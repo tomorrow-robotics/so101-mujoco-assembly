@@ -1,0 +1,39 @@
+{
+ "manifest_files": 15696,
+ "manifest_bad": 0,
+ "counts": {
+  "nbody": [
+   45,
+   45
+  ],
+  "njnt": [
+   38,
+   38
+  ],
+  "ngeom": [
+   16009,
+   16009
+  ],
+  "nmesh": [
+   15978,
+   15978
+  ],
+  "nmeshvert": [
+   2949447,
+   2949447
+  ],
+  "nmeshface": [
+   5322657,
+   5322657
+  ],
+  "neq": [
+   17,
+   17
+  ]
+ },
+ "geom_names_equal": true,
+ "mesh_vert_equal": true,
+ "geom_pos_equal": true,
+ "body_mass_equal": true,
+ "passed": true
+}

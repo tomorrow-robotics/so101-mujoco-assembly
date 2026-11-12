@@ -1,0 +1,1079 @@
+{
+  "scene_sha256": "855060451ff4325ec3fd0d15047d312bfae23f0933c1f3f00ea9dc48dc75f7fc",
+  "checkpoint_scene_sha256": "edc4dc19eaa23a0aedbdf9f2aefa619255c6ec22329be96478676dbaa4658c30",
+  "revised_base_scene_sha256": null,
+  "scope": "FCL distance of exact convex Minkowski sweeps on compiled MuJoCo collider vertices; no robot or dynamics.",
+  "interfaces": {
+    "base_m1": {
+      "continuous": {
+        "moving": "motor",
+        "predecessors": [
+          "base"
+        ],
+        "world_target": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -9.943246979520187e-05
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.005289593403451679
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            1.410516828678843
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "withdrawal_world": [
+          0,
+          -1,
+          0
+        ],
+        "separated_distance_mm": 80.0,
+        "checkpoint_sha256": null,
+        "projection": null,
+        "convex_pairs_checked": 527,
+        "distance_cap_mm": 2.0,
+        "clearance_mm": 0.28358302550096826,
+        "continuous_passed": true,
+        "closest_pair": [
+          "v11_motor_0297",
+          "v11_base_0426"
+        ],
+        "colliding_or_touching_pairs": [],
+        "invalid_near_hulls": [],
+        "moving_pieces": 929,
+        "static_predecessor_pieces": 948,
+        "candidate_predecessor_pieces": 351
+      },
+      "native": {
+        "passed": true,
+        "tested_poses": 801,
+        "nominal_contacts": [],
+        "side_shift_min_separations_m": [
+          -0.0026927043266667242,
+          -0.002708372921329582
+        ],
+        "base_geom_count": 948,
+        "motor_geom_count": 929
+      },
+      "passed": true
+    },
+    "base_holder": {
+      "samples": 261,
+      "interval_mm": 0.25,
+      "reporting_penetration_mm": 0.01,
+      "nominal_target_from": "scripts/check_base_pan_merge.py: installed holder body frame",
+      "passed": true,
+      "penetrations": []
+    },
+    "shoulder_m2": {
+      "moving": "motor_2",
+      "predecessors": [
+        "base",
+        "motor",
+        "holder",
+        "shoulder_fork",
+        "shoulder_seat"
+      ],
+      "world_target": [
+        [
+          -0.09370727569134146,
+          -0.9955981645769579,
+          0.0018003259416965504,
+          -0.04667453368145118
+        ],
+        [
+          0.9955997574084564,
+          -0.09370759812618373,
+          -9.540252287361503e-05,
+          0.3524727871302195
+        ],
+        [
+          0.00026368679650962644,
+          0.0017834641602966716,
+          0.999998374861109,
+          0.10745562408765486
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "withdrawal_world": [
+        0.0018003259416965504,
+        -9.540252287361503e-05,
+        0.999998374861109
+      ],
+      "separated_distance_mm": 80.0,
+      "checkpoint_sha256": "98bb0c96d9ef1883833ced3112cc7aff66a4fff98f6668cc68f05aa524feb6cf",
+      "projection": null,
+      "convex_pairs_checked": 1192,
+      "distance_cap_mm": 2.0,
+      "clearance_mm": 0.012814055894908416,
+      "continuous_passed": true,
+      "closest_pair": [
+        "v11_motor_2_0747",
+        "v11_shoulder_seat_0151"
+      ],
+      "colliding_or_touching_pairs": [],
+      "invalid_near_hulls": [],
+      "moving_pieces": 753,
+      "static_predecessor_pieces": 4207,
+      "candidate_predecessor_pieces": 870,
+      "native": {
+        "samples": 161,
+        "contacts": [],
+        "control_offset_mm": 3.0,
+        "offset_controls": [
+          {
+            "contacts": 284,
+            "separation_mm": -1.1787479427530008,
+            "pair": [
+              "v11_shoulder_seat_0240",
+              "v11_motor_2_0285"
+            ]
+          },
+          {
+            "contacts": 2163,
+            "separation_mm": -2.6541931851106924,
+            "pair": [
+              "v11_shoulder_fork_1088",
+              "v11_motor_2_0719"
+            ]
+          }
+        ],
+        "passed": true
+      },
+      "passed": true
+    },
+    "shoulder_upper": {
+      "moving": "upper_print",
+      "predecessors": [
+        "base",
+        "motor",
+        "holder",
+        "shoulder_fork",
+        "shoulder_seat",
+        "motor_2"
+      ],
+      "world_target": [
+        [
+          -0.0021388892193796925,
+          0.9947479006833992,
+          0.10233298216543404,
+          -0.058192525661243236
+        ],
+        [
+          0.00018562743856160704,
+          0.1023336094350852,
+          -0.9947501183324559,
+          0.35068556251527366
+        ],
+        [
+          -0.9999976953450216,
+          -0.002108664494718347,
+          -0.00040353275881926904,
+          0.1849132642620614
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "withdrawal_world": [
+        0.9947488117695589,
+        0.10232467687338168,
+        -0.0021123413080948116
+      ],
+      "separated_distance_mm": 100.0,
+      "checkpoint_sha256": "eaa14acd6186cf7ad42dc945f09c9b4dbb6eab198dda14dc36e63218c16cf9dc",
+      "projection": null,
+      "convex_pairs_checked": 7723,
+      "distance_cap_mm": 2.0,
+      "clearance_mm": 0.01901836439844474,
+      "continuous_passed": true,
+      "closest_pair": [
+        "v11_upper_print_0472",
+        "v11_motor_2_0533"
+      ],
+      "colliding_or_touching_pairs": [],
+      "invalid_near_hulls": [],
+      "moving_pieces": 1790,
+      "static_predecessor_pieces": 4960,
+      "candidate_predecessor_pieces": 447,
+      "native": {
+        "samples": 201,
+        "contacts": [],
+        "control_offset_mm": 3.0,
+        "offset_controls": [
+          {
+            "contacts": 375,
+            "separation_mm": -2.781919611438208,
+            "pair": [
+              "stock_0_motor_2_0004",
+              "v11_upper_print_0527"
+            ]
+          },
+          {
+            "contacts": 2928,
+            "separation_mm": -2.7834267105993065,
+            "pair": [
+              "v11_motor_2_0374",
+              "v11_upper_print_0678"
+            ]
+          }
+        ],
+        "passed": true
+      },
+      "passed": true
+    },
+    "upper_m3": {
+      "moving": "motor3",
+      "predecessors": [
+        "base",
+        "motor",
+        "holder",
+        "shoulder_fork",
+        "shoulder_seat",
+        "motor_2",
+        "upper_print"
+      ],
+      "world_target": [
+        [
+          0.9948160095101881,
+          0.002709748102405629,
+          0.10165512523942599,
+          -0.030830298071854195
+        ],
+        [
+          0.10165768444119702,
+          -0.0008237027993322107,
+          -0.9948190974784054,
+          0.35395166049688714
+        ],
+        [
+          -0.002611975550402781,
+          0.9999959893814158,
+          -0.0010948994493635593,
+          0.23238659426053693
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "withdrawal_world": [
+        0.9948166327096859,
+        0.10165139645187543,
+        -0.00261932883441827
+      ],
+      "separated_distance_mm": 45.0,
+      "checkpoint_sha256": "a34067626eba0d8c7296a8e604ed7705068b033e099512f11e24e7ec3a334e9c",
+      "projection": null,
+      "convex_pairs_checked": 3573,
+      "distance_cap_mm": 2.0,
+      "clearance_mm": 0.02103509351371795,
+      "continuous_passed": true,
+      "closest_pair": [
+        "stock_0_motor3_housing_048_057",
+        "v11_upper_print_0582"
+      ],
+      "colliding_or_touching_pairs": [],
+      "invalid_near_hulls": [],
+      "moving_pieces": 280,
+      "static_predecessor_pieces": 6750,
+      "candidate_predecessor_pieces": 589,
+      "native": {
+        "samples": 91,
+        "contacts": [],
+        "control_offset_mm": 3.0,
+        "offset_controls": [
+          {
+            "contacts": 1850,
+            "separation_mm": -2.899989051363435,
+            "pair": [
+              "v11_upper_print_0683",
+              "stock_0_motor3_housing_006_019"
+            ]
+          },
+          {
+            "contacts": 2353,
+            "separation_mm": -2.658188479528122,
+            "pair": [
+              "v11_upper_print_1623",
+              "stock_0_motor3_housing_153_201"
+            ]
+          }
+        ],
+        "passed": true
+      },
+      "passed": true
+    },
+    "m3_forearm": {
+      "moving": "forearm",
+      "predecessors": [
+        "base",
+        "motor",
+        "holder",
+        "shoulder_fork",
+        "shoulder_seat",
+        "motor_2",
+        "upper_print",
+        "motor3"
+      ],
+      "world_target": [
+        [
+          -0.9948121578302334,
+          -0.0024456703161876187,
+          0.10169950506203498,
+          0.04604908507750187
+        ],
+        [
+          -0.10170259233142834,
+          0.0011726459897057869,
+          -0.9948141573251021,
+          0.3613773927724683
+        ],
+        [
+          0.0023137299379271457,
+          -0.9999963217922805,
+          -0.0014152934985344856,
+          0.20018451298787152
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "withdrawal_world": [
+        0.002445130589684597,
+        -0.0011673663447317295,
+        0.9999963292893713
+      ],
+      "separated_distance_mm": 65.0,
+      "checkpoint_sha256": "1eecf25e918aec143804d0dcfa4f2e4e1ca843b51ed134d794ef8a430d8dcbdc",
+      "projection": null,
+      "convex_pairs_checked": 712,
+      "distance_cap_mm": 2.0,
+      "clearance_mm": 0.014406736198404204,
+      "continuous_passed": true,
+      "closest_pair": [
+        "v11_forearm_0435",
+        "stock_0_motor3_drive_horn_192_041"
+      ],
+      "colliding_or_touching_pairs": [],
+      "invalid_near_hulls": [],
+      "moving_pieces": 1403,
+      "static_predecessor_pieces": 7030,
+      "candidate_predecessor_pieces": 303,
+      "native": {
+        "samples": 131,
+        "contacts": [],
+        "control_offset_mm": 3.0,
+        "offset_controls": [
+          {
+            "contacts": 2978,
+            "separation_mm": -2.742662406887964,
+            "pair": [
+              "stock_0_motor3_idler_horn_012_005",
+              "v11_forearm_1397"
+            ]
+          },
+          {
+            "contacts": 5407,
+            "separation_mm": -2.642401018101727,
+            "pair": [
+              "stock_0_motor3_drive_horn_186_035",
+              "v11_forearm_1327"
+            ]
+          }
+        ],
+        "passed": true
+      },
+      "passed": true
+    },
+    "forearm_holder": {
+      "moving": "forearm_holder",
+      "predecessors": [
+        "base",
+        "motor",
+        "holder",
+        "shoulder_fork",
+        "shoulder_seat",
+        "motor_2",
+        "upper_print",
+        "motor3",
+        "forearm"
+      ],
+      "world_target": [
+        [
+          -0.9947830439855114,
+          -0.004318426109043075,
+          0.10192176703167498,
+          0.046069174740740675
+        ],
+        [
+          -0.10193199999543927,
+          0.0022191853406240284,
+          -0.9947888934811003,
+          0.36117743735628277
+        ],
+        [
+          0.004069739039307664,
+          -0.9999882131367164,
+          -0.002647793758441335,
+          0.20006127926130327
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "withdrawal_world": [
+        0.994783043985511,
+        0.10193199999544178,
+        -0.004069739039307656
+      ],
+      "separated_distance_mm": 100.0,
+      "checkpoint_sha256": "97321351b3b1f67e32e54e4ad67ea0351ff05c808cf5999ae4d8950945151d29",
+      "projection": "Measured forearm seated before release; release outcome is outside the geometric audit.",
+      "convex_pairs_checked": 4776,
+      "distance_cap_mm": 2.0,
+      "clearance_mm": 0.015449437959243584,
+      "continuous_passed": true,
+      "closest_pair": [
+        "v11_forearm_holder_0091",
+        "v11_forearm_1390"
+      ],
+      "colliding_or_touching_pairs": [],
+      "invalid_near_hulls": [],
+      "moving_pieces": 1377,
+      "static_predecessor_pieces": 8433,
+      "candidate_predecessor_pieces": 369,
+      "native": {
+        "samples": 201,
+        "contacts": [],
+        "control_offset_mm": 3.0,
+        "offset_controls": [
+          {
+            "contacts": 697,
+            "separation_mm": -2.613985310804988,
+            "pair": [
+              "v11_forearm_0434",
+              "v11_forearm_holder_0056"
+            ]
+          },
+          {
+            "contacts": 1966,
+            "separation_mm": -1.967255959952245,
+            "pair": [
+              "v11_forearm_1005",
+              "v11_forearm_holder_1138"
+            ]
+          }
+        ],
+        "passed": true
+      },
+      "passed": true
+    },
+    "forearm_m4": {
+      "moving": "motor4",
+      "predecessors": [
+        "base",
+        "motor",
+        "holder",
+        "shoulder_fork",
+        "shoulder_seat",
+        "motor_2",
+        "upper_print",
+        "motor3",
+        "forearm",
+        "forearm_holder"
+      ],
+      "world_target": [
+        [
+          0.9947830325219597,
+          0.004321606772220594,
+          0.10192174410457445,
+          0.10340834868382512
+        ],
+        [
+          0.10193200589089534,
+          -0.0022241943781786955,
+          -0.994788881690193,
+          0.36765733447672816
+        ],
+        [
+          -0.004072392597790527,
+          0.9999881882673779,
+          -0.0026531008754070765,
+          0.23702848195292087
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "withdrawal_world": [
+        0.994783043985511,
+        0.10193199999544178,
+        -0.004069739039307656
+      ],
+      "separated_distance_mm": 100.0,
+      "checkpoint_sha256": "97321351b3b1f67e32e54e4ad67ea0351ff05c808cf5999ae4d8950945151d29",
+      "projection": "Measured forearm seat with holder projected at its registered target.",
+      "convex_pairs_checked": 13939,
+      "distance_cap_mm": 2.0,
+      "clearance_mm": 0.019385090604493848,
+      "continuous_passed": true,
+      "closest_pair": [
+        "stock_1_motor4_housing_086_120",
+        "v11_forearm_holder_0098"
+      ],
+      "colliding_or_touching_pairs": [],
+      "invalid_near_hulls": [],
+      "moving_pieces": 280,
+      "static_predecessor_pieces": 9810,
+      "candidate_predecessor_pieces": 1125,
+      "native": {
+        "samples": 201,
+        "contacts": [],
+        "control_offset_mm": 3.0,
+        "offset_controls": [
+          {
+            "contacts": 3156,
+            "separation_mm": -2.660002251833977,
+            "pair": [
+              "v11_forearm_0708",
+              "stock_1_motor4_housing_048_057"
+            ]
+          },
+          {
+            "contacts": 2230,
+            "separation_mm": -2.9016499624137637,
+            "pair": [
+              "v11_forearm_0434",
+              "stock_1_motor4_housing_155_203"
+            ]
+          }
+        ],
+        "passed": true
+      },
+      "passed": true
+    },
+    "wrist_mount": {
+      "moving": "wrist_shell",
+      "predecessors": [
+        "base",
+        "motor",
+        "holder",
+        "shoulder_fork",
+        "shoulder_seat",
+        "motor_2",
+        "upper_print",
+        "motor3",
+        "forearm",
+        "forearm_holder",
+        "motor4"
+      ],
+      "world_target": [
+        [
+          -0.004315042525405478,
+          -0.9947830598422585,
+          -0.10192175557198321,
+          0.11774907356284017
+        ],
+        [
+          0.002222199519396661,
+          -0.10193199183353077,
+          0.9947888875887906,
+          0.35032893227876083
+        ],
+        [
+          -0.9999882210492772,
+          0.004066065877498328,
+          0.0026504473169463795,
+          0.2369280468501026
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "withdrawal_world": [
+        0.00431869656758855,
+        -0.0022218251022699392,
+        0.9999882061070372
+      ],
+      "separated_distance_mm": 40.0,
+      "checkpoint_sha256": "97321351b3b1f67e32e54e4ad67ea0351ff05c808cf5999ae4d8950945151d29",
+      "projection": null,
+      "convex_pairs_checked": 909,
+      "distance_cap_mm": 2.0,
+      "clearance_mm": 0.13525267431710067,
+      "continuous_passed": true,
+      "closest_pair": [
+        "v11_wrist_shell_0444",
+        "stock_1_motor4_drive_horn_185_034"
+      ],
+      "colliding_or_touching_pairs": [],
+      "invalid_near_hulls": [],
+      "moving_pieces": 1593,
+      "static_predecessor_pieces": 10090,
+      "candidate_predecessor_pieces": 304,
+      "native": {
+        "samples": 81,
+        "contacts": [],
+        "control_offset_mm": 4.0,
+        "offset_controls": [
+          {
+            "contacts": 3920,
+            "separation_mm": -3.704495132617518,
+            "pair": [
+              "stock_1_motor4_idler_horn_013_006",
+              "v11_wrist_shell_1419"
+            ]
+          },
+          {
+            "contacts": 6074,
+            "separation_mm": -3.4801688668911295,
+            "pair": [
+              "stock_1_motor4_drive_horn_191_040",
+              "v11_wrist_shell_0530"
+            ]
+          }
+        ],
+        "passed": true
+      },
+      "passed": true
+    },
+    "wrist_motor5": {
+      "moving": "motor5",
+      "predecessors": [
+        "base",
+        "motor",
+        "holder",
+        "shoulder_fork",
+        "shoulder_seat",
+        "motor_2",
+        "upper_print",
+        "motor3",
+        "forearm",
+        "forearm_holder",
+        "motor4",
+        "wrist_shell"
+      ],
+      "world_target": [
+        [
+          0.10192177142133178,
+          -0.004311014103622436,
+          0.9947830756842083,
+          0.15680906957964924
+        ],
+        [
+          -0.994788895744674,
+          0.0022189198728607266,
+          0.10193198368367058,
+          0.3850913886927195
+        ],
+        [
+          -0.0026467741550916675,
+          -0.9999882457069154,
+          -0.004062392715598388,
+          0.23683674934479515
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "withdrawal_world": [
+        -0.10192175557198321,
+        0.9947888875887906,
+        0.0026504473169463795
+      ],
+      "separated_distance_mm": 65.0,
+      "checkpoint_sha256": "97321351b3b1f67e32e54e4ad67ea0351ff05c808cf5999ae4d8950945151d29",
+      "projection": null,
+      "convex_pairs_checked": 5466,
+      "distance_cap_mm": 2.0,
+      "clearance_mm": 0.018471742915587088,
+      "continuous_passed": true,
+      "closest_pair": [
+        "stock_2_motor5_housing_193",
+        "v11_wrist_shell_0468"
+      ],
+      "colliding_or_touching_pairs": [],
+      "invalid_near_hulls": [],
+      "moving_pieces": 860,
+      "static_predecessor_pieces": 11683,
+      "candidate_predecessor_pieces": 364,
+      "native": {
+        "samples": 131,
+        "contacts": [],
+        "control_offset_mm": 4.0,
+        "offset_controls": [
+          {
+            "contacts": 2111,
+            "separation_mm": -3.6999478051084007,
+            "pair": [
+              "v11_wrist_shell_1502",
+              "stock_2_motor5_housing_129"
+            ]
+          },
+          {
+            "contacts": 2594,
+            "separation_mm": -3.699956736547411,
+            "pair": [
+              "v11_wrist_shell_1564",
+              "stock_2_motor5_housing_150"
+            ]
+          }
+        ],
+        "passed": true
+      },
+      "passed": true
+    },
+    "wrist_end_frame": {
+      "moving": "frame",
+      "predecessors": [
+        "base",
+        "motor",
+        "holder",
+        "shoulder_fork",
+        "shoulder_seat",
+        "motor_2",
+        "upper_print",
+        "motor3",
+        "forearm",
+        "forearm_holder",
+        "motor4",
+        "wrist_shell",
+        "motor5"
+      ],
+      "world_target": [
+        [
+          0.009266835044503808,
+          -0.1015948290759351,
+          -0.9947826981171752,
+          0.17668553474334928
+        ],
+        [
+          -0.05062653942863913,
+          0.9935019274097493,
+          -0.10193563527340355,
+          0.3745626558451467
+        ],
+        [
+          0.9986746613756338,
+          0.051307026206392575,
+          0.004063223857744076,
+          0.23672758332142413
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "withdrawal_world": [
+        0.9947826981171752,
+        0.10193563527340355,
+        -0.004063223857744076
+      ],
+      "separated_distance_mm": 100.0,
+      "checkpoint_sha256": "97321351b3b1f67e32e54e4ad67ea0351ff05c808cf5999ae4d8950945151d29",
+      "projection": null,
+      "convex_pairs_checked": 3741,
+      "distance_cap_mm": 2.0,
+      "clearance_mm": 0.024494260511757484,
+      "continuous_passed": true,
+      "closest_pair": [
+        "v11_frame_0386",
+        "motor5_disc_section_324"
+      ],
+      "colliding_or_touching_pairs": [],
+      "invalid_near_hulls": [],
+      "moving_pieces": 1952,
+      "static_predecessor_pieces": 12543,
+      "candidate_predecessor_pieces": 789,
+      "native": {
+        "samples": 201,
+        "contacts": [],
+        "control_offset_mm": 4.0,
+        "offset_controls": [
+          {
+            "contacts": 1801,
+            "separation_mm": -0.999369765368633,
+            "pair": [
+              "motor5_disc_section_23",
+              "v11_frame_0785"
+            ]
+          },
+          {
+            "contacts": 1088,
+            "separation_mm": -0.9835071496250175,
+            "pair": [
+              "motor5_disc_section_269",
+              "v11_frame_1775"
+            ]
+          }
+        ],
+        "passed": true
+      },
+      "passed": true
+    },
+    "end_frame_motor6": {
+      "moving": "housing",
+      "predecessors": [
+        "base",
+        "motor",
+        "holder",
+        "shoulder_fork",
+        "shoulder_seat",
+        "motor_2",
+        "upper_print",
+        "motor3",
+        "forearm",
+        "forearm_holder",
+        "motor4",
+        "wrist_shell",
+        "motor5",
+        "frame"
+      ],
+      "world_target": [
+        [
+          0.009266835044503772,
+          0.9947830712891088,
+          -0.10159117503436632,
+          0.20002464502622627
+        ],
+        [
+          -0.050626539428639296,
+          0.10193198593636596,
+          0.9935023018335426,
+          0.3766574755496848
+        ],
+        [
+          0.9986746613756337,
+          -0.004063412318947109,
+          0.051307011280992,
+          0.24432742947836594
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "withdrawal_world": [
+        0.009266835044503808,
+        -0.05062653942863913,
+        0.9986746613756338
+      ],
+      "separated_distance_mm": 55.0,
+      "checkpoint_sha256": "97321351b3b1f67e32e54e4ad67ea0351ff05c808cf5999ae4d8950945151d29",
+      "projection": null,
+      "convex_pairs_checked": 7238,
+      "distance_cap_mm": 2.0,
+      "clearance_mm": 0.03422541404136693,
+      "continuous_passed": true,
+      "closest_pair": [
+        "stock_3_housing_contact_187",
+        "v11_frame_0362"
+      ],
+      "colliding_or_touching_pairs": [],
+      "invalid_near_hulls": [],
+      "moving_pieces": 371,
+      "static_predecessor_pieces": 14495,
+      "candidate_predecessor_pieces": 942,
+      "native": {
+        "samples": 111,
+        "contacts": [],
+        "control_offset_mm": 4.0,
+        "offset_controls": [
+          {
+            "contacts": 5421,
+            "separation_mm": -3.6793016845522692,
+            "pair": [
+              "v11_frame_1643",
+              "stock_3_housing_contact_1"
+            ]
+          },
+          {
+            "contacts": 884,
+            "separation_mm": -1.3569688048504627,
+            "pair": [
+              "v11_frame_1754",
+              "stock_3_housing_contact_128"
+            ]
+          }
+        ],
+        "passed": true
+      },
+      "passed": true
+    },
+    "end_frame_jaw": {
+      "moving": "jaw",
+      "predecessors": [
+        "base",
+        "motor",
+        "holder",
+        "shoulder_fork",
+        "shoulder_seat",
+        "motor_2",
+        "upper_print",
+        "motor3",
+        "forearm",
+        "forearm_holder",
+        "motor4",
+        "wrist_shell",
+        "motor5",
+        "frame",
+        "housing"
+      ],
+      "world_target": [
+        [
+          0.009266782889638728,
+          -0.9947823254176635,
+          0.10159848311613488,
+          0.19824065716056258
+        ],
+        [
+          -0.050626544772962724,
+          -0.10193928195479716,
+          -0.9935015529725608,
+          0.3946031298493891
+        ],
+        [
+          0.9986746615886606,
+          0.004062983037571546,
+          -0.05130704113091014,
+          0.2577703041356209
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "withdrawal_world": [
+        0.009266835044503808,
+        -0.05062653942863913,
+        0.9986746613756338
+      ],
+      "separated_distance_mm": 35.0,
+      "checkpoint_sha256": "97321351b3b1f67e32e54e4ad67ea0351ff05c808cf5999ae4d8950945151d29",
+      "projection": null,
+      "convex_pairs_checked": 945,
+      "distance_cap_mm": 2.0,
+      "clearance_mm": 0.0927488362739313,
+      "continuous_passed": true,
+      "closest_pair": [
+        "v11_jaw_0456",
+        "stock_3_disc_contact_0"
+      ],
+      "colliding_or_touching_pairs": [],
+      "invalid_near_hulls": [],
+      "moving_pieces": 1056,
+      "static_predecessor_pieces": 14866,
+      "candidate_predecessor_pieces": 353,
+      "native": {
+        "samples": 71,
+        "contacts": [],
+        "control_offset_mm": 4.0,
+        "offset_controls": [
+          {
+            "contacts": 842,
+            "separation_mm": -2.0561811688132314,
+            "pair": [
+              "stock_3_housing_contact_25",
+              "v11_jaw_0393"
+            ]
+          },
+          {
+            "contacts": 123,
+            "separation_mm": -0.9258124109690355,
+            "pair": [
+              "stock_3_disc_contact_0",
+              "v11_jaw_0780"
+            ]
+          }
+        ],
+        "passed": true
+      },
+      "passed": true
+    }
+  },
+  "required": [
+    "base_m1",
+    "shoulder_m2",
+    "shoulder_upper",
+    "upper_m3",
+    "forearm_m4",
+    "wrist_motor5",
+    "end_frame_motor6",
+    "end_frame_jaw"
+  ],
+  "auxiliary": [
+    "base_holder",
+    "m3_forearm",
+    "forearm_holder",
+    "wrist_mount",
+    "wrist_end_frame"
+  ],
+  "geom_count": 16009,
+  "mujoco": "3.9.0",
+  "stock": {
+    "passed": true,
+    "warmup_steps": 20,
+    "steps": 200,
+    "wall_ms_per_step": 3.0525746941566467,
+    "warning_counts": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "scope": "Passive stock-state smoke, no controller or parameter changes.",
+    "load_wall_s": 42.12598317209631,
+    "peak_rss_mib": 5242.6015625
+  },
+  "passed_required": 8,
+  "passed": true
+}

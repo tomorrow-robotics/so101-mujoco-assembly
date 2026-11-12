@@ -1,0 +1,116 @@
+{
+ "probe_r_mm": 0.5,
+ "tol_mm": 0.05,
+ "grid_h_mm": 0.2,
+ "pieces": 1004,
+ "cad_volume_mm3": 121834.98066116871,
+ "collider_volume_grid_mm3": 122424.87200000003,
+ "enclosed_probe_center_voxels": 0,
+ "volume": {
+  "missing_mm3": 0.0,
+  "missing_max_depth_mm": 0.0,
+  "extra_total_mm3": 0.016000000000000004,
+  "extra_unreachable_fill_mm3": 0.0,
+  "extra_probe_reachable_flagged_mm3": 0.016000000000000004
+ },
+ "flagged_blobs_top15": [
+  {
+   "volume_mm3": 0.008000000000000002,
+   "bbox_lo": [
+    -10.136339999999997,
+    13.254360000000005,
+    17.828280000000003
+   ],
+   "bbox_hi": [
+    -9.936340000000001,
+    13.454360000000001,
+    18.028280000000002
+   ],
+   "max_outside_cad_mm": 0.1264135241508484,
+   "max_probe_depth_upper_mm": 0.326794925460562
+  },
+  {
+   "volume_mm3": 0.008000000000000002,
+   "bbox_lo": [
+    -9.936340000000001,
+    29.45436000000001,
+    2.8282800000000003
+   ],
+   "bbox_hi": [
+    -9.736339999999998,
+    29.654359999999997,
+    3.0282800000000005
+   ],
+   "max_outside_cad_mm": 0.054956164211034775,
+   "max_probe_depth_upper_mm": 0.2732050747964232
+  }
+ ],
+ "missing_blobs_top10": [],
+ "cad_surface": {
+  "samples": 200000,
+  "exposed_fraction": 0.889995,
+  "exposed_abs_offset_mm": {
+   "median": 7.954512781793711e-07,
+   "p95": 0.027537079971926306,
+   "p99": 0.04125721927598977,
+   "max": 0.06568630229779088
+  },
+  "exposed_outward_gt_tol": 1.1236018179877416e-05,
+  "exposed_inward_gt_tol": 0.0,
+  "unexposed_uncovered_gt_tol": 0.0,
+  "exposed_area_fraction_within_tol": 0.9999887639818201
+ },
+ "collider_surface": {
+  "samples": 179199,
+  "area_mm2": 162115.5097394854,
+  "outside_cad_gt_tol_fraction": 5.022349455075084e-05,
+  "protrusion_suspects": 9,
+  "protrusion_confirmed": 1,
+  "protrusion_confirmed_fraction": 5.5803882834167605e-06,
+  "protrusion_confirmed_max_mm": 0.0538228377699852,
+  "protrusion_confirmed_p95_mm": 0.0538228377699852,
+  "protrusion_unconfirmed_suspects": 8
+ },
+ "witnesses": {
+  "protrusion": [
+   {
+    "p": [
+     12.543053624810792,
+     27.098479449881438,
+     42.44085100483444
+    ],
+    "outside_cad_mm": 0.0538228377699852
+   }
+  ],
+  "exposed_cad_outward": [
+   {
+    "p": [
+     12.469476576490827,
+     42.36379761652117,
+     49.24211178534862
+    ],
+    "offset_mm": 0.06568630229779088
+   },
+   {
+    "p": [
+     12.585726727601065,
+     27.045140385736545,
+     41.62802139121173
+    ],
+    "offset_mm": 0.05060816389250395
+   }
+  ],
+  "exposed_cad_inward": []
+ },
+ "pass": {
+  "missing": true,
+  "exposed_surface": false,
+  "no_reachable_protrusion": false,
+  "all": false
+ },
+ "t_gate_s": 287.3085289001465,
+ "t_envelope_s": 2.494781970977783,
+ "reference": "results/exposed_gate/base_reference_clean/reference_mesh.ply",
+ "reference_sha256": "f594cc40f97fbdc641618b7a2539d1e61bc42c0bb4aba5731a74aa757ba4816e",
+ "collider": "results/exposed_gate/base_F8_v2_clean/hulls_mm"
+}

@@ -1,0 +1,187 @@
+{
+ "probe_r_mm": 0.5,
+ "tol_mm": 0.05,
+ "grid_h_mm": 0.2,
+ "pieces": 752,
+ "cad_volume_mm3": 33725.38277894614,
+ "collider_volume_grid_mm3": 33786.83200000001,
+ "enclosed_probe_center_voxels": 14,
+ "volume": {
+  "missing_mm3": 0.0,
+  "missing_max_depth_mm": 0.0,
+  "extra_total_mm3": 2.2480000000000007,
+  "extra_unreachable_fill_mm3": 2.2160000000000006,
+  "extra_probe_reachable_flagged_mm3": 0.03200000000000001
+ },
+ "flagged_blobs_top15": [
+  {
+   "volume_mm3": 0.008000000000000002,
+   "bbox_lo": [
+    -14.13634,
+    10.25436,
+    20.82828
+   ],
+   "bbox_hi": [
+    -13.936340000000001,
+    10.454360000000003,
+    21.028280000000002
+   ],
+   "max_outside_cad_mm": 0.06047223135828972,
+   "max_probe_depth_upper_mm": 0.2259914906117766
+  },
+  {
+   "volume_mm3": 0.008000000000000002,
+   "bbox_lo": [
+    -13.936340000000001,
+    -10.94564,
+    20.628280000000004
+   ],
+   "bbox_hi": [
+    -13.736340000000002,
+    -10.74564,
+    20.82828
+   ],
+   "max_outside_cad_mm": 0.07447736710309982,
+   "max_probe_depth_upper_mm": 0.2259914906117766
+  },
+  {
+   "volume_mm3": 0.008000000000000002,
+   "bbox_lo": [
+    -13.936340000000001,
+    -10.74564,
+    20.82828
+   ],
+   "bbox_hi": [
+    -13.736340000000002,
+    -10.545639999999999,
+    21.028280000000002
+   ],
+   "max_outside_cad_mm": 0.07058971375226974,
+   "max_probe_depth_upper_mm": 0.2259914906117766
+  },
+  {
+   "volume_mm3": 0.008000000000000002,
+   "bbox_lo": [
+    14.863660000000003,
+    -6.3456399999999995,
+    5.8282799999999995
+   ],
+   "bbox_hi": [
+    15.063659999999999,
+    -6.14564,
+    6.028279999999999
+   ],
+   "max_outside_cad_mm": 0.07546736299991608,
+   "max_probe_depth_upper_mm": 0.2732050747964232
+  }
+ ],
+ "missing_blobs_top10": [],
+ "cad_surface": {
+  "samples": 200000,
+  "exposed_fraction": 0.862145,
+  "exposed_abs_offset_mm": {
+   "median": 0.00014996371160960054,
+   "p95": 0.0410285979223687,
+   "p99": 0.04723442945724045,
+   "max": 0.08409157017741259
+  },
+  "exposed_outward_gt_tol": 1.7398465455346837e-05,
+  "exposed_inward_gt_tol": 1.7398465455346837e-05,
+  "unexposed_uncovered_gt_tol": 3.626999383410105e-05,
+  "exposed_area_fraction_within_tol": 0.9999652030690893
+ },
+ "collider_surface": {
+  "samples": 168768,
+  "area_mm2": 41077.215913299944,
+  "outside_cad_gt_tol_fraction": 0.0004917993932499052,
+  "protrusion_suspects": 28,
+  "protrusion_confirmed": 2,
+  "protrusion_confirmed_fraction": 1.1850587789154341e-05,
+  "protrusion_confirmed_max_mm": 0.051113713532686234,
+  "protrusion_confirmed_p95_mm": 0.05107571929693222,
+  "protrusion_unconfirmed_suspects": 26
+ },
+ "witnesses": {
+  "protrusion": [
+   {
+    "p": [
+     -15.978028038144828,
+     6.9674438615694,
+     -21.598479179706775
+    ],
+    "outside_cad_mm": 0.051113713532686234
+   },
+   {
+    "p": [
+     14.094101072361557,
+     9.538971794070292,
+     4.2825975634315245
+    ],
+    "outside_cad_mm": 0.050353795289993286
+   }
+  ],
+  "exposed_cad_outward": [
+   {
+    "p": [
+     14.883297162658161,
+     -12.107260548837834,
+     7.2583807658133335
+    ],
+    "offset_mm": 0.06128990630690305
+   },
+   {
+    "p": [
+     16.367701229308583,
+     -9.055773709442857,
+     -20.07494585509631
+    ],
+    "offset_mm": 0.059033719373006326
+   },
+   {
+    "p": [
+     14.872943080773876,
+     -12.118851395887294,
+     7.1068633614395305
+    ],
+    "offset_mm": 0.05036703166105831
+   }
+  ],
+  "exposed_cad_inward": [
+   {
+    "p": [
+     18.229958239601746,
+     -6.186995694170429,
+     -16.88570912102152
+    ],
+    "offset_mm": -0.08409157017741259
+   },
+   {
+    "p": [
+     4.93650660892947,
+     -12.206910263820346,
+     -18.187655145047373
+    ],
+    "offset_mm": -0.06600336181116659
+   },
+   {
+    "p": [
+     4.936550906026062,
+     -12.315818021342327,
+     -5.6784609675301
+    ],
+    "offset_mm": -0.06577984901470418
+   }
+  ]
+ },
+ "pass": {
+  "missing": false,
+  "exposed_surface": false,
+  "no_reachable_protrusion": false,
+  "all": false
+ },
+ "t_gate_s": 222.36164116859436,
+ "t_envelope_s": 0.09627366065979004,
+ "reference": "results/exposed_gate/part_references/motor_2_reference_mesh.ply",
+ "reference_sha256": "d9c981dfba983a79d8a053fea95f592da0344bb07629fffd8e8885a21a90e31b",
+ "collider": "results/v11_release/oneshot/final/motor_2/hulls_mm"
+}

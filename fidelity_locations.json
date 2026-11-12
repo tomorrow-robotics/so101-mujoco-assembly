@@ -1,0 +1,1006 @@
+{
+ "holder": {
+  "within_tol": 84.9,
+  "inward_gt_tol": 15.1,
+  "outward_gt_tol": 0.0,
+  "p95": 0.95,
+  "missing_mm3": 1522.2,
+  "missing_max_depth_mm": 2.39,
+  "extra_mm3": 0.01,
+  "pieces": 519,
+  "blobs": [
+   {
+    "volume_mm3": 824.3,
+    "max_depth_mm": 0.95,
+    "bbox_lo": [
+     -15.1,
+     43.7,
+     2.2
+    ],
+    "bbox_hi": [
+     15.1,
+     44.7,
+     33.6
+    ],
+    "dist_to_insertion_path_mm": 0.15
+   },
+   {
+    "volume_mm3": 329.1,
+    "max_depth_mm": 2.39,
+    "bbox_lo": [
+     17.5,
+     34.7,
+     2.2
+    ],
+    "bbox_hi": [
+     22.3,
+     41.9,
+     33.6
+    ],
+    "dist_to_insertion_path_mm": 0.11
+   },
+   {
+    "volume_mm3": 132.7,
+    "max_depth_mm": 2.03,
+    "bbox_lo": [
+     16.9,
+     8.9,
+     2.2
+    ],
+    "bbox_hi": [
+     20.7,
+     15.1,
+     22.6
+    ],
+    "dist_to_insertion_path_mm": 0.0
+   },
+   {
+    "volume_mm3": 107.2,
+    "max_depth_mm": 0.57,
+    "bbox_lo": [
+     -9.3,
+     -28.1,
+     2.4
+    ],
+    "bbox_hi": [
+     12.7,
+     -24.9,
+     22.0
+    ],
+    "dist_to_insertion_path_mm": 0.0
+   },
+   {
+    "volume_mm3": 93.0,
+    "max_depth_mm": 1.62,
+    "bbox_lo": [
+     14.5,
+     6.1,
+     2.2
+    ],
+    "bbox_hi": [
+     17.3,
+     9.1,
+     22.2
+    ],
+    "dist_to_insertion_path_mm": 0.0
+   },
+   {
+    "volume_mm3": 35.7,
+    "max_depth_mm": 0.48,
+    "bbox_lo": [
+     -12.7,
+     -27.9,
+     2.4
+    ],
+    "bbox_hi": [
+     -9.3,
+     -24.7,
+     21.8
+    ],
+    "dist_to_insertion_path_mm": 0.0
+   },
+   {
+    "volume_mm3": 0.2,
+    "max_depth_mm": 0.21,
+    "bbox_lo": [
+     -12.7,
+     -24.7,
+     5.2
+    ],
+    "bbox_hi": [
+     -12.5,
+     -24.5,
+     10.6
+    ],
+    "dist_to_insertion_path_mm": 0.07
+   }
+  ]
+ },
+ "shoulder_fork": {
+  "within_tol": 94.8,
+  "inward_gt_tol": 5.2,
+  "outward_gt_tol": 0.0,
+  "p95": 0.26,
+  "missing_mm3": 887.6,
+  "missing_max_depth_mm": 2.43,
+  "extra_mm3": 0.06,
+  "pieces": 1226,
+  "blobs": [
+   {
+    "volume_mm3": 887.6,
+    "max_depth_mm": 2.43,
+    "bbox_lo": [
+     -12.7,
+     -25.7,
+     21.8
+    ],
+    "bbox_hi": [
+     20.7,
+     -5.9,
+     42.0
+    ],
+    "dist_to_insertion_path_mm": 0.0
+   }
+  ]
+ },
+ "shoulder_seat": {
+  "within_tol": 96.3,
+  "inward_gt_tol": 3.7,
+  "outward_gt_tol": 0.0,
+  "p95": 0.04,
+  "missing_mm3": 274.3,
+  "missing_max_depth_mm": 2.31,
+  "extra_mm3": 0.33,
+  "pieces": 585,
+  "blobs": [
+   {
+    "volume_mm3": 274.3,
+    "max_depth_mm": 2.31,
+    "bbox_lo": [
+     0.3,
+     8.1,
+     -8.4
+    ],
+    "bbox_hi": [
+     19.7,
+     14.5,
+     13.8
+    ],
+    "dist_to_insertion_path_mm": 0.0
+   },
+   {
+    "volume_mm3": 0.0,
+    "max_depth_mm": 0.06,
+    "bbox_lo": [
+     22.1,
+     11.9,
+     2.6
+    ],
+    "bbox_hi": [
+     22.3,
+     12.1,
+     2.8
+    ],
+    "dist_to_insertion_path_mm": 3.37
+   }
+  ]
+ },
+ "motor_2": {
+  "within_tol": 100.0,
+  "inward_gt_tol": 0.0,
+  "outward_gt_tol": 0.0,
+  "p95": 0.04,
+  "missing_mm3": 0.0,
+  "missing_max_depth_mm": 0.0,
+  "extra_mm3": 2.25,
+  "pieces": 752,
+  "blobs": []
+ },
+ "upper_print": {
+  "within_tol": 91.1,
+  "inward_gt_tol": 8.9,
+  "outward_gt_tol": 0.0,
+  "p95": 0.35,
+  "missing_mm3": 1068.8,
+  "missing_max_depth_mm": 2.97,
+  "extra_mm3": 0.27,
+  "pieces": 1790,
+  "blobs": [
+   {
+    "volume_mm3": 614.9,
+    "max_depth_mm": 1.97,
+    "bbox_lo": [
+     -60.1,
+     4.5,
+     -18.4
+    ],
+    "bbox_hi": [
+     -34.5,
+     23.7,
+     17.0
+    ],
+    "dist_to_insertion_path_mm": 0.0
+   },
+   {
+    "volume_mm3": 312.9,
+    "max_depth_mm": 2.97,
+    "bbox_lo": [
+     55.1,
+     0.7,
+     -31.6
+    ],
+    "bbox_hi": [
+     77.1,
+     23.3,
+     -16.6
+    ],
+    "dist_to_insertion_path_mm": 0.0
+   },
+   {
+    "volume_mm3": 90.5,
+    "max_depth_mm": 1.73,
+    "bbox_lo": [
+     54.9,
+     0.7,
+     16.8
+    ],
+    "bbox_hi": [
+     75.5,
+     22.9,
+     19.8
+    ],
+    "dist_to_insertion_path_mm": 0.0
+   },
+   {
+    "volume_mm3": 28.4,
+    "max_depth_mm": 0.25,
+    "bbox_lo": [
+     -60.1,
+     6.3,
+     -12.2
+    ],
+    "bbox_hi": [
+     -59.7,
+     23.7,
+     -8.0
+    ],
+    "dist_to_insertion_path_mm": 0.0
+   },
+   {
+    "volume_mm3": 18.7,
+    "max_depth_mm": 0.35,
+    "bbox_lo": [
+     -34.9,
+     4.9,
+     -10.6
+    ],
+    "bbox_hi": [
+     -34.5,
+     23.7,
+     -8.0
+    ],
+    "dist_to_insertion_path_mm": 0.15
+   },
+   {
+    "volume_mm3": 3.0,
+    "max_depth_mm": 1.25,
+    "bbox_lo": [
+     -63.7,
+     0.1,
+     -22.8
+    ],
+    "bbox_hi": [
+     -62.1,
+     1.5,
+     -18.8
+    ],
+    "dist_to_insertion_path_mm": 4.92
+   },
+   {
+    "volume_mm3": 0.2,
+    "max_depth_mm": 0.46,
+    "bbox_lo": [
+     67.5,
+     13.5,
+     18.8
+    ],
+    "bbox_hi": [
+     68.3,
+     14.3,
+     19.8
+    ],
+    "dist_to_insertion_path_mm": 0.51
+   },
+   {
+    "volume_mm3": 0.2,
+    "max_depth_mm": 0.49,
+    "bbox_lo": [
+     62.3,
+     13.5,
+     18.8
+    ],
+    "bbox_hi": [
+     62.9,
+     14.3,
+     19.8
+    ],
+    "dist_to_insertion_path_mm": 0.51
+   },
+   {
+    "volume_mm3": 0.0,
+    "max_depth_mm": 0.08,
+    "bbox_lo": [
+     68.1,
+     11.5,
+     -19.8
+    ],
+    "bbox_hi": [
+     68.3,
+     12.1,
+     -19.6
+    ],
+    "dist_to_insertion_path_mm": 0.09
+   },
+   {
+    "volume_mm3": 0.0,
+    "max_depth_mm": 0.08,
+    "bbox_lo": [
+     38.7,
+     15.7,
+     -31.8
+    ],
+    "bbox_hi": [
+     38.9,
+     15.9,
+     -31.6
+    ],
+    "dist_to_insertion_path_mm": 20.94
+   }
+  ]
+ },
+ "forearm": {
+  "within_tol": 91.1,
+  "inward_gt_tol": 8.8,
+  "outward_gt_tol": 0.0,
+  "p95": 0.34,
+  "missing_mm3": 698.2,
+  "missing_max_depth_mm": 1.73,
+  "extra_mm3": 2.58,
+  "pieces": 1403,
+  "blobs": [
+   {
+    "volume_mm3": 494.2,
+    "max_depth_mm": 1.14,
+    "bbox_lo": [
+     -53.7,
+     -43.9,
+     -20.2
+    ],
+    "bbox_hi": [
+     -33.5,
+     -24.3,
+     17.0
+    ],
+    "dist_to_insertion_path_mm": 0.0
+   },
+   {
+    "volume_mm3": 115.4,
+    "max_depth_mm": 1.73,
+    "bbox_lo": [
+     54.7,
+     -42.5,
+     16.8
+    ],
+    "bbox_hi": [
+     75.3,
+     -20.1,
+     20.2
+    ],
+    "dist_to_insertion_path_mm": 0.0
+   },
+   {
+    "volume_mm3": 88.1,
+    "max_depth_mm": 1.67,
+    "bbox_lo": [
+     54.7,
+     -42.5,
+     -19.0
+    ],
+    "bbox_hi": [
+     75.3,
+     -20.7,
+     -16.6
+    ],
+    "dist_to_insertion_path_mm": 0.0
+   },
+   {
+    "volume_mm3": 0.2,
+    "max_depth_mm": 0.42,
+    "bbox_lo": [
+     67.3,
+     -33.9,
+     19.0
+    ],
+    "bbox_hi": [
+     67.9,
+     -33.1,
+     20.0
+    ],
+    "dist_to_insertion_path_mm": 0.0
+   },
+   {
+    "volume_mm3": 0.1,
+    "max_depth_mm": 0.37,
+    "bbox_lo": [
+     67.7,
+     -33.9,
+     -19.0
+    ],
+    "bbox_hi": [
+     68.3,
+     -32.5,
+     -18.4
+    ],
+    "dist_to_insertion_path_mm": 0.0
+   },
+   {
+    "volume_mm3": 0.1,
+    "max_depth_mm": 0.36,
+    "bbox_lo": [
+     61.7,
+     -33.9,
+     -19.0
+    ],
+    "bbox_hi": [
+     62.3,
+     -32.7,
+     -18.4
+    ],
+    "dist_to_insertion_path_mm": 0.0
+   },
+   {
+    "volume_mm3": 0.0,
+    "max_depth_mm": 0.28,
+    "bbox_lo": [
+     61.9,
+     -33.9,
+     18.8
+    ],
+    "bbox_hi": [
+     62.1,
+     -33.1,
+     19.2
+    ],
+    "dist_to_insertion_path_mm": 0.09
+   },
+   {
+    "volume_mm3": 0.0,
+    "max_depth_mm": 0.15,
+    "bbox_lo": [
+     67.9,
+     -33.9,
+     18.8
+    ],
+    "bbox_hi": [
+     68.1,
+     -33.5,
+     19.0
+    ],
+    "dist_to_insertion_path_mm": 0.32
+   }
+  ]
+ },
+ "forearm_holder": {
+  "within_tol": 67.2,
+  "inward_gt_tol": 32.4,
+  "outward_gt_tol": 0.3,
+  "p95": 3.0,
+  "missing_mm3": 2797.9,
+  "missing_max_depth_mm": 1.97,
+  "extra_mm3": 3.45,
+  "pieces": 1377,
+  "blobs": [
+   {
+    "volume_mm3": 2179.2,
+    "max_depth_mm": 1.97,
+    "bbox_lo": [
+     -53.7,
+     -44.3,
+     -26.0
+    ],
+    "bbox_hi": [
+     -25.7,
+     -16.9,
+     19.8
+    ],
+    "dist_to_insertion_path_mm": 0.0
+   },
+   {
+    "volume_mm3": 294.8,
+    "max_depth_mm": 1.45,
+    "bbox_lo": [
+     -53.7,
+     -52.5,
+     -22.8
+    ],
+    "bbox_hi": [
+     -33.7,
+     -43.9,
+     15.6
+    ],
+    "dist_to_insertion_path_mm": 0.0
+   },
+   {
+    "volume_mm3": 252.9,
+    "max_depth_mm": 1.5,
+    "bbox_lo": [
+     -53.3,
+     -43.9,
+     20.8
+    ],
+    "bbox_hi": [
+     -25.7,
+     -19.1,
+     26.2
+    ],
+    "dist_to_insertion_path_mm": 0.0
+   },
+   {
+    "volume_mm3": 68.6,
+    "max_depth_mm": 0.75,
+    "bbox_lo": [
+     -53.5,
+     -44.9,
+     15.6
+    ],
+    "bbox_hi": [
+     -25.7,
+     -44.1,
+     23.2
+    ],
+    "dist_to_insertion_path_mm": 0.0
+   },
+   {
+    "volume_mm3": 2.4,
+    "max_depth_mm": 1.45,
+    "bbox_lo": [
+     -33.5,
+     -18.5,
+     -6.0
+    ],
+    "bbox_hi": [
+     -25.7,
+     -16.9,
+     -5.8
+    ],
+    "dist_to_insertion_path_mm": 1.45
+   }
+  ]
+ },
+ "wrist_shell": {
+  "within_tol": 70.8,
+  "inward_gt_tol": 28.4,
+  "outward_gt_tol": 0.8,
+  "p95": 3.0,
+  "missing_mm3": 3504.8,
+  "missing_max_depth_mm": 2.11,
+  "extra_mm3": 41.73,
+  "pieces": 1593,
+  "blobs": [
+   {
+    "volume_mm3": 2863.4,
+    "max_depth_mm": 2.11,
+    "bbox_lo": [
+     -12.5,
+     -62.3,
+     10.6
+    ],
+    "bbox_hi": [
+     12.9,
+     -22.5,
+     53.4
+    ],
+    "dist_to_insertion_path_mm": 0.0
+   },
+   {
+    "volume_mm3": 287.9,
+    "max_depth_mm": 2.03,
+    "bbox_lo": [
+     -10.5,
+     -10.1,
+     36.4
+    ],
+    "bbox_hi": [
+     12.1,
+     12.1,
+     38.6
+    ],
+    "dist_to_insertion_path_mm": 0.0
+   },
+   {
+    "volume_mm3": 269.3,
+    "max_depth_mm": 1.67,
+    "bbox_lo": [
+     -9.9,
+     -10.5,
+     -1.6
+    ],
+    "bbox_hi": [
+     12.1,
+     12.1,
+     1.6
+    ],
+    "dist_to_insertion_path_mm": 0.0
+   },
+   {
+    "volume_mm3": 83.5,
+    "max_depth_mm": 1.95,
+    "bbox_lo": [
+     -8.3,
+     -26.3,
+     10.6
+    ],
+    "bbox_hi": [
+     5.9,
+     -23.5,
+     18.2
+    ],
+    "dist_to_insertion_path_mm": 0.0
+   },
+   {
+    "volume_mm3": 0.7,
+    "max_depth_mm": 1.01,
+    "bbox_lo": [
+     -2.1,
+     -4.7,
+     37.6
+    ],
+    "bbox_hi": [
+     1.7,
+     -4.1,
+     38.6
+    ],
+    "dist_to_insertion_path_mm": 0.93
+   },
+   {
+    "volume_mm3": 0.0,
+    "max_depth_mm": 0.43,
+    "bbox_lo": [
+     2.5,
+     -10.3,
+     36.6
+    ],
+    "bbox_hi": [
+     3.1,
+     -10.1,
+     36.8
+    ],
+    "dist_to_insertion_path_mm": 0.27
+   }
+  ]
+ },
+ "frame": {
+  "within_tol": 86.1,
+  "inward_gt_tol": 13.4,
+  "outward_gt_tol": 0.5,
+  "p95": 0.32,
+  "missing_mm3": 801.1,
+  "missing_max_depth_mm": 2.45,
+  "extra_mm3": 5.92,
+  "pieces": 1952,
+  "blobs": [
+   {
+    "volume_mm3": 337.2,
+    "max_depth_mm": 2.45,
+    "bbox_lo": [
+     -14.7,
+     -15.9,
+     -16.4
+    ],
+    "bbox_hi": [
+     28.1,
+     18.7,
+     -10.6
+    ],
+    "dist_to_insertion_path_mm": 0.0
+   },
+   {
+    "volume_mm3": 147.9,
+    "max_depth_mm": 1.25,
+    "bbox_lo": [
+     -14.7,
+     -15.9,
+     -36.0
+    ],
+    "bbox_hi": [
+     4.5,
+     17.9,
+     -30.4
+    ],
+    "dist_to_insertion_path_mm": 0.0
+   },
+   {
+    "volume_mm3": 121.3,
+    "max_depth_mm": 0.14,
+    "bbox_lo": [
+     -15.1,
+     -15.1,
+     -34.6
+    ],
+    "bbox_hi": [
+     -14.9,
+     15.3,
+     -12.0
+    ],
+    "dist_to_insertion_path_mm": 0.0
+   },
+   {
+    "volume_mm3": 107.7,
+    "max_depth_mm": 0.4,
+    "bbox_lo": [
+     -10.1,
+     -10.1,
+     -1.2
+    ],
+    "bbox_hi": [
+     10.3,
+     10.3,
+     1.0
+    ],
+    "dist_to_insertion_path_mm": 0.0
+   },
+   {
+    "volume_mm3": 58.9,
+    "max_depth_mm": 1.55,
+    "bbox_lo": [
+     -10.5,
+     -18.7,
+     -14.2
+    ],
+    "bbox_hi": [
+     4.1,
+     -15.9,
+     -10.8
+    ],
+    "dist_to_insertion_path_mm": 0.0
+   },
+   {
+    "volume_mm3": 25.7,
+    "max_depth_mm": 1.55,
+    "bbox_lo": [
+     -11.9,
+     -17.9,
+     -35.8
+    ],
+    "bbox_hi": [
+     -3.9,
+     -15.9,
+     -32.6
+    ],
+    "dist_to_insertion_path_mm": 0.0
+   },
+   {
+    "volume_mm3": 1.0,
+    "max_depth_mm": 2.01,
+    "bbox_lo": [
+     24.5,
+     19.7,
+     -9.8
+    ],
+    "bbox_hi": [
+     27.7,
+     21.5,
+     -8.8
+    ],
+    "dist_to_insertion_path_mm": 3.86
+   },
+   {
+    "volume_mm3": 0.6,
+    "max_depth_mm": 0.17,
+    "bbox_lo": [
+     9.7,
+     17.9,
+     -5.2
+    ],
+    "bbox_hi": [
+     12.1,
+     20.5,
+     -5.0
+    ],
+    "dist_to_insertion_path_mm": 6.12
+   },
+   {
+    "volume_mm3": 0.6,
+    "max_depth_mm": 0.17,
+    "bbox_lo": [
+     13.1,
+     10.3,
+     -5.2
+    ],
+    "bbox_hi": [
+     15.9,
+     12.7,
+     -5.0
+    ],
+    "dist_to_insertion_path_mm": 5.83
+   },
+   {
+    "volume_mm3": 0.1,
+    "max_depth_mm": 0.67,
+    "bbox_lo": [
+     -0.5,
+     -12.5,
+     -10.2
+    ],
+    "bbox_hi": [
+     -0.3,
+     -12.1,
+     -9.2
+    ],
+    "dist_to_insertion_path_mm": 0.83
+   }
+  ]
+ },
+ "jaw": {
+  "within_tol": 89.7,
+  "inward_gt_tol": 10.3,
+  "outward_gt_tol": 0.0,
+  "p95": 1.56,
+  "missing_mm3": 558.5,
+  "missing_max_depth_mm": 2.27,
+  "extra_mm3": 0.83,
+  "pieces": 1056,
+  "blobs": [
+   {
+    "volume_mm3": 313.0,
+    "max_depth_mm": 1.99,
+    "bbox_lo": [
+     -9.9,
+     -9.9,
+     -4.8
+    ],
+    "bbox_hi": [
+     9.7,
+     10.1,
+     1.6
+    ],
+    "dist_to_insertion_path_mm": 0.0
+   },
+   {
+    "volume_mm3": 241.8,
+    "max_depth_mm": 2.27,
+    "bbox_lo": [
+     -9.9,
+     -12.1,
+     35.0
+    ],
+    "bbox_hi": [
+     8.9,
+     10.1,
+     38.2
+    ],
+    "dist_to_insertion_path_mm": 0.0
+   },
+   {
+    "volume_mm3": 3.7,
+    "max_depth_mm": 0.82,
+    "bbox_lo": [
+     1.5,
+     -9.9,
+     0.0
+    ],
+    "bbox_hi": [
+     6.9,
+     -8.9,
+     1.6
+    ],
+    "dist_to_insertion_path_mm": 0.0
+   },
+   {
+    "volume_mm3": 0.0,
+    "max_depth_mm": 0.1,
+    "bbox_lo": [
+     -8.7,
+     -12.5,
+     34.6
+    ],
+    "bbox_hi": [
+     -7.5,
+     -12.3,
+     34.8
+    ],
+    "dist_to_insertion_path_mm": 0.03
+   },
+   {
+    "volume_mm3": 0.0,
+    "max_depth_mm": 0.44,
+    "bbox_lo": [
+     -6.7,
+     -71.7,
+     19.6
+    ],
+    "bbox_hi": [
+     -6.5,
+     -71.5,
+     20.0
+    ],
+    "dist_to_insertion_path_mm": 60.72
+   },
+   {
+    "volume_mm3": 0.0,
+    "max_depth_mm": 0.95,
+    "bbox_lo": [
+     6.1,
+     -9.9,
+     36.4
+    ],
+    "bbox_hi": [
+     6.5,
+     -9.7,
+     36.6
+    ],
+    "dist_to_insertion_path_mm": 0.87
+   },
+   {
+    "volume_mm3": 0.0,
+    "max_depth_mm": 0.72,
+    "bbox_lo": [
+     5.3,
+     -9.3,
+     37.0
+    ],
+    "bbox_hi": [
+     5.5,
+     -9.1,
+     37.2
+    ],
+    "dist_to_insertion_path_mm": 0.63
+   },
+   {
+    "volume_mm3": 0.0,
+    "max_depth_mm": 0.08,
+    "bbox_lo": [
+     1.5,
+     -2.9,
+     37.2
+    ],
+    "bbox_hi": [
+     1.7,
+     -2.7,
+     37.4
+    ],
+    "dist_to_insertion_path_mm": 0.23
+   },
+   {
+    "volume_mm3": 0.0,
+    "max_depth_mm": 0.78,
+    "bbox_lo": [
+     5.9,
+     -9.7,
+     36.6
+    ],
+    "bbox_hi": [
+     6.1,
+     -9.5,
+     36.8
+    ],
+    "dist_to_insertion_path_mm": 0.68
+   },
+   {
+    "volume_mm3": 0.0,
+    "max_depth_mm": 0.67,
+    "bbox_lo": [
+     8.5,
+     -8.5,
+     37.6
+    ],
+    "bbox_hi": [
+     8.7,
+     -8.3,
+     37.8
+    ],
+    "dist_to_insertion_path_mm": 1.23
+   }
+  ]
+ }
+}

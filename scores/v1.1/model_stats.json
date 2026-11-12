@@ -1,0 +1,31 @@
+{
+ "tool": "model_stats",
+ "scene": "results/v11_release/oneshot/final/scene/scene.xml",
+ "scene_sha256": "7700d95f1d58ec27553d76ff0d4f396b65da2ed9077ad4dc1836abefffbe1abd",
+ "mujoco": "3.9.0",
+ "created": "2026-11-12 16:48:44",
+ "threads": {
+  "OPENBLAS_NUM_THREADS": "1",
+  "OMP_NUM_THREADS": "1"
+ },
+ "compile_wall_s": 46.92253024200909,
+ "compile_cpu_s": 71.428072983,
+ "mjb_load_wall_s": 1.5289895629975945,
+ "mjdata_alloc_wall_s": 0.010900875087827444,
+ "ngeom": 16009,
+ "n_collision_geom": 15943,
+ "n_collision_mesh_geom": 15942,
+ "nmesh": 15978,
+ "nmeshvert": 2949447,
+ "nmeshface": 5322657,
+ "n_collision_meshvert": 1902332,
+ "nbody": 45,
+ "nq": 134,
+ "nv": 118,
+ "nexclude": 60,
+ "mjb_size_mb": 1097.4572706222534,
+ "mjdata_nbuffer_mb": 1097.4644165039062,
+ "peak_rss_mb": 7355.12890625,
+ "peak_rss_after_compile_mb": 5148.78125,
+ "rss_after_import_mb": 44.25
+}

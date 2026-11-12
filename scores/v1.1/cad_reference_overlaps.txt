@@ -1,0 +1,18 @@
+CAD-vs-CAD overlap in the official CAD assembly pose (STEP references; Base = clean slot-relieved reference)
+shoulder_seat   x motor_2         overlap   134.65 mm3  (res 0.043 mm3)  max depth 1.99 mm
+holder          x motor           overlap    22.22 mm3  (res 0.071 mm3)  max depth 0.21 mm
+holder          x base            overlap     1.13 mm3  (res 0.282 mm3)  max depth 0.03 mm
+shoulder_fork   x motor           overlap     7.94 mm3  (res 0.050 mm3)  max depth 0.40 mm
+shoulder_fork   x motor_2         overlap   437.04 mm3  (res 0.043 mm3)  max depth 2.08 mm
+shoulder_fork   x motor_output    overlap   136.22 mm3  (res 0.035 mm3)  max depth 0.85 mm
+
+Overlap regions, expressed in the second body's frame (mm); clusters by 0.5 mm grid connectivity
+shoulder_fork x motor_2: 1 clusters
+   n=20626  bbox [14.3, -12.1, -22.5] .. [18.3, 7.0, -4.3]
+shoulder_seat x motor_2: 1 clusters
+   n=6064  bbox [14.2, 6.9, -22.4] .. [18.2, 12.5, -4.7]
+shoulder_fork x motor_output: 1 clusters
+   n=7642  bbox [-9.6, -21.9, -18.4] .. [9.6, -3.4, -17.5]
+holder x motor: 2 clusters
+   n=310  bbox [-12.2, -22.4, -7.7] .. [-9.6, -19.8, 10.9]
+   n=309  bbox [9.6, -22.4, -7.9] .. [12.1, -19.9, 10.9]

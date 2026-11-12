@@ -1,0 +1,3403 @@
+{
+ "tool": "tolerance_envelope",
+ "scene": "results/v11_release/oneshot/final/scene/scene.xml",
+ "scene_sha256": "7700d95f1d58ec27553d76ff0d4f396b65da2ed9077ad4dc1836abefffbe1abd",
+ "interfaces_file": "results/release/interfaces_v1.1.json",
+ "interfaces_sha256": "f4f6ebab8284cb5cefc1ffaead5585e94906ee7af7fee6be59ee2fbfea5d752e",
+ "mujoco": "3.9.0",
+ "pass_threshold_mm": 0.005,
+ "lateral": {
+  "range_mm": 1.0,
+  "resolution_mm": 0.002,
+  "directions": 8
+ },
+ "tilt": {
+  "range_deg": 3.0,
+  "resolution_deg": 0.01,
+  "cases": 4,
+  "pivot": "AABB centre of the moving part's collision pieces at the target"
+ },
+ "search_distance_cap_mm": 0.1,
+ "wall_seconds": 76.4,
+ "interfaces": {
+  "base_m1": {
+   "moving": "motor",
+   "required": true,
+   "nominal_clearance_mm": 0.28358302550096826,
+   "nominal_passed": true,
+   "nominal_failed": false,
+   "delta_max_mm": 0.28125,
+   "delta_saturated": false,
+   "delta_limiting_direction": "270deg",
+   "delta_limiting_vector_world": [
+    -1.0,
+    -0.0,
+    1.8369701987210297e-16
+   ],
+   "delta_pair_at_limit": [
+    "v11_motor_0297",
+    "v11_base_0815"
+   ],
+   "theta_max_deg": 0.796875,
+   "theta_saturated": false,
+   "theta_limiting_direction": "+u",
+   "theta_limiting_axis_world": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "theta_pair_at_limit": [
+    "v11_motor_0424",
+    "v11_base_0122"
+   ],
+   "tilt_pivot_world_mm": [
+    -0.09953389272040525,
+    -5.290296276241994,
+    1410.5169287910578
+   ],
+   "lateral_cases": [
+    {
+     "case": "0deg",
+     "vector_world": [
+      0.0,
+      0.0,
+      -1.0
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 5.97,
+     "max_pass_mm": 0.390625,
+     "first_fail_mm": 0.392578125,
+     "pair_at_limit": [
+      "v11_motor_0382",
+      "v11_base_0380"
+     ],
+     "clearance_at_fail_mm": 0.00448077238810567,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "45deg",
+     "vector_world": [
+      0.7071067811865475,
+      0.0,
+      -0.7071067811865476
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 4.92,
+     "max_pass_mm": 0.376953125,
+     "first_fail_mm": 0.37890625,
+     "pair_at_limit": [
+      "v11_motor_0375",
+      "v11_base_0519"
+     ],
+     "clearance_at_fail_mm": 0.004646891515659232,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "90deg",
+     "vector_world": [
+      1.0,
+      0.0,
+      -6.123233995736766e-17
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 4.65,
+     "max_pass_mm": 0.28515625,
+     "first_fail_mm": 0.287109375,
+     "pair_at_limit": [
+      "v11_motor_0424",
+      "v11_base_0122"
+     ],
+     "clearance_at_fail_mm": 0.004178005933454831,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "135deg",
+     "vector_world": [
+      0.7071067811865476,
+      0.0,
+      0.7071067811865475
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 5.71,
+     "max_pass_mm": 0.291015625,
+     "first_fail_mm": 0.29296875,
+     "pair_at_limit": [
+      "v11_motor_0303",
+      "v11_base_0646"
+     ],
+     "clearance_at_fail_mm": 0.0049881156418659115,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "180deg",
+     "vector_world": [
+      1.2246467991473532e-16,
+      0.0,
+      1.0
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 3.56,
+     "max_pass_mm": 0.29296875,
+     "first_fail_mm": 0.294921875,
+     "pair_at_limit": [
+      "v11_motor_0297",
+      "v11_base_0724"
+     ],
+     "clearance_at_fail_mm": 0.004236594042217094,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "225deg",
+     "vector_world": [
+      -0.7071067811865475,
+      -0.0,
+      0.7071067811865477
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 5.79,
+     "max_pass_mm": 0.291015625,
+     "first_fail_mm": 0.29296875,
+     "pair_at_limit": [
+      "v11_motor_0297",
+      "v11_base_0776"
+     ],
+     "clearance_at_fail_mm": 0.004067568967752569,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "270deg",
+     "vector_world": [
+      -1.0,
+      -0.0,
+      1.8369701987210297e-16
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 5.19,
+     "max_pass_mm": 0.28125,
+     "first_fail_mm": 0.283203125,
+     "pair_at_limit": [
+      "v11_motor_0297",
+      "v11_base_0815"
+     ],
+     "clearance_at_fail_mm": 0.004324859648501095,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "315deg",
+     "vector_world": [
+      -0.7071067811865477,
+      0.0,
+      -0.7071067811865474
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 4.8,
+     "max_pass_mm": 0.3359375,
+     "first_fail_mm": 0.337890625,
+     "pair_at_limit": [
+      "v11_motor_0529",
+      "v11_base_0526"
+     ],
+     "clearance_at_fail_mm": 0.004511308479672036,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    }
+   ],
+   "tilt_cases": [
+    {
+     "case": "+u",
+     "vector_world": [
+      0.0,
+      0.0,
+      -1.0
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 4.96,
+     "max_pass_deg": 0.796875,
+     "first_fail_deg": 0.802734375,
+     "pair_at_limit": [
+      "v11_motor_0424",
+      "v11_base_0122"
+     ],
+     "clearance_at_fail_mm": 0.004608856985147841,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "-u",
+     "vector_world": [
+      -0.0,
+      -0.0,
+      1.0
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 5.83,
+     "max_pass_deg": 0.814453125,
+     "first_fail_deg": 0.8203125,
+     "pair_at_limit": [
+      "v11_motor_0382",
+      "v11_base_0865"
+     ],
+     "clearance_at_fail_mm": 0.004457792914952204,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "+v",
+     "vector_world": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 4.18,
+     "max_pass_deg": 0.814453125,
+     "first_fail_deg": 0.8203125,
+     "pair_at_limit": [
+      "v11_motor_0289",
+      "v11_base_0822"
+     ],
+     "clearance_at_fail_mm": 0.004248259542028556,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "-v",
+     "vector_world": [
+      -1.0,
+      -0.0,
+      -0.0
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 4.36,
+     "max_pass_deg": 1.107421875,
+     "first_fail_deg": 1.11328125,
+     "pair_at_limit": [
+      "v11_motor_0382",
+      "v11_base_0526"
+     ],
+     "clearance_at_fail_mm": 0.00462560328106045,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    }
+   ]
+  },
+  "shoulder_m2": {
+   "moving": "motor_2",
+   "required": true,
+   "nominal_clearance_mm": 0.012814055894908416,
+   "nominal_passed": true,
+   "nominal_failed": false,
+   "delta_max_mm": 0.0078125,
+   "delta_saturated": false,
+   "delta_limiting_direction": "180deg",
+   "delta_limiting_vector_world": [
+    -0.9999983794119239,
+    1.2246467935742052e-16,
+    0.0018003259498895138
+   ],
+   "delta_pair_at_limit": [
+    "v11_motor_2_0747",
+    "v11_shoulder_seat_0151"
+   ],
+   "theta_max_deg": 0.017578125,
+   "theta_saturated": false,
+   "theta_limiting_direction": "+v",
+   "theta_limiting_axis_world": [
+    1.7175563761429733e-07,
+    0.9999999954491794,
+    9.54023682654242e-05
+   ],
+   "theta_pair_at_limit": [
+    "v11_motor_2_0747",
+    "v11_shoulder_seat_0151"
+   ],
+   "tilt_pivot_world_mm": [
+    -46.70613353361219,
+    352.24146964211593,
+    107.4554851807922
+   ],
+   "lateral_cases": [
+    {
+     "case": "0deg",
+     "vector_world": [
+      0.9999983794119239,
+      0.0,
+      -0.0018003259498895138
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 8.44,
+     "max_pass_mm": 0.01953125,
+     "first_fail_mm": 0.021484375,
+     "pair_at_limit": [
+      "v11_motor_2_0280",
+      "v11_shoulder_fork_0747"
+     ],
+     "clearance_at_fail_mm": 0.004162295623022794,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "45deg",
+     "vector_world": [
+      0.7071057567073056,
+      0.7071067779686313,
+      -0.00120556302597125
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 8.3,
+     "max_pass_mm": 0.025390625,
+     "first_fail_mm": 0.02734375,
+     "pair_at_limit": [
+      "v11_motor_2_0280",
+      "v11_shoulder_fork_0747"
+     ],
+     "clearance_at_fail_mm": 0.004673637889602608,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "90deg",
+     "vector_world": [
+      1.7175563767552958e-07,
+      0.9999999954491794,
+      9.540236826542409e-05
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 9.64,
+     "max_pass_mm": 0.068359375,
+     "first_fail_mm": 0.0703125,
+     "pair_at_limit": [
+      "v11_motor_2_0593",
+      "v11_shoulder_fork_0836"
+     ],
+     "clearance_at_fail_mm": 0.003972637298302538,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "135deg",
+     "vector_world": [
+      -0.7071055138081533,
+      0.7071067779686314,
+      0.0013404823490547255
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 8.96,
+     "max_pass_mm": 0.01171875,
+     "first_fail_mm": 0.013671875,
+     "pair_at_limit": [
+      "v11_motor_2_0747",
+      "v11_shoulder_seat_0151"
+     ],
+     "clearance_at_fail_mm": 0.00403820234594418,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "180deg",
+     "vector_world": [
+      -0.9999983794119239,
+      1.2246467935742052e-16,
+      0.0018003259498895138
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 9.1,
+     "max_pass_mm": 0.0078125,
+     "first_fail_mm": 0.009765625,
+     "pair_at_limit": [
+      "v11_motor_2_0747",
+      "v11_shoulder_seat_0151"
+     ],
+     "clearance_at_fail_mm": 0.0030865944096781007,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "225deg",
+     "vector_world": [
+      -0.7071057567073057,
+      -0.7071067779686313,
+      0.0012055630259712503
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 10.77,
+     "max_pass_mm": 0.009765625,
+     "first_fail_mm": 0.01171875,
+     "pair_at_limit": [
+      "v11_motor_2_0747",
+      "v11_shoulder_seat_0151"
+     ],
+     "clearance_at_fail_mm": 0.003828166527889371,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "270deg",
+     "vector_world": [
+      -1.7175563779799405e-07,
+      -0.9999999954491794,
+      -9.540236826542387e-05
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 8.95,
+     "max_pass_mm": 0.087890625,
+     "first_fail_mm": 0.08984375,
+     "pair_at_limit": [
+      "v11_motor_2_0747",
+      "v11_shoulder_seat_0151"
+     ],
+     "clearance_at_fail_mm": 0.004878957527382019,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "315deg",
+     "vector_world": [
+      0.7071055138081532,
+      -0.7071067779686315,
+      -0.0013404823490547253
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 9.22,
+     "max_pass_mm": 0.03125,
+     "first_fail_mm": 0.033203125,
+     "pair_at_limit": [
+      "v11_motor_2_0280",
+      "v11_shoulder_fork_0747"
+     ],
+     "clearance_at_fail_mm": 0.004155396898949867,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    }
+   ],
+   "tilt_cases": [
+    {
+     "case": "+u",
+     "vector_world": [
+      0.9999983794119239,
+      0.0,
+      -0.0018003259498895138
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 10.03,
+     "max_pass_deg": 0.193359375,
+     "first_fail_deg": 0.19921875,
+     "pair_at_limit": [
+      "v11_motor_2_0593",
+      "v11_shoulder_fork_0836"
+     ],
+     "clearance_at_fail_mm": 0.0038218925606533314,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "-u",
+     "vector_world": [
+      -0.9999983794119239,
+      -0.0,
+      0.0018003259498895138
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 9.88,
+     "max_pass_deg": 0.24609375,
+     "first_fail_deg": 0.251953125,
+     "pair_at_limit": [
+      "v11_motor_2_0747",
+      "v11_shoulder_seat_0151"
+     ],
+     "clearance_at_fail_mm": 0.0048756008693616555,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "+v",
+     "vector_world": [
+      1.7175563761429733e-07,
+      0.9999999954491794,
+      9.54023682654242e-05
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 9.66,
+     "max_pass_deg": 0.017578125,
+     "first_fail_deg": 0.0234375,
+     "pair_at_limit": [
+      "v11_motor_2_0747",
+      "v11_shoulder_seat_0151"
+     ],
+     "clearance_at_fail_mm": 0.004497007897850365,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "-v",
+     "vector_world": [
+      -1.7175563761429733e-07,
+      -0.9999999954491794,
+      -9.54023682654242e-05
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 7.94,
+     "max_pass_deg": 0.05859375,
+     "first_fail_deg": 0.064453125,
+     "pair_at_limit": [
+      "v11_motor_2_0005",
+      "v11_shoulder_fork_0778"
+     ],
+     "clearance_at_fail_mm": 0.004089100567998273,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    }
+   ]
+  },
+  "shoulder_upper": {
+   "moving": "upper_print",
+   "required": true,
+   "nominal_clearance_mm": 0.01901836439844474,
+   "nominal_passed": true,
+   "nominal_failed": false,
+   "delta_max_mm": 0.017578125,
+   "delta_saturated": false,
+   "delta_limiting_direction": "90deg",
+   "delta_limiting_vector_world": [
+    0.002101253694166382,
+    0.0002161451240159355,
+    0.9999977690046103
+   ],
+   "delta_pair_at_limit": [
+    "v11_upper_print_0472",
+    "v11_motor_2_0533"
+   ],
+   "theta_max_deg": 0.017578125,
+   "theta_saturated": false,
+   "theta_limiting_direction": "+u",
+   "theta_limiting_axis_world": [
+    -0.10232490515977367,
+    0.9947510310545263,
+    0.0
+   ],
+   "theta_pair_at_limit": [
+    "v11_upper_print_0472",
+    "v11_motor_2_0533"
+   ],
+   "tilt_pivot_world_mm": [
+    -46.34241472214951,
+    353.77434777349924,
+    178.89814839976577
+   ],
+   "lateral_cases": [
+    {
+     "case": "0deg",
+     "vector_world": [
+      -0.10232490515977367,
+      0.9947510310545263,
+      0.0
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 10.47,
+     "max_pass_mm": 0.064453125,
+     "first_fail_mm": 0.06640625,
+     "pair_at_limit": [
+      "v11_upper_print_0311",
+      "stock_0_motor_2_0004"
+     ],
+     "clearance_at_fail_mm": 0.0042389222513228445,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "45deg",
+     "vector_world": [
+      -0.07086882358660798,
+      0.7035480373338776,
+      0.7071052036345786
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 10.67,
+     "max_pass_mm": 0.025390625,
+     "first_fail_mm": 0.02734375,
+     "pair_at_limit": [
+      "v11_upper_print_0472",
+      "v11_motor_2_0533"
+     ],
+     "clearance_at_fail_mm": 0.004913781160897147,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "90deg",
+     "vector_world": [
+      0.002101253694166382,
+      0.0002161451240159355,
+      0.9999977690046103
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 9.37,
+     "max_pass_mm": 0.017578125,
+     "first_fail_mm": 0.01953125,
+     "pair_at_limit": [
+      "v11_upper_print_0472",
+      "v11_motor_2_0533"
+     ],
+     "clearance_at_fail_mm": 0.004555244076064921,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "135deg",
+     "vector_world": [
+      0.07384044505888464,
+      -0.7032423619680533,
+      0.7071052036345787
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 11.03,
+     "max_pass_mm": 0.025390625,
+     "first_fail_mm": 0.02734375,
+     "pair_at_limit": [
+      "v11_upper_print_0472",
+      "v11_motor_2_0533"
+     ],
+     "clearance_at_fail_mm": 0.004487430356188219,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "180deg",
+     "vector_world": [
+      0.10232490515977367,
+      -0.9947510310545263,
+      1.2246440669659902e-16
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 10.72,
+     "max_pass_mm": 0.2109375,
+     "first_fail_mm": 0.212890625,
+     "pair_at_limit": [
+      "v11_upper_print_0678",
+      "v11_motor_2_0019"
+     ],
+     "clearance_at_fail_mm": 0.003307680372513329,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "225deg",
+     "vector_world": [
+      0.070868823586608,
+      -0.7035480373338777,
+      -0.7071052036345786
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 10.66,
+     "max_pass_mm": 0.1328125,
+     "first_fail_mm": 0.134765625,
+     "pair_at_limit": [
+      "v11_upper_print_0075",
+      "v11_motor_2_0569"
+     ],
+     "clearance_at_fail_mm": 0.003982745581286435,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "270deg",
+     "vector_world": [
+      -0.0021012536941663693,
+      -0.00021614512401605735,
+      -0.9999977690046103
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 10.38,
+     "max_pass_mm": 0.09375,
+     "first_fail_mm": 0.095703125,
+     "pair_at_limit": [
+      "v11_upper_print_0075",
+      "v11_motor_2_0569"
+     ],
+     "clearance_at_fail_mm": 0.0035297323831729103,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "315deg",
+     "vector_world": [
+      -0.07384044505888462,
+      0.7032423619680532,
+      -0.7071052036345788
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 9.34,
+     "max_pass_mm": 0.091796875,
+     "first_fail_mm": 0.09375,
+     "pair_at_limit": [
+      "v11_upper_print_0311",
+      "stock_0_motor_2_0004"
+     ],
+     "clearance_at_fail_mm": 0.004380656911225898,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    }
+   ],
+   "tilt_cases": [
+    {
+     "case": "+u",
+     "vector_world": [
+      -0.10232490515977367,
+      0.9947510310545263,
+      0.0
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 10.88,
+     "max_pass_deg": 0.017578125,
+     "first_fail_deg": 0.0234375,
+     "pair_at_limit": [
+      "v11_upper_print_0472",
+      "v11_motor_2_0533"
+     ],
+     "clearance_at_fail_mm": 0.002693175574703481,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "-u",
+     "vector_world": [
+      0.10232490515977367,
+      -0.9947510310545263,
+      -0.0
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 10.26,
+     "max_pass_deg": 0.609375,
+     "first_fail_deg": 0.615234375,
+     "pair_at_limit": [
+      "v11_upper_print_0243",
+      "stock_0_motor_2_0004"
+     ],
+     "clearance_at_fail_mm": 0.004917410742787145,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "+v",
+     "vector_world": [
+      0.002101253694166388,
+      0.0002161451240158746,
+      0.9999977690046103
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 10.97,
+     "max_pass_deg": 0.0703125,
+     "first_fail_deg": 0.076171875,
+     "pair_at_limit": [
+      "v11_upper_print_0472",
+      "v11_motor_2_0533"
+     ],
+     "clearance_at_fail_mm": 0.004015348568269112,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "-v",
+     "vector_world": [
+      -0.002101253694166388,
+      -0.0002161451240158746,
+      -0.9999977690046103
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 10.58,
+     "max_pass_deg": 1.119140625,
+     "first_fail_deg": 1.125,
+     "pair_at_limit": [
+      "v11_upper_print_1725",
+      "stock_0_motor_2_0004"
+     ],
+     "clearance_at_fail_mm": 0.004293346616495835,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    }
+   ]
+  },
+  "upper_m3": {
+   "moving": "motor3",
+   "required": true,
+   "nominal_clearance_mm": 0.02103509351371795,
+   "nominal_passed": true,
+   "nominal_failed": false,
+   "delta_max_mm": 0.015625,
+   "delta_saturated": false,
+   "delta_limiting_direction": "90deg",
+   "delta_limiting_vector_world": [
+    0.0026057608299415,
+    0.0002662593471740952,
+    0.9999965695523445
+   ],
+   "delta_pair_at_limit": [
+    "stock_0_motor3_housing_048_057",
+    "v11_upper_print_0582"
+   ],
+   "theta_max_deg": 0.041015625,
+   "theta_saturated": false,
+   "theta_limiting_direction": "+u",
+   "theta_limiting_axis_world": [
+    -0.10165174516286643,
+    0.9948200453877795,
+    0.0
+   ],
+   "theta_pair_at_limit": [
+    "stock_0_motor3_housing_048_057",
+    "v11_upper_print_0582"
+   ],
+   "tilt_pivot_world_mm": [
+    -30.725312438921506,
+    354.3222088044334,
+    232.38790018231896
+   ],
+   "lateral_cases": [
+    {
+     "case": "0deg",
+     "vector_world": [
+      -0.10165174516286643,
+      0.9948200453877795,
+      0.0
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 4.01,
+     "max_pass_mm": 0.09375,
+     "first_fail_mm": 0.095703125,
+     "pair_at_limit": [
+      "stock_0_motor3_housing_005_018",
+      "v11_upper_print_0659"
+     ],
+     "clearance_at_fail_mm": 0.00430421288976455,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "45deg",
+     "vector_world": [
+      -0.07003608717110776,
+      0.7036322739439489,
+      0.7071043554937477
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 4.07,
+     "max_pass_mm": 0.01953125,
+     "first_fail_mm": 0.021484375,
+     "pair_at_limit": [
+      "stock_0_motor3_housing_048_057",
+      "v11_upper_print_0582"
+     ],
+     "clearance_at_fail_mm": 0.0037425923949968992,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "90deg",
+     "vector_world": [
+      0.0026057608299415,
+      0.0002662593471740952,
+      0.9999965695523445
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 4.1,
+     "max_pass_mm": 0.015625,
+     "first_fail_mm": 0.017578125,
+     "pair_at_limit": [
+      "stock_0_motor3_housing_048_057",
+      "v11_upper_print_0582"
+     ],
+     "clearance_at_fail_mm": 0.0036545815841510627,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "135deg",
+     "vector_world": [
+      0.0737211894771116,
+      -0.7032557263640667,
+      0.7071043554937478
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 4.15,
+     "max_pass_mm": 0.025390625,
+     "first_fail_mm": 0.02734375,
+     "pair_at_limit": [
+      "stock_0_motor3_housing_048_057",
+      "v11_upper_print_0582"
+     ],
+     "clearance_at_fail_mm": 0.004808555780642752,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "180deg",
+     "vector_world": [
+      0.10165174516286643,
+      -0.9948200453877795,
+      1.2246425980606123e-16
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 4.27,
+     "max_pass_mm": 0.0703125,
+     "first_fail_mm": 0.072265625,
+     "pair_at_limit": [
+      "stock_0_motor3_housing_151_199",
+      "v11_upper_print_0171"
+     ],
+     "clearance_at_fail_mm": 0.0038848088900146458,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "225deg",
+     "vector_world": [
+      0.07003608717110778,
+      -0.703632273943949,
+      -0.7071043554937477
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 4.11,
+     "max_pass_mm": 0.0390625,
+     "first_fail_mm": 0.041015625,
+     "pair_at_limit": [
+      "stock_0_motor3_housing_110_147",
+      "v11_upper_print_0673"
+     ],
+     "clearance_at_fail_mm": 0.004664512840568296,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "270deg",
+     "vector_world": [
+      -0.0026057608299414874,
+      -0.00026625934717421703,
+      -0.9999965695523445
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 3.14,
+     "max_pass_mm": 0.029296875,
+     "first_fail_mm": 0.03125,
+     "pair_at_limit": [
+      "stock_0_motor3_housing_110_147",
+      "v11_upper_print_0673"
+     ],
+     "clearance_at_fail_mm": 0.0037329763017306117,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "315deg",
+     "vector_world": [
+      -0.07372118947711159,
+      0.7032557263640666,
+      -0.707104355493748
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 4.03,
+     "max_pass_mm": 0.0390625,
+     "first_fail_mm": 0.041015625,
+     "pair_at_limit": [
+      "stock_0_motor3_housing_070_095",
+      "v11_upper_print_0681"
+     ],
+     "clearance_at_fail_mm": 0.004664125494749883,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    }
+   ],
+   "tilt_cases": [
+    {
+     "case": "+u",
+     "vector_world": [
+      -0.10165174516286643,
+      0.9948200453877795,
+      0.0
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 4.15,
+     "max_pass_deg": 0.041015625,
+     "first_fail_deg": 0.046875,
+     "pair_at_limit": [
+      "stock_0_motor3_housing_048_057",
+      "v11_upper_print_0582"
+     ],
+     "clearance_at_fail_mm": 0.004500410883398926,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "-u",
+     "vector_world": [
+      0.10165174516286643,
+      -0.9948200453877795,
+      -0.0
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 2.92,
+     "max_pass_deg": 0.08203125,
+     "first_fail_deg": 0.087890625,
+     "pair_at_limit": [
+      "stock_0_motor3_housing_070_095",
+      "v11_upper_print_0681"
+     ],
+     "clearance_at_fail_mm": 0.0033328885346781438,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "+v",
+     "vector_world": [
+      0.002605760829941506,
+      0.0002662593471740343,
+      0.9999965695523445
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 3.91,
+     "max_pass_deg": 0.111328125,
+     "first_fail_deg": 0.1171875,
+     "pair_at_limit": [
+      "stock_0_motor3_housing_084_118",
+      "v11_upper_print_0674"
+     ],
+     "clearance_at_fail_mm": 0.00457136360154783,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "-v",
+     "vector_world": [
+      -0.002605760829941506,
+      -0.0002662593471740343,
+      -0.9999965695523445
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 4.09,
+     "max_pass_deg": 0.298828125,
+     "first_fail_deg": 0.3046875,
+     "pair_at_limit": [
+      "stock_0_motor3_housing_048_057",
+      "v11_upper_print_0582"
+     ],
+     "clearance_at_fail_mm": 0.004811044801819339,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    }
+   ]
+  },
+  "m3_forearm": {
+   "moving": "forearm",
+   "required": false,
+   "nominal_clearance_mm": 0.014406736198404204,
+   "nominal_passed": true,
+   "nominal_failed": false,
+   "delta_max_mm": 0.0078125,
+   "delta_saturated": false,
+   "delta_limiting_direction": "90deg",
+   "delta_limiting_vector_world": [
+    2.8543651038184607e-06,
+    0.9999993186276765,
+    0.001167362855076421
+   ],
+   "delta_pair_at_limit": [
+    "v11_forearm_0435",
+    "stock_0_motor3_drive_horn_192_041"
+   ],
+   "theta_max_deg": 0.0234375,
+   "theta_saturated": false,
+   "theta_limiting_direction": "-v",
+   "theta_limiting_axis_world": [
+    -2.8543651037572287e-06,
+    -0.9999993186276765,
+    -0.0011673628550764213
+   ],
+   "theta_pair_at_limit": [
+    "v11_forearm_0378",
+    "stock_0_motor3_drive_horn_185_034"
+   ],
+   "tilt_pivot_world_mm": [
+    34.78969779327856,
+    357.4180993147345,
+    232.20329781730538
+   ],
+   "lateral_cases": [
+    {
+     "case": "0deg",
+     "vector_world": [
+      0.999997010659658,
+      0.0,
+      -0.002445132255730043
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 5.16,
+     "max_pass_mm": 0.021484375,
+     "first_fail_mm": 0.0234375,
+     "pair_at_limit": [
+      "v11_forearm_0345",
+      "stock_0_motor3_drive_horn_189_038"
+     ],
+     "clearance_at_fail_mm": 0.00441711524417793,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "45deg",
+     "vector_world": [
+      0.7071066857446413,
+      0.7071062993835571,
+      -0.0009035194079948467
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 6.21,
+     "max_pass_mm": 0.015625,
+     "first_fail_mm": 0.017578125,
+     "pair_at_limit": [
+      "v11_forearm_0435",
+      "stock_0_motor3_drive_horn_192_041"
+     ],
+     "clearance_at_fail_mm": 0.004912770179678066,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "90deg",
+     "vector_world": [
+      2.8543651038184607e-06,
+      0.9999993186276765,
+      0.001167362855076421
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 6.16,
+     "max_pass_mm": 0.0078125,
+     "first_fail_mm": 0.009765625,
+     "pair_at_limit": [
+      "v11_forearm_0435",
+      "stock_0_motor3_drive_horn_192_041"
+     ],
+     "clearance_at_fail_mm": 0.004865619609541505,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "135deg",
+     "vector_world": [
+      -0.7071026490627995,
+      0.7071062993835572,
+      0.002554419789854499
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 6.49,
+     "max_pass_mm": 0.009765625,
+     "first_fail_mm": 0.01171875,
+     "pair_at_limit": [
+      "v11_forearm_0435",
+      "stock_0_motor3_drive_horn_192_041"
+     ],
+     "clearance_at_fail_mm": 0.004544235101352623,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "180deg",
+     "vector_world": [
+      -0.999997010659658,
+      1.2246459647069183e-16,
+      0.002445132255730043
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 6.18,
+     "max_pass_mm": 0.017578125,
+     "first_fail_mm": 0.01953125,
+     "pair_at_limit": [
+      "v11_forearm_0378",
+      "stock_0_motor3_drive_horn_185_034"
+     ],
+     "clearance_at_fail_mm": 0.0038837515963180483,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "225deg",
+     "vector_world": [
+      -0.7071066857446414,
+      -0.7071062993835571,
+      0.0009035194079948471
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 4.98,
+     "max_pass_mm": 0.02734375,
+     "first_fail_mm": 0.029296875,
+     "pair_at_limit": [
+      "v11_forearm_0378",
+      "stock_0_motor3_drive_horn_185_034"
+     ],
+     "clearance_at_fail_mm": 0.003979033414095406,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "270deg",
+     "vector_world": [
+      -2.854365103940925e-06,
+      -0.9999993186276765,
+      -0.0011673628550764208
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 4.73,
+     "max_pass_mm": 0.064453125,
+     "first_fail_mm": 0.06640625,
+     "pair_at_limit": [
+      "v11_forearm_0533",
+      "stock_0_motor3_idler_horn_012_005"
+     ],
+     "clearance_at_fail_mm": 0.004798915204239784,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "315deg",
+     "vector_world": [
+      0.7071026490627994,
+      -0.7071062993835573,
+      -0.002554419789854499
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 4.04,
+     "max_pass_mm": 0.064453125,
+     "first_fail_mm": 0.06640625,
+     "pair_at_limit": [
+      "v11_forearm_0345",
+      "stock_0_motor3_drive_horn_189_038"
+     ],
+     "clearance_at_fail_mm": 0.00454254611826047,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    }
+   ],
+   "tilt_cases": [
+    {
+     "case": "+u",
+     "vector_world": [
+      0.999997010659658,
+      0.0,
+      -0.002445132255730043
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 6.2,
+     "max_pass_deg": 0.046875,
+     "first_fail_deg": 0.052734375,
+     "pair_at_limit": [
+      "v11_forearm_0435",
+      "stock_0_motor3_drive_horn_192_041"
+     ],
+     "clearance_at_fail_mm": 0.00398597622637942,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "-u",
+     "vector_world": [
+      -0.999997010659658,
+      -0.0,
+      0.002445132255730043
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 6.36,
+     "max_pass_deg": 0.33984375,
+     "first_fail_deg": 0.345703125,
+     "pair_at_limit": [
+      "v11_forearm_0279",
+      "stock_0_motor3_idler_horn_013_006"
+     ],
+     "clearance_at_fail_mm": 0.003981358503675878,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "+v",
+     "vector_world": [
+      2.8543651037572287e-06,
+      0.9999993186276765,
+      0.0011673628550764213
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 6.43,
+     "max_pass_deg": 0.216796875,
+     "first_fail_deg": 0.22265625,
+     "pair_at_limit": [
+      "v11_forearm_0435",
+      "stock_0_motor3_drive_horn_192_041"
+     ],
+     "clearance_at_fail_mm": 0.004893543939670627,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "-v",
+     "vector_world": [
+      -2.8543651037572287e-06,
+      -0.9999993186276765,
+      -0.0011673628550764213
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 4.94,
+     "max_pass_deg": 0.0234375,
+     "first_fail_deg": 0.029296875,
+     "pair_at_limit": [
+      "v11_forearm_0378",
+      "stock_0_motor3_drive_horn_185_034"
+     ],
+     "clearance_at_fail_mm": 0.003532117805393662,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    }
+   ]
+  },
+  "forearm_holder": {
+   "moving": "forearm_holder",
+   "required": false,
+   "nominal_clearance_mm": 0.015449437959243584,
+   "nominal_passed": true,
+   "nominal_failed": false,
+   "delta_max_mm": 0.009765625,
+   "delta_saturated": false,
+   "delta_limiting_direction": "90deg",
+   "delta_limiting_vector_world": [
+    0.004048540917425834,
+    0.0004148400752020335,
+    0.9999917185777851
+   ],
+   "delta_pair_at_limit": [
+    "v11_forearm_holder_0091",
+    "v11_forearm_1390"
+   ],
+   "theta_max_deg": 0.052734375,
+   "theta_saturated": false,
+   "theta_limiting_direction": "-v",
+   "theta_limiting_axis_world": [
+    -0.00404854091742584,
+    -0.00041484007520197256,
+    -0.9999917185777851
+   ],
+   "theta_pair_at_limit": [
+    "v11_forearm_holder_0042",
+    "v11_forearm_0979"
+   ],
+   "tilt_pivot_world_mm": [
+    85.85073729562959,
+    366.91886476131094,
+    235.35130661065796
+   ],
+   "lateral_cases": [
+    {
+     "case": "0deg",
+     "vector_world": [
+      -0.10193284414436182,
+      0.9947912822721364,
+      0.0
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 8.36,
+     "max_pass_mm": 0.076171875,
+     "first_fail_mm": 0.078125,
+     "pair_at_limit": [
+      "v11_forearm_holder_0091",
+      "v11_forearm_1390"
+     ],
+     "clearance_at_fail_mm": 0.004992540734719558,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "45deg",
+     "vector_world": [
+      -0.06921465458348669,
+      0.7037169977901719,
+      0.7071009253367414
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 7.1,
+     "max_pass_mm": 0.01171875,
+     "first_fail_mm": 0.013671875,
+     "pair_at_limit": [
+      "v11_forearm_holder_0091",
+      "v11_forearm_1390"
+     ],
+     "clearance_at_fail_mm": 0.004574976962140093,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "90deg",
+     "vector_world": [
+      0.004048540917425834,
+      0.0004148400752020335,
+      0.9999917185777851
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 8.18,
+     "max_pass_mm": 0.009765625,
+     "first_fail_mm": 0.01171875,
+     "pair_at_limit": [
+      "v11_forearm_holder_0091",
+      "v11_forearm_1390"
+     ],
+     "clearance_at_fail_mm": 0.0038361352066946545,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "135deg",
+     "vector_world": [
+      0.07494015605673272,
+      -0.7031303253296053,
+      0.7071009253367415
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 8.79,
+     "max_pass_mm": 0.015625,
+     "first_fail_mm": 0.017578125,
+     "pair_at_limit": [
+      "v11_forearm_holder_0091",
+      "v11_forearm_1390"
+     ],
+     "clearance_at_fail_mm": 0.004795352427764029,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "180deg",
+     "vector_world": [
+      0.10193284414436182,
+      -0.9947912822721364,
+      1.2246366573301454e-16
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 7.89,
+     "max_pass_mm": 0.189453125,
+     "first_fail_mm": 0.19140625,
+     "pair_at_limit": [
+      "v11_forearm_holder_0031",
+      "v11_forearm_0708"
+     ],
+     "clearance_at_fail_mm": 0.004991681194851494,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "225deg",
+     "vector_world": [
+      0.0692146545834867,
+      -0.703716997790172,
+      -0.7071009253367414
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 7.92,
+     "max_pass_mm": 0.013671875,
+     "first_fail_mm": 0.015625,
+     "pair_at_limit": [
+      "v11_forearm_holder_0037",
+      "v11_forearm_0708"
+     ],
+     "clearance_at_fail_mm": 0.004676154239924041,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "270deg",
+     "vector_world": [
+      -0.004048540917425821,
+      -0.0004148400752021553,
+      -0.9999917185777851
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 6.96,
+     "max_pass_mm": 0.009765625,
+     "first_fail_mm": 0.01171875,
+     "pair_at_limit": [
+      "v11_forearm_holder_0037",
+      "v11_forearm_0708"
+     ],
+     "clearance_at_fail_mm": 0.004800559112025908,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "315deg",
+     "vector_world": [
+      -0.07494015605673271,
+      0.7031303253296052,
+      -0.7071009253367416
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 6.53,
+     "max_pass_mm": 0.015625,
+     "first_fail_mm": 0.017578125,
+     "pair_at_limit": [
+      "v11_forearm_holder_0031",
+      "v11_forearm_0708"
+     ],
+     "clearance_at_fail_mm": 0.0049834972069125565,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    }
+   ],
+   "tilt_cases": [
+    {
+     "case": "+u",
+     "vector_world": [
+      -0.10193284414436182,
+      0.9947912822721364,
+      0.0
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 8.58,
+     "max_pass_deg": 0.064453125,
+     "first_fail_deg": 0.0703125,
+     "pair_at_limit": [
+      "v11_forearm_holder_0042",
+      "v11_forearm_0979"
+     ],
+     "clearance_at_fail_mm": 0.00393814917030379,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "-u",
+     "vector_world": [
+      0.10193284414436182,
+      -0.9947912822721364,
+      -0.0
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 6.78,
+     "max_pass_deg": 0.1171875,
+     "first_fail_deg": 0.123046875,
+     "pair_at_limit": [
+      "v11_forearm_holder_0026",
+      "v11_forearm_0708"
+     ],
+     "clearance_at_fail_mm": 0.00457994050522748,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "+v",
+     "vector_world": [
+      0.00404854091742584,
+      0.00041484007520197256,
+      0.9999917185777851
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 8.66,
+     "max_pass_deg": 1.20703125,
+     "first_fail_deg": 1.212890625,
+     "pair_at_limit": [
+      "v11_forearm_holder_0010",
+      "v11_forearm_1390"
+     ],
+     "clearance_at_fail_mm": 0.004879732508812262,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "-v",
+     "vector_world": [
+      -0.00404854091742584,
+      -0.00041484007520197256,
+      -0.9999917185777851
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 8.25,
+     "max_pass_deg": 0.052734375,
+     "first_fail_deg": 0.05859375,
+     "pair_at_limit": [
+      "v11_forearm_holder_0042",
+      "v11_forearm_0979"
+     ],
+     "clearance_at_fail_mm": 0.003936126799073023,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    }
+   ]
+  },
+  "forearm_m4": {
+   "moving": "motor4",
+   "required": true,
+   "nominal_clearance_mm": 0.019385090604493848,
+   "nominal_passed": true,
+   "nominal_failed": false,
+   "delta_max_mm": 0.013671875,
+   "delta_saturated": false,
+   "delta_limiting_direction": "90deg",
+   "delta_limiting_vector_world": [
+    0.004048540917425834,
+    0.0004148400752020335,
+    0.9999917185777851
+   ],
+   "delta_pair_at_limit": [
+    "stock_1_motor4_housing_086_120",
+    "v11_forearm_holder_0098"
+   ],
+   "theta_max_deg": 0.041015625,
+   "theta_saturated": false,
+   "theta_limiting_direction": "+u",
+   "theta_limiting_axis_world": [
+    -0.10193284414436182,
+    0.9947912822721364,
+    0.0
+   ],
+   "theta_pair_at_limit": [
+    "stock_1_motor4_housing_086_120",
+    "v11_forearm_holder_0098"
+   ],
+   "tilt_pivot_world_mm": [
+    103.50552918072836,
+    368.0230386116813,
+    237.03051808301976
+   ],
+   "lateral_cases": [
+    {
+     "case": "0deg",
+     "vector_world": [
+      -0.10193284414436182,
+      0.9947912822721364,
+      0.0
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 5.46,
+     "max_pass_mm": 0.24609375,
+     "first_fail_mm": 0.248046875,
+     "pair_at_limit": [
+      "stock_1_motor4_housing_052_061",
+      "v11_forearm_0918"
+     ],
+     "clearance_at_fail_mm": 0.004056739123448015,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "45deg",
+     "vector_world": [
+      -0.06921465458348669,
+      0.7037169977901719,
+      0.7071009253367414
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 5.05,
+     "max_pass_mm": 0.01953125,
+     "first_fail_mm": 0.021484375,
+     "pair_at_limit": [
+      "stock_1_motor4_housing_086_120",
+      "v11_forearm_holder_0098"
+     ],
+     "clearance_at_fail_mm": 0.004363267835122603,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "90deg",
+     "vector_world": [
+      0.004048540917425834,
+      0.0004148400752020335,
+      0.9999917185777851
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 4.45,
+     "max_pass_mm": 0.013671875,
+     "first_fail_mm": 0.015625,
+     "pair_at_limit": [
+      "stock_1_motor4_housing_086_120",
+      "v11_forearm_holder_0098"
+     ],
+     "clearance_at_fail_mm": 0.003893760609592366,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "135deg",
+     "vector_world": [
+      0.07494015605673272,
+      -0.7031303253296053,
+      0.7071009253367415
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 4.37,
+     "max_pass_mm": 0.01953125,
+     "first_fail_mm": 0.021484375,
+     "pair_at_limit": [
+      "stock_1_motor4_housing_086_120",
+      "v11_forearm_holder_0098"
+     ],
+     "clearance_at_fail_mm": 0.0042833460291190235,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "180deg",
+     "vector_world": [
+      0.10193284414436182,
+      -0.9947912822721364,
+      1.2246366573301454e-16
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 5.09,
+     "max_pass_mm": 0.041015625,
+     "first_fail_mm": 0.04296875,
+     "pair_at_limit": [
+      "stock_1_motor4_housing_155_203",
+      "v11_forearm_0427"
+     ],
+     "clearance_at_fail_mm": 0.0037369547126533957,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "225deg",
+     "vector_world": [
+      0.0692146545834867,
+      -0.703716997790172,
+      -0.7071009253367414
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 5.3,
+     "max_pass_mm": 0.05859375,
+     "first_fail_mm": 0.060546875,
+     "pair_at_limit": [
+      "stock_1_motor4_housing_155_203",
+      "v11_forearm_0427"
+     ],
+     "clearance_at_fail_mm": 0.003778157865927193,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "270deg",
+     "vector_world": [
+      -0.004048540917425821,
+      -0.0004148400752021553,
+      -0.9999917185777851
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 4.66,
+     "max_pass_mm": 0.2265625,
+     "first_fail_mm": 0.228515625,
+     "pair_at_limit": [
+      "stock_1_motor4_housing_130_178",
+      "v11_forearm_0867"
+     ],
+     "clearance_at_fail_mm": 0.004220504356823714,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "315deg",
+     "vector_world": [
+      -0.07494015605673271,
+      0.7031303253296052,
+      -0.7071009253367416
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 5.3,
+     "max_pass_mm": 0.314453125,
+     "first_fail_mm": 0.31640625,
+     "pair_at_limit": [
+      "stock_1_motor4_housing_048_057",
+      "v11_forearm_0880"
+     ],
+     "clearance_at_fail_mm": 0.004242697212761792,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    }
+   ],
+   "tilt_cases": [
+    {
+     "case": "+u",
+     "vector_world": [
+      -0.10193284414436182,
+      0.9947912822721364,
+      0.0
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 4.27,
+     "max_pass_deg": 0.041015625,
+     "first_fail_deg": 0.046875,
+     "pair_at_limit": [
+      "stock_1_motor4_housing_086_120",
+      "v11_forearm_holder_0098"
+     ],
+     "clearance_at_fail_mm": 0.0035926915622560324,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "-u",
+     "vector_world": [
+      0.10193284414436182,
+      -0.9947912822721364,
+      -0.0
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 5.32,
+     "max_pass_deg": 0.615234375,
+     "first_fail_deg": 0.62109375,
+     "pair_at_limit": [
+      "stock_1_motor4_housing_109_144",
+      "v11_forearm_0005"
+     ],
+     "clearance_at_fail_mm": 0.004955035361333103,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "+v",
+     "vector_world": [
+      0.00404854091742584,
+      0.00041484007520197256,
+      0.9999917185777851
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 5.38,
+     "max_pass_deg": 0.10546875,
+     "first_fail_deg": 0.111328125,
+     "pair_at_limit": [
+      "stock_1_motor4_housing_151_199",
+      "v11_forearm_0427"
+     ],
+     "clearance_at_fail_mm": 0.00372599620245066,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "-v",
+     "vector_world": [
+      -0.00404854091742584,
+      -0.00041484007520197256,
+      -0.9999917185777851
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 5.33,
+     "max_pass_deg": 0.46875,
+     "first_fail_deg": 0.474609375,
+     "pair_at_limit": [
+      "stock_1_motor4_housing_109_144",
+      "v11_forearm_0005"
+     ],
+     "clearance_at_fail_mm": 0.004653308480465382,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    }
+   ]
+  },
+  "wrist_mount": {
+   "moving": "wrist_shell",
+   "required": false,
+   "nominal_clearance_mm": 0.13525267431710067,
+   "nominal_passed": true,
+   "nominal_failed": false,
+   "delta_max_mm": 0.16796875,
+   "delta_saturated": false,
+   "delta_limiting_direction": "180deg",
+   "delta_limiting_vector_world": [
+    -0.9999906743404586,
+    1.224643776405006e-16,
+    0.004318707227265474
+   ],
+   "delta_pair_at_limit": [
+    "v11_wrist_shell_0359",
+    "stock_1_motor4_idler_horn_014_007"
+   ],
+   "theta_max_deg": 0.4453125,
+   "theta_saturated": false,
+   "theta_limiting_direction": "-v",
+   "theta_limiting_axis_world": [
+    -9.595412126893048e-06,
+    -0.9999975317435613,
+    -0.002221804382285477
+   ],
+   "theta_pair_at_limit": [
+    "v11_wrist_shell_0444",
+    "stock_1_motor4_drive_horn_185_034"
+   ],
+   "tilt_pivot_world_mm": [
+    140.950554649438,
+    375.15210829500194,
+    238.9550292251672
+   ],
+   "lateral_cases": [
+    {
+     "case": "0deg",
+     "vector_world": [
+      0.9999906743404586,
+      0.0,
+      -0.004318707227265474
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 6.09,
+     "max_pass_mm": 0.59765625,
+     "first_fail_mm": 0.599609375,
+     "pair_at_limit": [
+      "v11_wrist_shell_0463",
+      "stock_1_motor4_idler_horn_010_003"
+     ],
+     "clearance_at_fail_mm": 0.004094760470251359,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "45deg",
+     "vector_world": [
+      0.70710697193043,
+      0.707105035865682,
+      -0.0014827342211747201
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 5.85,
+     "max_pass_mm": 0.265625,
+     "first_fail_mm": 0.267578125,
+     "pair_at_limit": [
+      "v11_wrist_shell_1521",
+      "stock_1_motor4_drive_horn_183_032"
+     ],
+     "clearance_at_fail_mm": 0.004113240953428838,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "90deg",
+     "vector_world": [
+      9.59541212695428e-06,
+      0.9999975317435613,
+      0.0022218043822854767
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 5.61,
+     "max_pass_mm": 0.177734375,
+     "first_fail_mm": 0.1796875,
+     "pair_at_limit": [
+      "v11_wrist_shell_1522",
+      "stock_1_motor4_drive_horn_183_032"
+     ],
+     "clearance_at_fail_mm": 0.004004475114764829,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "135deg",
+     "vector_world": [
+      -0.7070934019684636,
+      0.7071050358656821,
+      0.004624840111542818
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 4.12,
+     "max_pass_mm": 0.19140625,
+     "first_fail_mm": 0.193359375,
+     "pair_at_limit": [
+      "v11_wrist_shell_1160",
+      "stock_1_motor4_drive_horn_186_035"
+     ],
+     "clearance_at_fail_mm": 0.003979725056140115,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "180deg",
+     "vector_world": [
+      -0.9999906743404586,
+      1.224643776405006e-16,
+      0.004318707227265474
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 6.25,
+     "max_pass_mm": 0.16796875,
+     "first_fail_mm": 0.169921875,
+     "pair_at_limit": [
+      "v11_wrist_shell_0359",
+      "stock_1_motor4_idler_horn_014_007"
+     ],
+     "clearance_at_fail_mm": 0.003414061744877693,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "225deg",
+     "vector_world": [
+      -0.7071069719304302,
+      -0.707105035865682,
+      0.0014827342211747206
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 6.44,
+     "max_pass_mm": 0.1796875,
+     "first_fail_mm": 0.181640625,
+     "pair_at_limit": [
+      "v11_wrist_shell_1448",
+      "stock_1_motor4_idler_horn_014_007"
+     ],
+     "clearance_at_fail_mm": 0.00431086550358157,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "270deg",
+     "vector_world": [
+      -9.595412127076744e-06,
+      -0.9999975317435613,
+      -0.0022218043822854762
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 6.33,
+     "max_pass_mm": 0.173828125,
+     "first_fail_mm": 0.17578125,
+     "pair_at_limit": [
+      "v11_wrist_shell_1061",
+      "stock_1_motor4_idler_horn_014_007"
+     ],
+     "clearance_at_fail_mm": 0.004240830941890593,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "315deg",
+     "vector_world": [
+      0.7070934019684635,
+      -0.7071050358656822,
+      -0.004624840111542818
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 6.03,
+     "max_pass_mm": 0.2421875,
+     "first_fail_mm": 0.244140625,
+     "pair_at_limit": [
+      "v11_wrist_shell_1438",
+      "stock_1_motor4_idler_horn_014_007"
+     ],
+     "clearance_at_fail_mm": 0.004431478602908462,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    }
+   ],
+   "tilt_cases": [
+    {
+     "case": "+u",
+     "vector_world": [
+      0.9999906743404586,
+      0.0,
+      -0.004318707227265474
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 5.64,
+     "max_pass_deg": 0.732421875,
+     "first_fail_deg": 0.73828125,
+     "pair_at_limit": [
+      "v11_wrist_shell_0986",
+      "stock_1_motor4_drive_horn_186_035"
+     ],
+     "clearance_at_fail_mm": 0.004859766553760646,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "-u",
+     "vector_world": [
+      -0.9999906743404586,
+      -0.0,
+      0.004318707227265474
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 6.04,
+     "max_pass_deg": 0.703125,
+     "first_fail_deg": 0.708984375,
+     "pair_at_limit": [
+      "v11_wrist_shell_1009",
+      "stock_1_motor4_idler_horn_014_007"
+     ],
+     "clearance_at_fail_mm": 0.004940273195856306,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "+v",
+     "vector_world": [
+      9.595412126893048e-06,
+      0.9999975317435613,
+      0.002221804382285477
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 4.85,
+     "max_pass_deg": 0.685546875,
+     "first_fail_deg": 0.69140625,
+     "pair_at_limit": [
+      "v11_wrist_shell_0359",
+      "stock_1_motor4_idler_horn_014_007"
+     ],
+     "clearance_at_fail_mm": 0.004759251485982722,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "-v",
+     "vector_world": [
+      -9.595412126893048e-06,
+      -0.9999975317435613,
+      -0.002221804382285477
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 5.89,
+     "max_pass_deg": 0.4453125,
+     "first_fail_deg": 0.451171875,
+     "pair_at_limit": [
+      "v11_wrist_shell_0444",
+      "stock_1_motor4_drive_horn_185_034"
+     ],
+     "clearance_at_fail_mm": 0.0033468925083374426,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    }
+   ]
+  },
+  "wrist_motor5": {
+   "moving": "motor5",
+   "required": true,
+   "nominal_clearance_mm": 0.018471742915587088,
+   "nominal_passed": true,
+   "nominal_failed": false,
+   "delta_max_mm": 0.01171875,
+   "delta_saturated": false,
+   "delta_limiting_direction": "270deg",
+   "delta_limiting_vector_world": [
+    -0.0002701391924421985,
+    0.0026366447990988375,
+    -0.9999964875583414
+   ],
+   "delta_pair_at_limit": [
+    "stock_2_motor5_housing_193",
+    "v11_wrist_shell_0468"
+   ],
+   "theta_max_deg": 0.169921875,
+   "theta_saturated": false,
+   "theta_limiting_direction": "+u",
+   "theta_limiting_axis_world": [
+    -0.9947923817389946,
+    -0.10192211356746093,
+    0.0
+   ],
+   "theta_pair_at_limit": [
+    "stock_2_motor5_housing_188",
+    "v11_wrist_shell_0468"
+   ],
+   "tilt_pivot_world_mm": [
+    157.78961617238323,
+    385.0924978367211,
+    236.83807279712116
+   ],
+   "lateral_cases": [
+    {
+     "case": "0deg",
+     "vector_world": [
+      -0.9947923817389946,
+      -0.10192211356746093,
+      0.0
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 6.86,
+     "max_pass_mm": 0.294921875,
+     "first_fail_mm": 0.296875,
+     "pair_at_limit": [
+      "stock_2_motor5_housing_000",
+      "v11_wrist_shell_1449"
+     ],
+     "clearance_at_fail_mm": 0.0031279240153328806,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "45deg",
+     "vector_world": [
+      -0.7032334217455195,
+      -0.07393420707344008,
+      0.7071042975152321
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 6.07,
+     "max_pass_mm": 0.12890625,
+     "first_fail_mm": 0.130859375,
+     "pair_at_limit": [
+      "stock_2_motor5_housing_124",
+      "v11_wrist_shell_0191"
+     ],
+     "clearance_at_fail_mm": 0.004920995669248443,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "90deg",
+     "vector_world": [
+      0.0002701391924423203,
+      -0.002636644799098825,
+      0.9999964875583414
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 6.69,
+     "max_pass_mm": 0.091796875,
+     "first_fail_mm": 0.09375,
+     "pair_at_limit": [
+      "stock_2_motor5_housing_124",
+      "v11_wrist_shell_0191"
+     ],
+     "clearance_at_fail_mm": 0.003793721650128537,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "135deg",
+     "vector_world": [
+      0.7036154562552,
+      0.07020542823939402,
+      0.7071042975152322
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 7.01,
+     "max_pass_mm": 0.12890625,
+     "first_fail_mm": 0.130859375,
+     "pair_at_limit": [
+      "stock_2_motor5_housing_124",
+      "v11_wrist_shell_0191"
+     ],
+     "clearance_at_fail_mm": 0.004389586661475263,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "180deg",
+     "vector_world": [
+      0.9947923817389946,
+      0.10192211356746093,
+      1.2246424976469188e-16
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 6.98,
+     "max_pass_mm": 0.15234375,
+     "first_fail_mm": 0.154296875,
+     "pair_at_limit": [
+      "stock_2_motor5_housing_193",
+      "v11_wrist_shell_0468"
+     ],
+     "clearance_at_fail_mm": 0.004967795661970272,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "225deg",
+     "vector_world": [
+      0.7032334217455196,
+      0.07393420707344009,
+      -0.7071042975152321
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 7.28,
+     "max_pass_mm": 0.017578125,
+     "first_fail_mm": 0.01953125,
+     "pair_at_limit": [
+      "stock_2_motor5_housing_193",
+      "v11_wrist_shell_0468"
+     ],
+     "clearance_at_fail_mm": 0.0035053572057002825,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "270deg",
+     "vector_world": [
+      -0.0002701391924421985,
+      0.0026366447990988375,
+      -0.9999964875583414
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 5.8,
+     "max_pass_mm": 0.01171875,
+     "first_fail_mm": 0.013671875,
+     "pair_at_limit": [
+      "stock_2_motor5_housing_193",
+      "v11_wrist_shell_0468"
+     ],
+     "clearance_at_fail_mm": 0.004852329248434343,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "315deg",
+     "vector_world": [
+      -0.7036154562551998,
+      -0.070205428239394,
+      -0.7071042975152323
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 7.29,
+     "max_pass_mm": 0.01953125,
+     "first_fail_mm": 0.021484375,
+     "pair_at_limit": [
+      "stock_2_motor5_housing_193",
+      "v11_wrist_shell_0468"
+     ],
+     "clearance_at_fail_mm": 0.004667859379875229,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    }
+   ],
+   "tilt_cases": [
+    {
+     "case": "+u",
+     "vector_world": [
+      -0.9947923817389946,
+      -0.10192211356746093,
+      0.0
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 7.49,
+     "max_pass_deg": 0.169921875,
+     "first_fail_deg": 0.17578125,
+     "pair_at_limit": [
+      "stock_2_motor5_housing_188",
+      "v11_wrist_shell_0468"
+     ],
+     "clearance_at_fail_mm": 0.003271482452198231,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "-u",
+     "vector_world": [
+      0.9947923817389946,
+      0.10192211356746093,
+      -0.0
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 6.09,
+     "max_pass_deg": 0.1875,
+     "first_fail_deg": 0.193359375,
+     "pair_at_limit": [
+      "stock_2_motor5_housing_193",
+      "v11_wrist_shell_0468"
+     ],
+     "clearance_at_fail_mm": 0.0047547092573253,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "+v",
+     "vector_world": [
+      0.00027013919244238123,
+      -0.002636644799098819,
+      0.9999964875583414
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 5.98,
+     "max_pass_deg": 0.31640625,
+     "first_fail_deg": 0.322265625,
+     "pair_at_limit": [
+      "stock_2_motor5_housing_124",
+      "v11_wrist_shell_0480"
+     ],
+     "clearance_at_fail_mm": 0.004819927243943796,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "-v",
+     "vector_world": [
+      -0.00027013919244238123,
+      0.002636644799098819,
+      -0.9999964875583414
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 7.4,
+     "max_pass_deg": 0.46875,
+     "first_fail_deg": 0.474609375,
+     "pair_at_limit": [
+      "stock_2_motor5_housing_149",
+      "v11_wrist_shell_0480"
+     ],
+     "clearance_at_fail_mm": 0.004383587612757986,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    }
+   ]
+  },
+  "wrist_end_frame": {
+   "moving": "frame",
+   "required": false,
+   "nominal_clearance_mm": 0.024494260511757484,
+   "nominal_passed": true,
+   "nominal_failed": false,
+   "delta_max_mm": 0.01953125,
+   "delta_saturated": false,
+   "delta_limiting_direction": "270deg",
+   "delta_limiting_vector_world": [
+    -0.004042058159160326,
+    -0.00041419072431203737,
+    -0.9999917450718689
+   ],
+   "delta_pair_at_limit": [
+    "v11_frame_0386",
+    "motor5_disc_section_324"
+   ],
+   "theta_max_deg": 0.017578125,
+   "theta_saturated": false,
+   "theta_limiting_direction": "-u",
+   "theta_limiting_axis_world": [
+    0.10193647675169319,
+    -0.9947909100446443,
+    -0.0
+   ],
+   "theta_pair_at_limit": [
+    "v11_frame_0386",
+    "motor5_disc_section_324"
+   ],
+   "tilt_pivot_world_mm": [
+    227.49028149018994,
+    374.26234109223344,
+    234.07780372494636
+   ],
+   "lateral_cases": [
+    {
+     "case": "0deg",
+     "vector_world": [
+      -0.10193647675169319,
+      0.9947909100446443,
+      0.0
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 4.64,
+     "max_pass_mm": 0.154296875,
+     "first_fail_mm": 0.15625,
+     "pair_at_limit": [
+      "v11_frame_1736",
+      "motor5_disc_section_631"
+     ],
+     "clearance_at_fail_mm": 0.003136459450759766,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "45deg",
+     "vector_world": [
+      -0.06922180722709442,
+      0.7037162754251702,
+      0.7071009440708877
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 4.91,
+     "max_pass_mm": 0.130859375,
+     "first_fail_mm": 0.1328125,
+     "pair_at_limit": [
+      "v11_frame_0979",
+      "motor5_disc_section_384"
+     ],
+     "clearance_at_fail_mm": 0.0035326506880795777,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "90deg",
+     "vector_world": [
+      0.004042058159160339,
+      0.00041419072431191556,
+      0.9999917450718689
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 5.32,
+     "max_pass_mm": 0.1484375,
+     "first_fail_mm": 0.150390625,
+     "pair_at_limit": [
+      "v11_frame_0999",
+      "motor5_disc_section_397"
+     ],
+     "clearance_at_fail_mm": 0.004883974836288786,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "135deg",
+     "vector_world": [
+      0.07493814069567979,
+      -0.7031305212854392,
+      0.7071009440708879
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 4.72,
+     "max_pass_mm": 0.130859375,
+     "first_fail_mm": 0.1328125,
+     "pair_at_limit": [
+      "v11_frame_1153",
+      "motor5_disc_section_268"
+     ],
+     "clearance_at_fail_mm": 0.003525367660555673,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "180deg",
+     "vector_world": [
+      0.10193647675169319,
+      -0.9947909100446443,
+      1.2246366897760402e-16
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 6.29,
+     "max_pass_mm": 0.080078125,
+     "first_fail_mm": 0.08203125,
+     "pair_at_limit": [
+      "v11_frame_0785",
+      "motor5_disc_section_20"
+     ],
+     "clearance_at_fail_mm": 0.004341925327794602,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "225deg",
+     "vector_world": [
+      0.06922180722709444,
+      -0.7037162754251703,
+      -0.7071009440708877
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 5.75,
+     "max_pass_mm": 0.03125,
+     "first_fail_mm": 0.033203125,
+     "pair_at_limit": [
+      "v11_frame_0386",
+      "motor5_disc_section_324"
+     ],
+     "clearance_at_fail_mm": 0.004446895362242927,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "270deg",
+     "vector_world": [
+      -0.004042058159160326,
+      -0.00041419072431203737,
+      -0.9999917450718689
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 4.55,
+     "max_pass_mm": 0.01953125,
+     "first_fail_mm": 0.021484375,
+     "pair_at_limit": [
+      "v11_frame_0386",
+      "motor5_disc_section_324"
+     ],
+     "clearance_at_fail_mm": 0.0033371083950263208,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "315deg",
+     "vector_world": [
+      -0.07493814069567978,
+      0.7031305212854391,
+      -0.707100944070888
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 4.64,
+     "max_pass_mm": 0.0234375,
+     "first_fail_mm": 0.025390625,
+     "pair_at_limit": [
+      "v11_frame_0386",
+      "motor5_disc_section_324"
+     ],
+     "clearance_at_fail_mm": 0.004406287746441631,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    }
+   ],
+   "tilt_cases": [
+    {
+     "case": "+u",
+     "vector_world": [
+      -0.10193647675169319,
+      0.9947909100446443,
+      0.0
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 6.29,
+     "max_pass_deg": 0.169921875,
+     "first_fail_deg": 0.17578125,
+     "pair_at_limit": [
+      "v11_frame_0999",
+      "motor5_disc_section_397"
+     ],
+     "clearance_at_fail_mm": 0.0018539864600012558,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "-u",
+     "vector_world": [
+      0.10193647675169319,
+      -0.9947909100446443,
+      -0.0
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 5.01,
+     "max_pass_deg": 0.017578125,
+     "first_fail_deg": 0.0234375,
+     "pair_at_limit": [
+      "v11_frame_0386",
+      "motor5_disc_section_324"
+     ],
+     "clearance_at_fail_mm": 0.003991061974728668,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "+v",
+     "vector_world": [
+      0.004042058159160345,
+      0.0004141907243118546,
+      0.9999917450718689
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 6.69,
+     "max_pass_deg": 0.076171875,
+     "first_fail_deg": 0.08203125,
+     "pair_at_limit": [
+      "v11_frame_0785",
+      "motor5_disc_section_20"
+     ],
+     "clearance_at_fail_mm": 0.0020232160743478707,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "-v",
+     "vector_world": [
+      -0.004042058159160345,
+      -0.0004141907243118546,
+      -0.9999917450718689
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 4.83,
+     "max_pass_deg": 0.169921875,
+     "first_fail_deg": 0.17578125,
+     "pair_at_limit": [
+      "v11_frame_1739",
+      "motor5_disc_section_634"
+     ],
+     "clearance_at_fail_mm": 0.0016604766349559766,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    }
+   ]
+  },
+  "end_frame_motor6": {
+   "moving": "housing",
+   "required": true,
+   "nominal_clearance_mm": 0.03422541404136693,
+   "nominal_passed": true,
+   "nominal_failed": false,
+   "delta_max_mm": 0.02734375,
+   "delta_saturated": false,
+   "delta_limiting_direction": "270deg",
+   "delta_limiting_vector_world": [
+    -0.9999570619622915,
+    -0.000469167934909565,
+    0.009254950739517565
+   ],
+   "delta_pair_at_limit": [
+    "stock_3_housing_contact_187",
+    "v11_frame_0362"
+   ],
+   "theta_max_deg": 0.099609375,
+   "theta_saturated": false,
+   "theta_limiting_direction": "-u",
+   "theta_limiting_axis_world": [
+    -0.0,
+    0.9987175443472139,
+    0.0506287133262411
+   ],
+   "theta_pair_at_limit": [
+    "stock_3_housing_contact_187",
+    "v11_frame_0362"
+   ],
+   "tilt_pivot_world_mm": [
+    199.98816652129176,
+    376.4366085613898,
+    244.3251883964844
+   ],
+   "lateral_cases": [
+    {
+     "case": "0deg",
+     "vector_world": [
+      0.0,
+      -0.9987175443472139,
+      -0.0506287133262411
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 4.4,
+     "max_pass_mm": 0.1953125,
+     "first_fail_mm": 0.197265625,
+     "pair_at_limit": [
+      "stock_3_housing_contact_339",
+      "v11_frame_0667"
+     ],
+     "clearance_at_fail_mm": 0.0035257327244554524,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "45deg",
+     "vector_world": [
+      0.707076419408913,
+      -0.7058681962696016,
+      -0.04234414494319513
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 4.4,
+     "max_pass_mm": 0.1796875,
+     "first_fail_mm": 0.181640625,
+     "pair_at_limit": [
+      "stock_3_housing_contact_341",
+      "v11_frame_0755"
+     ],
+     "clearance_at_fail_mm": 0.004286631259510938,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "90deg",
+     "vector_world": [
+      0.9999570619622915,
+      0.0004691679349096873,
+      -0.00925495073951756
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 4.2,
+     "max_pass_mm": 0.11328125,
+     "first_fail_mm": 0.115234375,
+     "pair_at_limit": [
+      "stock_3_housing_contact_341",
+      "v11_frame_0755"
+     ],
+     "clearance_at_fail_mm": 0.004367276137897989,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "135deg",
+     "vector_world": [
+      0.7070764194089131,
+      0.7065316999261814,
+      0.02925566808827449
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 3.99,
+     "max_pass_mm": 0.146484375,
+     "first_fail_mm": 0.1484375,
+     "pair_at_limit": [
+      "stock_3_housing_contact_341",
+      "v11_frame_0755"
+     ],
+     "clearance_at_fail_mm": 0.0039571140882823435,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "180deg",
+     "vector_world": [
+      1.224594215216912e-16,
+      0.9987175443472139,
+      0.0506287133262411
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 3.53,
+     "max_pass_mm": 0.09375,
+     "first_fail_mm": 0.095703125,
+     "pair_at_limit": [
+      "stock_3_housing_contact_179",
+      "v11_frame_0766"
+     ],
+     "clearance_at_fail_mm": 0.004766475016680117,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "225deg",
+     "vector_world": [
+      -0.707076419408913,
+      0.7058681962696017,
+      0.04234414494319513
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 4.96,
+     "max_pass_mm": 0.04296875,
+     "first_fail_mm": 0.044921875,
+     "pair_at_limit": [
+      "stock_3_housing_contact_187",
+      "v11_frame_0362"
+     ],
+     "clearance_at_fail_mm": 0.004707358431362097,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "270deg",
+     "vector_world": [
+      -0.9999570619622915,
+      -0.000469167934909565,
+      0.009254950739517565
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 4.93,
+     "max_pass_mm": 0.02734375,
+     "first_fail_mm": 0.029296875,
+     "pair_at_limit": [
+      "stock_3_housing_contact_187",
+      "v11_frame_0362"
+     ],
+     "clearance_at_fail_mm": 0.004997118512335069,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "315deg",
+     "vector_world": [
+      -0.7070764194089132,
+      -0.7065316999261813,
+      -0.029255668088274484
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 3.4,
+     "max_pass_mm": 0.037109375,
+     "first_fail_mm": 0.0390625,
+     "pair_at_limit": [
+      "stock_3_housing_contact_187",
+      "v11_frame_0362"
+     ],
+     "clearance_at_fail_mm": 0.004779885895259743,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    }
+   ],
+   "tilt_cases": [
+    {
+     "case": "+u",
+     "vector_world": [
+      0.0,
+      -0.9987175443472139,
+      -0.0506287133262411
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 4.51,
+     "max_pass_deg": 0.392578125,
+     "first_fail_deg": 0.3984375,
+     "pair_at_limit": [
+      "stock_3_housing_contact_341",
+      "v11_frame_0755"
+     ],
+     "clearance_at_fail_mm": 0.003990360127964517,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "-u",
+     "vector_world": [
+      -0.0,
+      0.9987175443472139,
+      0.0506287133262411
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 5.08,
+     "max_pass_deg": 0.099609375,
+     "first_fail_deg": 0.10546875,
+     "pair_at_limit": [
+      "stock_3_housing_contact_187",
+      "v11_frame_0362"
+     ],
+     "clearance_at_fail_mm": 0.0034222870889798677,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "+v",
+     "vector_world": [
+      0.9999570619622915,
+      0.00046916793490974846,
+      -0.009254950739517556
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 3.41,
+     "max_pass_deg": 0.24609375,
+     "first_fail_deg": 0.251953125,
+     "pair_at_limit": [
+      "stock_3_housing_contact_313",
+      "v11_frame_0766"
+     ],
+     "clearance_at_fail_mm": 0.0038387667250259624,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "-v",
+     "vector_world": [
+      -0.9999570619622915,
+      -0.00046916793490974846,
+      0.009254950739517556
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 3.13,
+     "max_pass_deg": 0.498046875,
+     "first_fail_deg": 0.50390625,
+     "pair_at_limit": [
+      "stock_3_housing_contact_155",
+      "v11_frame_0434"
+     ],
+     "clearance_at_fail_mm": 0.0042888906688049,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    }
+   ]
+  },
+  "end_frame_jaw": {
+   "moving": "jaw",
+   "required": true,
+   "nominal_clearance_mm": 0.0927488362739313,
+   "nominal_passed": true,
+   "nominal_failed": false,
+   "delta_max_mm": 0.087890625,
+   "delta_saturated": false,
+   "delta_limiting_direction": "0deg",
+   "delta_limiting_vector_world": [
+    0.0,
+    -0.9987175443472139,
+    -0.0506287133262411
+   ],
+   "delta_pair_at_limit": [
+    "v11_jaw_0456",
+    "stock_3_disc_contact_0"
+   ],
+   "theta_max_deg": 0.3515625,
+   "theta_saturated": false,
+   "theta_limiting_direction": "+u",
+   "theta_limiting_axis_world": [
+    0.0,
+    -0.9987175443472139,
+    -0.0506287133262411
+   ],
+   "theta_pair_at_limit": [
+    "v11_jaw_0892",
+    "stock_3_disc_contact_0"
+   ],
+   "tilt_pivot_world_mm": [
+    234.98500158016202,
+    376.11422697673993,
+    255.99718335005554
+   ],
+   "lateral_cases": [
+    {
+     "case": "0deg",
+     "vector_world": [
+      0.0,
+      -0.9987175443472139,
+      -0.0506287133262411
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 6.75,
+     "max_pass_mm": 0.087890625,
+     "first_fail_mm": 0.08984375,
+     "pair_at_limit": [
+      "v11_jaw_0456",
+      "stock_3_disc_contact_0"
+     ],
+     "clearance_at_fail_mm": 0.0031982919275535876,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "45deg",
+     "vector_world": [
+      0.707076419408913,
+      -0.7058681962696016,
+      -0.04234414494319513
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 6.11,
+     "max_pass_mm": 0.134765625,
+     "first_fail_mm": 0.13671875,
+     "pair_at_limit": [
+      "v11_jaw_0456",
+      "stock_3_disc_contact_0"
+     ],
+     "clearance_at_fail_mm": 0.004193589850027448,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "90deg",
+     "vector_world": [
+      0.9999570619622915,
+      0.0004691679349096873,
+      -0.00925495073951756
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 6.77,
+     "max_pass_mm": 0.498046875,
+     "first_fail_mm": 0.5,
+     "pair_at_limit": [
+      "v11_jaw_0143",
+      "stock_3_housing_contact_347"
+     ],
+     "clearance_at_fail_mm": 0.004291352673213447,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "135deg",
+     "vector_world": [
+      0.7070764194089131,
+      0.7065316999261814,
+      0.02925566808827449
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 5.03,
+     "max_pass_mm": 0.224609375,
+     "first_fail_mm": 0.2265625,
+     "pair_at_limit": [
+      "v11_jaw_0393",
+      "stock_3_housing_contact_154"
+     ],
+     "clearance_at_fail_mm": 0.004087520398667356,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "180deg",
+     "vector_world": [
+      1.224594215216912e-16,
+      0.9987175443472139,
+      0.0506287133262411
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 6.71,
+     "max_pass_mm": 0.142578125,
+     "first_fail_mm": 0.14453125,
+     "pair_at_limit": [
+      "v11_jaw_0393",
+      "stock_3_housing_contact_154"
+     ],
+     "clearance_at_fail_mm": 0.0034016811377143587,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "225deg",
+     "vector_world": [
+      -0.707076419408913,
+      0.7058681962696017,
+      0.04234414494319513
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 6.49,
+     "max_pass_mm": 0.150390625,
+     "first_fail_mm": 0.15234375,
+     "pair_at_limit": [
+      "v11_jaw_1041",
+      "stock_3_housing_contact_25"
+     ],
+     "clearance_at_fail_mm": 0.004192782029384749,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "270deg",
+     "vector_world": [
+      -0.9999570619622915,
+      -0.000469167934909565,
+      0.009254950739517565
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 5.18,
+     "max_pass_mm": 0.119140625,
+     "first_fail_mm": 0.12109375,
+     "pair_at_limit": [
+      "v11_jaw_0233",
+      "stock_3_disc_contact_0"
+     ],
+     "clearance_at_fail_mm": 0.003420300940988403,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "315deg",
+     "vector_world": [
+      -0.7070764194089132,
+      -0.7065316999261813,
+      -0.029255668088274484
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 6.59,
+     "max_pass_mm": 0.11328125,
+     "first_fail_mm": 0.115234375,
+     "pair_at_limit": [
+      "v11_jaw_0456",
+      "stock_3_disc_contact_0"
+     ],
+     "clearance_at_fail_mm": 0.004954085732929294,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    }
+   ],
+   "tilt_cases": [
+    {
+     "case": "+u",
+     "vector_world": [
+      0.0,
+      -0.9987175443472139,
+      -0.0506287133262411
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 5.35,
+     "max_pass_deg": 0.3515625,
+     "first_fail_deg": 0.357421875,
+     "pair_at_limit": [
+      "v11_jaw_0892",
+      "stock_3_disc_contact_0"
+     ],
+     "clearance_at_fail_mm": 0.004767580710065124,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "-u",
+     "vector_world": [
+      -0.0,
+      0.9987175443472139,
+      0.0506287133262411
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 7.19,
+     "max_pass_deg": 0.732421875,
+     "first_fail_deg": 0.73828125,
+     "pair_at_limit": [
+      "v11_jaw_0233",
+      "stock_3_disc_contact_0"
+     ],
+     "clearance_at_fail_mm": 0.004242347726139007,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "+v",
+     "vector_world": [
+      0.9999570619622915,
+      0.00046916793490974846,
+      -0.009254950739517556
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 5.3,
+     "max_pass_deg": 0.9375,
+     "first_fail_deg": 0.943359375,
+     "pair_at_limit": [
+      "v11_jaw_0393",
+      "stock_3_housing_contact_154"
+     ],
+     "clearance_at_fail_mm": 0.004458652359232636,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    },
+    {
+     "case": "-v",
+     "vector_world": [
+      -0.9999570619622915,
+      -0.00046916793490974846,
+      0.009254950739517556
+     ],
+     "saturated": false,
+     "evaluations": 10,
+     "seconds": 7.48,
+     "max_pass_deg": 0.861328125,
+     "first_fail_deg": 0.8671875,
+     "pair_at_limit": [
+      "v11_jaw_0943",
+      "stock_3_disc_contact_0"
+     ],
+     "clearance_at_fail_mm": 0.004542672513203237,
+     "colliding_pair_count_at_fail": 0,
+     "invalid_near_hulls_at_fail": []
+    }
+   ]
+  },
+  "base_holder": {
+   "moving": "holder",
+   "required": false,
+   "nominal_clearance_mm": null,
+   "nominal_passed": false,
+   "nominal_failed": true,
+   "delta_max_mm": 0.0,
+   "theta_max_deg": 0.0,
+   "delta_limiting_direction": null,
+   "theta_limiting_direction": null,
+   "delta_pair_at_limit": [
+    "v11_holder_0004",
+    "v11_base_0409"
+   ],
+   "theta_pair_at_limit": [
+    "v11_holder_0004",
+    "v11_base_0409"
+   ]
+  }
+ }
+}

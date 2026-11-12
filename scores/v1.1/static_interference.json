@@ -1,0 +1,2628 @@
+{
+ "tool": "static_interference",
+ "scene": "results/v11_release/oneshot/final/scene/scene.xml",
+ "scene_sha256": "7700d95f1d58ec27553d76ff0d4f396b65da2ed9077ad4dc1836abefffbe1abd",
+ "mujoco": "3.9.0",
+ "created": "2026-11-12 17:08:37",
+ "interfaces_file": "results/release/interfaces_v1.1.json",
+ "distmax_mm": 2.0,
+ "agree_above_mm": 0.05,
+ "pen_tol_mm": 1e-06,
+ "exact_max_points": 600000,
+ "depth_bins_mm": [
+  0.01,
+  0.05,
+  0.1,
+  0.5
+ ],
+ "workers": 48,
+ "n_exclude": 60,
+ "summary": {
+  "interfaces_min_distance_mm": {
+   "base_m1": 0.2848980360883612,
+   "shoulder_m2": 0.02556933999879948,
+   "shoulder_upper": 0.019018364398447896,
+   "upper_m3": 0.023948579913579265,
+   "m3_forearm": 0.019412687033284408,
+   "forearm_holder": 0.015588893505742472,
+   "forearm_m4": 0.019385090604509127,
+   "wrist_mount": 0.1352526743170878,
+   "wrist_motor5": 0.05749027922685137,
+   "wrist_end_frame": 0.024494260511746517,
+   "end_frame_motor6": 0.09997423126785193,
+   "end_frame_jaw": 0.10817322614764123,
+   "base_holder": -0.009683955684135725
+  },
+  "interfaces_min_distance_mujoco_mm": {
+   "base_m1": 0.0,
+   "shoulder_m2": 0.0,
+   "shoulder_upper": 0.0,
+   "upper_m3": 0.0,
+   "m3_forearm": 0.0,
+   "forearm_holder": 0.0,
+   "forearm_m4": 0.0,
+   "wrist_mount": 0.0,
+   "wrist_motor5": 0.0,
+   "wrist_end_frame": 0.0,
+   "end_frame_motor6": 0.0,
+   "end_frame_jaw": 0.0,
+   "base_holder": -1.5239824524141852
+  },
+  "interfaces_min_distance_fcl_mm": {
+   "base_m1": 0.28489803608835257,
+   "shoulder_m2": 0.02556933999879963,
+   "shoulder_upper": 0.019018364398451622,
+   "upper_m3": 0.023948590499011286,
+   "m3_forearm": 0.019412687033292974,
+   "forearm_holder": 0.015588893505750333,
+   "forearm_m4": 0.019385090604396037,
+   "wrist_mount": 0.13525267431708465,
+   "wrist_motor5": 0.05749027922685111,
+   "wrist_end_frame": 0.024494260511718387,
+   "end_frame_motor6": 0.09997423126783647,
+   "end_frame_jaw": 0.10817322614762825,
+   "base_holder": -13.504879785304084
+  },
+  "interfaces_n_penetrating": {
+   "base_m1": 0,
+   "shoulder_m2": 0,
+   "shoulder_upper": 0,
+   "upper_m3": 0,
+   "m3_forearm": 0,
+   "forearm_holder": 0,
+   "forearm_m4": 0,
+   "wrist_mount": 0,
+   "wrist_motor5": 0,
+   "wrist_end_frame": 0,
+   "end_frame_motor6": 0,
+   "end_frame_jaw": 0,
+   "base_holder": 22
+  },
+  "interfaces_max_penetration_mm": {
+   "base_m1": 0.0,
+   "shoulder_m2": 0.0,
+   "shoulder_upper": 0.0,
+   "upper_m3": 0.0,
+   "m3_forearm": 0.0,
+   "forearm_holder": 0.0,
+   "forearm_m4": 0.0,
+   "wrist_mount": 0.0,
+   "wrist_motor5": 0.0,
+   "wrist_end_frame": 0.0,
+   "end_frame_motor6": 0.0,
+   "end_frame_jaw": 0.0,
+   "base_holder": 0.009683955684135725
+  },
+  "worst_interface_max_penetration_mm": 0.009683955684135725,
+  "assembled_min_distance_mm": -0.9076837399999762,
+  "assembled_n_penetrating": 691,
+  "assembled_max_penetration_mm": 0.9076837399999762,
+  "assembled_n_part_pairs_penetrating": 6
+ },
+ "interfaces": {
+  "base_m1": {
+   "a": [
+    "motor"
+   ],
+   "b": [
+    "base"
+   ],
+   "n_geoms_a": 929,
+   "n_geoms_b": 948,
+   "n_geom_pairs_total": 880692,
+   "n_agree": 2901,
+   "n_exact": 71,
+   "n_unresolved": 0,
+   "n_mujoco_exact_zero": 71,
+   "resolved": {
+    "n_pairs": 2972,
+    "min_distance_mm": 0.2848980360883612,
+    "capped": false,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "n_penetrating_deeper_than_mm": {
+     "0.01": 0,
+     "0.05": 0,
+     "0.1": 0,
+     "0.5": 0
+    }
+   },
+   "resolved_collidable": {
+    "n_pairs": 2972,
+    "min_distance_mm": 0.2848980360883612,
+    "capped": false,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "n_penetrating_deeper_than_mm": {
+     "0.01": 0,
+     "0.05": 0,
+     "0.1": 0,
+     "0.5": 0
+    }
+   },
+   "mujoco": {
+    "n_pairs": 2972,
+    "min_distance_mm": 0.0,
+    "capped": false,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "n_penetrating_deeper_than_mm": {
+     "0.01": 0,
+     "0.05": 0,
+     "0.1": 0,
+     "0.5": 0
+    }
+   },
+   "fcl": {
+    "n_pairs": 2972,
+    "min_distance_mm": 0.28489803608835257,
+    "capped": false,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "n_penetrating_deeper_than_mm": {
+     "0.01": 0,
+     "0.05": 0,
+     "0.1": 0,
+     "0.5": 0
+    }
+   },
+   "per_b_part": {
+    "base": {
+     "min_distance_mm": 0.2848980360883612,
+     "n_penetrating": 0
+    }
+   },
+   "worst_pairs": [
+    {
+     "geom_a": "v11_motor_0297",
+     "body_a": "motor",
+     "geom_b": "v11_base_0815",
+     "body_b": "base",
+     "distance_mm": 0.2848980360883612,
+     "method": "agree",
+     "mujoco_mm": 0.2848980360883612,
+     "fcl_mm": 0.28489803608835257,
+     "collidable": true
+    },
+    {
+     "geom_a": "v11_motor_0297",
+     "body_a": "motor",
+     "geom_b": "v11_base_0724",
+     "body_b": "base",
+     "distance_mm": 0.2855303500063141,
+     "method": "agree",
+     "mujoco_mm": 0.2855303500063141,
+     "fcl_mm": 0.28553035000629945,
+     "collidable": true
+    },
+    {
+     "geom_a": "v11_motor_0382",
+     "body_a": "motor",
+     "geom_b": "v11_base_0865",
+     "body_b": "base",
+     "distance_mm": 0.2897283515344695,
+     "method": "agree",
+     "mujoco_mm": 0.2897283515344695,
+     "fcl_mm": 0.2897283515344533,
+     "collidable": true
+    },
+    {
+     "geom_a": "v11_motor_0303",
+     "body_a": "motor",
+     "geom_b": "v11_base_0777",
+     "body_b": "base",
+     "distance_mm": 0.2911017756110219,
+     "method": "agree",
+     "mujoco_mm": 0.2911017756110219,
+     "fcl_mm": 0.29110177561102846,
+     "collidable": true
+    },
+    {
+     "geom_a": "v11_motor_0424",
+     "body_a": "motor",
+     "geom_b": "v11_base_0122",
+     "body_b": "base",
+     "distance_mm": 0.29125143020103167,
+     "method": "agree",
+     "mujoco_mm": 0.29125143020103167,
+     "fcl_mm": 0.2912514302009937,
+     "collidable": true
+    }
+   ],
+   "wall_s": 3.7048134710639715
+  },
+  "shoulder_m2": {
+   "a": [
+    "motor_2"
+   ],
+   "b": [
+    "base",
+    "motor",
+    "holder",
+    "shoulder_fork",
+    "shoulder_seat"
+   ],
+   "n_geoms_a": 753,
+   "n_geoms_b": 4207,
+   "n_geom_pairs_total": 3167871,
+   "n_agree": 6074,
+   "n_exact": 178,
+   "n_unresolved": 6,
+   "n_mujoco_exact_zero": 170,
+   "resolved": {
+    "n_pairs": 6258,
+    "min_distance_mm": 0.02556933999879948,
+    "capped": false,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "n_penetrating_deeper_than_mm": {
+     "0.01": 0,
+     "0.05": 0,
+     "0.1": 0,
+     "0.5": 0
+    }
+   },
+   "resolved_collidable": {
+    "n_pairs": 6258,
+    "min_distance_mm": 0.02556933999879948,
+    "capped": false,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "n_penetrating_deeper_than_mm": {
+     "0.01": 0,
+     "0.05": 0,
+     "0.1": 0,
+     "0.5": 0
+    }
+   },
+   "mujoco": {
+    "n_pairs": 6258,
+    "min_distance_mm": 0.0,
+    "capped": false,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "n_penetrating_deeper_than_mm": {
+     "0.01": 0,
+     "0.05": 0,
+     "0.1": 0,
+     "0.5": 0
+    }
+   },
+   "fcl": {
+    "n_pairs": 6258,
+    "min_distance_mm": 0.02556933999879963,
+    "capped": false,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "n_penetrating_deeper_than_mm": {
+     "0.01": 0,
+     "0.05": 0,
+     "0.1": 0,
+     "0.5": 0
+    }
+   },
+   "per_b_part": {
+    "shoulder_fork": {
+     "min_distance_mm": 0.02556933999879948,
+     "n_penetrating": 0
+    },
+    "shoulder_seat": {
+     "min_distance_mm": 0.040983068624774,
+     "n_penetrating": 0
+    }
+   },
+   "worst_pairs": [
+    {
+     "geom_a": "v11_motor_2_0280",
+     "body_a": "motor_2",
+     "geom_b": "v11_shoulder_fork_0747",
+     "body_b": "shoulder_fork",
+     "distance_mm": 0.02556933999879948,
+     "method": "exact",
+     "mujoco_mm": 0.02556933999879224,
+     "fcl_mm": 0.02556933999879963,
+     "collidable": true
+    },
+    {
+     "geom_a": "v11_motor_2_0451",
+     "body_a": "motor_2",
+     "geom_b": "v11_shoulder_fork_0747",
+     "body_b": "shoulder_fork",
+     "distance_mm": 0.025601661999155003,
+     "method": "exact",
+     "mujoco_mm": 0.025601661999152855,
+     "fcl_mm": 0.02560166199915514,
+     "collidable": true
+    },
+    {
+     "geom_a": "v11_motor_2_0005",
+     "body_a": "motor_2",
+     "geom_b": "v11_shoulder_fork_0778",
+     "body_b": "shoulder_fork",
+     "distance_mm": 0.025821524490365663,
+     "method": "exact",
+     "mujoco_mm": 0.025821524490360938,
+     "fcl_mm": 0.025821524490359668,
+     "collidable": true
+    },
+    {
+     "geom_a": "v11_motor_2_0203",
+     "body_a": "motor_2",
+     "geom_b": "v11_shoulder_fork_0778",
+     "body_b": "shoulder_fork",
+     "distance_mm": 0.025843524111460424,
+     "method": "exact",
+     "mujoco_mm": 0.0,
+     "fcl_mm": 0.02584352411145453,
+     "collidable": true
+    },
+    {
+     "geom_a": "v11_motor_2_0386",
+     "body_a": "motor_2",
+     "geom_b": "v11_shoulder_fork_0778",
+     "body_b": "shoulder_fork",
+     "distance_mm": 0.025843816815877243,
+     "method": "exact",
+     "mujoco_mm": 0.02584381681587626,
+     "fcl_mm": 0.025843816815871366,
+     "collidable": true
+    }
+   ],
+   "wall_s": 8.467052268097177
+  },
+  "shoulder_upper": {
+   "a": [
+    "upper_print"
+   ],
+   "b": [
+    "base",
+    "motor",
+    "holder",
+    "shoulder_fork",
+    "shoulder_seat",
+    "motor_2"
+   ],
+   "n_geoms_a": 1790,
+   "n_geoms_b": 4960,
+   "n_geom_pairs_total": 8878400,
+   "n_agree": 3524,
+   "n_exact": 88,
+   "n_unresolved": 0,
+   "n_mujoco_exact_zero": 87,
+   "resolved": {
+    "n_pairs": 3612,
+    "min_distance_mm": 0.019018364398447896,
+    "capped": false,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "n_penetrating_deeper_than_mm": {
+     "0.01": 0,
+     "0.05": 0,
+     "0.1": 0,
+     "0.5": 0
+    }
+   },
+   "resolved_collidable": {
+    "n_pairs": 3612,
+    "min_distance_mm": 0.019018364398447896,
+    "capped": false,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "n_penetrating_deeper_than_mm": {
+     "0.01": 0,
+     "0.05": 0,
+     "0.1": 0,
+     "0.5": 0
+    }
+   },
+   "mujoco": {
+    "n_pairs": 3612,
+    "min_distance_mm": 0.0,
+    "capped": false,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "n_penetrating_deeper_than_mm": {
+     "0.01": 0,
+     "0.05": 0,
+     "0.1": 0,
+     "0.5": 0
+    }
+   },
+   "fcl": {
+    "n_pairs": 3612,
+    "min_distance_mm": 0.019018364398451622,
+    "capped": false,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "n_penetrating_deeper_than_mm": {
+     "0.01": 0,
+     "0.05": 0,
+     "0.1": 0,
+     "0.5": 0
+    }
+   },
+   "per_b_part": {
+    "motor_2": {
+     "min_distance_mm": 0.019018364398447896,
+     "n_penetrating": 0
+    }
+   },
+   "worst_pairs": [
+    {
+     "geom_a": "v11_upper_print_0472",
+     "body_a": "upper_print",
+     "geom_b": "v11_motor_2_0533",
+     "body_b": "motor_2",
+     "distance_mm": 0.019018364398447896,
+     "method": "exact",
+     "mujoco_mm": 0.019018364398441488,
+     "fcl_mm": 0.019018364398451622,
+     "collidable": true
+    },
+    {
+     "geom_a": "v11_upper_print_0472",
+     "body_a": "upper_print",
+     "geom_b": "v11_motor_2_0664",
+     "body_b": "motor_2",
+     "distance_mm": 0.06881118353845385,
+     "method": "agree",
+     "mujoco_mm": 0.06881118353845385,
+     "fcl_mm": 0.06881118353847315,
+     "collidable": true
+    },
+    {
+     "geom_a": "v11_upper_print_0311",
+     "body_a": "upper_print",
+     "geom_b": "stock_0_motor_2_0004",
+     "body_b": "shoulder_lift_output",
+     "distance_mm": 0.07064497167427865,
+     "method": "agree",
+     "mujoco_mm": 0.07064497167427865,
+     "fcl_mm": 0.07064923328976813,
+     "collidable": true
+    },
+    {
+     "geom_a": "v11_upper_print_0159",
+     "body_a": "upper_print",
+     "geom_b": "v11_motor_2_0664",
+     "body_b": "motor_2",
+     "distance_mm": 0.07564401936180769,
+     "method": "agree",
+     "mujoco_mm": 0.07564401936180769,
+     "fcl_mm": 0.07564401936181454,
+     "collidable": true
+    },
+    {
+     "geom_a": "v11_upper_print_0064",
+     "body_a": "upper_print",
+     "geom_b": "v11_motor_2_0664",
+     "body_b": "motor_2",
+     "distance_mm": 0.07693656696829801,
+     "method": "agree",
+     "mujoco_mm": 0.07693656696829801,
+     "fcl_mm": 0.07693656696828739,
+     "collidable": true
+    }
+   ],
+   "wall_s": 5.95544168795459
+  },
+  "upper_m3": {
+   "a": [
+    "motor3"
+   ],
+   "b": [
+    "base",
+    "motor",
+    "holder",
+    "shoulder_fork",
+    "shoulder_seat",
+    "motor_2",
+    "upper_print"
+   ],
+   "n_geoms_a": 280,
+   "n_geoms_b": 6750,
+   "n_geom_pairs_total": 1890000,
+   "n_agree": 4483,
+   "n_exact": 147,
+   "n_unresolved": 0,
+   "n_mujoco_exact_zero": 135,
+   "resolved": {
+    "n_pairs": 4630,
+    "min_distance_mm": 0.023948579913579265,
+    "capped": false,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "n_penetrating_deeper_than_mm": {
+     "0.01": 0,
+     "0.05": 0,
+     "0.1": 0,
+     "0.5": 0
+    }
+   },
+   "resolved_collidable": {
+    "n_pairs": 4630,
+    "min_distance_mm": 0.023948579913579265,
+    "capped": false,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "n_penetrating_deeper_than_mm": {
+     "0.01": 0,
+     "0.05": 0,
+     "0.1": 0,
+     "0.5": 0
+    }
+   },
+   "mujoco": {
+    "n_pairs": 4630,
+    "min_distance_mm": 0.0,
+    "capped": false,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "n_penetrating_deeper_than_mm": {
+     "0.01": 0,
+     "0.05": 0,
+     "0.1": 0,
+     "0.5": 0
+    }
+   },
+   "fcl": {
+    "n_pairs": 4630,
+    "min_distance_mm": 0.023948590499011286,
+    "capped": false,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "n_penetrating_deeper_than_mm": {
+     "0.01": 0,
+     "0.05": 0,
+     "0.1": 0,
+     "0.5": 0
+    }
+   },
+   "per_b_part": {
+    "upper_print": {
+     "min_distance_mm": 0.023948579913579265,
+     "n_penetrating": 0
+    }
+   },
+   "worst_pairs": [
+    {
+     "geom_a": "stock_0_motor3_housing_087_121",
+     "body_a": "motor3",
+     "geom_b": "v11_upper_print_0674",
+     "body_b": "upper_print",
+     "distance_mm": 0.023948579913579265,
+     "method": "exact",
+     "mujoco_mm": 0.02394857991358495,
+     "fcl_mm": 0.02394903233667895,
+     "collidable": true
+    },
+    {
+     "geom_a": "stock_0_motor3_housing_088_122",
+     "body_a": "motor3",
+     "geom_b": "v11_upper_print_0674",
+     "body_b": "upper_print",
+     "distance_mm": 0.02394859049902704,
+     "method": "exact",
+     "mujoco_mm": 0.023948590499033078,
+     "fcl_mm": 0.023948590499011286,
+     "collidable": true
+    },
+    {
+     "geom_a": "stock_0_motor3_housing_086_120",
+     "body_a": "motor3",
+     "geom_b": "v11_upper_print_0674",
+     "body_b": "upper_print",
+     "distance_mm": 0.023949399333467767,
+     "method": "exact",
+     "mujoco_mm": 0.023949399333472496,
+     "fcl_mm": 0.02394966550263858,
+     "collidable": true
+    },
+    {
+     "geom_a": "stock_0_motor3_housing_085_119",
+     "body_a": "motor3",
+     "geom_b": "v11_upper_print_0674",
+     "body_b": "upper_print",
+     "distance_mm": 0.023950218771858774,
+     "method": "exact",
+     "mujoco_mm": 0.023950218771867034,
+     "fcl_mm": 0.02395045282020375,
+     "collidable": true
+    },
+    {
+     "geom_a": "stock_0_motor3_housing_084_118",
+     "body_a": "motor3",
+     "geom_b": "v11_upper_print_0674",
+     "body_b": "upper_print",
+     "distance_mm": 0.023951038210247456,
+     "method": "exact",
+     "mujoco_mm": 0.023951038210258603,
+     "fcl_mm": 0.02395103821022701,
+     "collidable": true
+    }
+   ],
+   "wall_s": 3.871794774895534
+  },
+  "m3_forearm": {
+   "a": [
+    "forearm"
+   ],
+   "b": [
+    "base",
+    "motor",
+    "holder",
+    "shoulder_fork",
+    "shoulder_seat",
+    "motor_2",
+    "upper_print",
+    "motor3"
+   ],
+   "n_geoms_a": 1403,
+   "n_geoms_b": 7030,
+   "n_geom_pairs_total": 9863090,
+   "n_agree": 4940,
+   "n_exact": 110,
+   "n_unresolved": 0,
+   "n_mujoco_exact_zero": 102,
+   "resolved": {
+    "n_pairs": 5050,
+    "min_distance_mm": 0.019412687033284408,
+    "capped": false,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "n_penetrating_deeper_than_mm": {
+     "0.01": 0,
+     "0.05": 0,
+     "0.1": 0,
+     "0.5": 0
+    }
+   },
+   "resolved_collidable": {
+    "n_pairs": 5050,
+    "min_distance_mm": 0.019412687033284408,
+    "capped": false,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "n_penetrating_deeper_than_mm": {
+     "0.01": 0,
+     "0.05": 0,
+     "0.1": 0,
+     "0.5": 0
+    }
+   },
+   "mujoco": {
+    "n_pairs": 5050,
+    "min_distance_mm": 0.0,
+    "capped": false,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "n_penetrating_deeper_than_mm": {
+     "0.01": 0,
+     "0.05": 0,
+     "0.1": 0,
+     "0.5": 0
+    }
+   },
+   "fcl": {
+    "n_pairs": 5050,
+    "min_distance_mm": 0.019412687033292974,
+    "capped": false,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "n_penetrating_deeper_than_mm": {
+     "0.01": 0,
+     "0.05": 0,
+     "0.1": 0,
+     "0.5": 0
+    }
+   },
+   "per_b_part": {
+    "motor3": {
+     "min_distance_mm": 0.019412687033284408,
+     "n_penetrating": 0
+    }
+   },
+   "worst_pairs": [
+    {
+     "geom_a": "v11_forearm_0378",
+     "body_a": "forearm",
+     "geom_b": "stock_0_motor3_drive_horn_185_034",
+     "body_b": "motor3_output",
+     "distance_mm": 0.019412687033284408,
+     "method": "exact",
+     "mujoco_mm": 0.0,
+     "fcl_mm": 0.019412687033292974,
+     "collidable": true
+    },
+    {
+     "geom_a": "v11_forearm_0368",
+     "body_a": "forearm",
+     "geom_b": "stock_0_motor3_drive_horn_185_034",
+     "body_b": "motor3_output",
+     "distance_mm": 0.03383548601815193,
+     "method": "exact",
+     "mujoco_mm": 0.03383548601813836,
+     "fcl_mm": 0.03383548601814905,
+     "collidable": true
+    },
+    {
+     "geom_a": "v11_forearm_0408",
+     "body_a": "forearm",
+     "geom_b": "stock_0_motor3_drive_horn_186_035",
+     "body_b": "motor3_output",
+     "distance_mm": 0.03871300131235579,
+     "method": "exact",
+     "mujoco_mm": 0.038713001312355416,
+     "fcl_mm": 0.03871300131234587,
+     "collidable": true
+    },
+    {
+     "geom_a": "v11_forearm_0140",
+     "body_a": "forearm",
+     "geom_b": "stock_0_motor3_drive_horn_186_035",
+     "body_b": "motor3_output",
+     "distance_mm": 0.039209255135597997,
+     "method": "exact",
+     "mujoco_mm": 0.03920925513560023,
+     "fcl_mm": 0.039209255135598586,
+     "collidable": true
+    },
+    {
+     "geom_a": "v11_forearm_0073",
+     "body_a": "forearm",
+     "geom_b": "stock_0_motor3_drive_horn_186_035",
+     "body_b": "motor3_output",
+     "distance_mm": 0.04185103266889494,
+     "method": "exact",
+     "mujoco_mm": 0.04185103266890117,
+     "fcl_mm": 0.04185103266889782,
+     "collidable": true
+    }
+   ],
+   "wall_s": 4.098661861149594
+  },
+  "forearm_holder": {
+   "a": [
+    "forearm_holder"
+   ],
+   "b": [
+    "base",
+    "motor",
+    "holder",
+    "shoulder_fork",
+    "shoulder_seat",
+    "motor_2",
+    "upper_print",
+    "motor3",
+    "forearm"
+   ],
+   "n_geoms_a": 1377,
+   "n_geoms_b": 8433,
+   "n_geom_pairs_total": 11612241,
+   "n_agree": 3988,
+   "n_exact": 85,
+   "n_unresolved": 1,
+   "n_mujoco_exact_zero": 63,
+   "resolved": {
+    "n_pairs": 4074,
+    "min_distance_mm": 0.015588893505742472,
+    "capped": false,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "n_penetrating_deeper_than_mm": {
+     "0.01": 0,
+     "0.05": 0,
+     "0.1": 0,
+     "0.5": 0
+    }
+   },
+   "resolved_collidable": {
+    "n_pairs": 4074,
+    "min_distance_mm": 0.015588893505742472,
+    "capped": false,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "n_penetrating_deeper_than_mm": {
+     "0.01": 0,
+     "0.05": 0,
+     "0.1": 0,
+     "0.5": 0
+    }
+   },
+   "mujoco": {
+    "n_pairs": 4074,
+    "min_distance_mm": 0.0,
+    "capped": false,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "n_penetrating_deeper_than_mm": {
+     "0.01": 0,
+     "0.05": 0,
+     "0.1": 0,
+     "0.5": 0
+    }
+   },
+   "fcl": {
+    "n_pairs": 4074,
+    "min_distance_mm": 0.015588893505750333,
+    "capped": false,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "n_penetrating_deeper_than_mm": {
+     "0.01": 0,
+     "0.05": 0,
+     "0.1": 0,
+     "0.5": 0
+    }
+   },
+   "per_b_part": {
+    "forearm": {
+     "min_distance_mm": 0.015588893505742472,
+     "n_penetrating": 0
+    }
+   },
+   "worst_pairs": [
+    {
+     "geom_a": "v11_forearm_holder_0091",
+     "body_a": "forearm_holder",
+     "geom_b": "v11_forearm_1182",
+     "body_b": "forearm",
+     "distance_mm": 0.015588893505742472,
+     "method": "exact",
+     "mujoco_mm": 0.015588893505736494,
+     "fcl_mm": 0.015588893505750333,
+     "collidable": true
+    },
+    {
+     "geom_a": "v11_forearm_holder_0091",
+     "body_a": "forearm_holder",
+     "geom_b": "v11_forearm_0862",
+     "body_b": "forearm",
+     "distance_mm": 0.015630223797019654,
+     "method": "exact",
+     "mujoco_mm": 0.015630223797025382,
+     "fcl_mm": 0.015630223796983898,
+     "collidable": true
+    },
+    {
+     "geom_a": "v11_forearm_holder_0091",
+     "body_a": "forearm_holder",
+     "geom_b": "v11_forearm_0869",
+     "body_b": "forearm",
+     "distance_mm": 0.015643525211776085,
+     "method": "exact",
+     "mujoco_mm": 0.015643525211743933,
+     "fcl_mm": 0.015643525211707508,
+     "collidable": true
+    },
+    {
+     "geom_a": "v11_forearm_holder_0037",
+     "body_a": "forearm_holder",
+     "geom_b": "v11_forearm_0708",
+     "body_b": "forearm",
+     "distance_mm": 0.0164890787078473,
+     "method": "exact",
+     "mujoco_mm": 0.01648907870781671,
+     "fcl_mm": 0.0164890787078473,
+     "collidable": true
+    },
+    {
+     "geom_a": "v11_forearm_holder_0108",
+     "body_a": "forearm_holder",
+     "geom_b": "v11_forearm_0708",
+     "body_b": "forearm",
+     "distance_mm": 0.016489084515218102,
+     "method": "exact",
+     "mujoco_mm": 0.016489084515211312,
+     "fcl_mm": 0.016489084515218102,
+     "collidable": true
+    }
+   ],
+   "wall_s": 6.7396761840209365
+  },
+  "forearm_m4": {
+   "a": [
+    "motor4"
+   ],
+   "b": [
+    "base",
+    "motor",
+    "holder",
+    "shoulder_fork",
+    "shoulder_seat",
+    "motor_2",
+    "upper_print",
+    "motor3",
+    "forearm",
+    "forearm_holder"
+   ],
+   "n_geoms_a": 280,
+   "n_geoms_b": 9810,
+   "n_geom_pairs_total": 2746800,
+   "n_agree": 5531,
+   "n_exact": 120,
+   "n_unresolved": 0,
+   "n_mujoco_exact_zero": 118,
+   "resolved": {
+    "n_pairs": 5651,
+    "min_distance_mm": 0.019385090604509127,
+    "capped": false,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "n_penetrating_deeper_than_mm": {
+     "0.01": 0,
+     "0.05": 0,
+     "0.1": 0,
+     "0.5": 0
+    }
+   },
+   "resolved_collidable": {
+    "n_pairs": 5651,
+    "min_distance_mm": 0.019385090604509127,
+    "capped": false,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "n_penetrating_deeper_than_mm": {
+     "0.01": 0,
+     "0.05": 0,
+     "0.1": 0,
+     "0.5": 0
+    }
+   },
+   "mujoco": {
+    "n_pairs": 5651,
+    "min_distance_mm": 0.0,
+    "capped": false,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "n_penetrating_deeper_than_mm": {
+     "0.01": 0,
+     "0.05": 0,
+     "0.1": 0,
+     "0.5": 0
+    }
+   },
+   "fcl": {
+    "n_pairs": 5651,
+    "min_distance_mm": 0.019385090604396037,
+    "capped": false,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "n_penetrating_deeper_than_mm": {
+     "0.01": 0,
+     "0.05": 0,
+     "0.1": 0,
+     "0.5": 0
+    }
+   },
+   "per_b_part": {
+    "forearm": {
+     "min_distance_mm": 0.04670470135653981,
+     "n_penetrating": 0
+    },
+    "forearm_holder": {
+     "min_distance_mm": 0.019385090604509127,
+     "n_penetrating": 0
+    }
+   },
+   "worst_pairs": [
+    {
+     "geom_a": "stock_1_motor4_housing_086_120",
+     "body_a": "motor4",
+     "geom_b": "v11_forearm_holder_0098",
+     "body_b": "forearm_holder",
+     "distance_mm": 0.019385090604509127,
+     "method": "exact",
+     "mujoco_mm": 0.019385090604497883,
+     "fcl_mm": 0.019385090604396037,
+     "collidable": true
+    },
+    {
+     "geom_a": "stock_1_motor4_housing_155_203",
+     "body_a": "motor4",
+     "geom_b": "v11_forearm_0427",
+     "body_b": "forearm",
+     "distance_mm": 0.04670470135653981,
+     "method": "exact",
+     "mujoco_mm": 0.04670470135651661,
+     "fcl_mm": 0.046704725465985725,
+     "collidable": true
+    },
+    {
+     "geom_a": "stock_1_motor4_housing_109_144",
+     "body_a": "motor4",
+     "geom_b": "v11_forearm_0005",
+     "body_b": "forearm",
+     "distance_mm": 0.07715420273227258,
+     "method": "agree",
+     "mujoco_mm": 0.07715420273227258,
+     "fcl_mm": 0.07715420273228084,
+     "collidable": true
+    },
+    {
+     "geom_a": "stock_1_motor4_housing_154_202",
+     "body_a": "motor4",
+     "geom_b": "v11_forearm_0427",
+     "body_b": "forearm",
+     "distance_mm": 0.0835951303710473,
+     "method": "agree",
+     "mujoco_mm": 0.0835951303710473,
+     "fcl_mm": 0.08359513037106094,
+     "collidable": true
+    },
+    {
+     "geom_a": "stock_1_motor4_housing_155_203",
+     "body_a": "motor4",
+     "geom_b": "v11_forearm_0434",
+     "body_b": "forearm",
+     "distance_mm": 0.09833850772294264,
+     "method": "agree",
+     "mujoco_mm": 0.09833850772294264,
+     "fcl_mm": 0.09833850772314506,
+     "collidable": true
+    }
+   ],
+   "wall_s": 4.445658610202372
+  },
+  "wrist_mount": {
+   "a": [
+    "wrist_shell"
+   ],
+   "b": [
+    "base",
+    "motor",
+    "holder",
+    "shoulder_fork",
+    "shoulder_seat",
+    "motor_2",
+    "upper_print",
+    "motor3",
+    "forearm",
+    "forearm_holder",
+    "motor4"
+   ],
+   "n_geoms_a": 1593,
+   "n_geoms_b": 10090,
+   "n_geom_pairs_total": 16073370,
+   "n_agree": 5192,
+   "n_exact": 142,
+   "n_unresolved": 0,
+   "n_mujoco_exact_zero": 142,
+   "resolved": {
+    "n_pairs": 5334,
+    "min_distance_mm": 0.1352526743170878,
+    "capped": false,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "n_penetrating_deeper_than_mm": {
+     "0.01": 0,
+     "0.05": 0,
+     "0.1": 0,
+     "0.5": 0
+    }
+   },
+   "resolved_collidable": {
+    "n_pairs": 5334,
+    "min_distance_mm": 0.1352526743170878,
+    "capped": false,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "n_penetrating_deeper_than_mm": {
+     "0.01": 0,
+     "0.05": 0,
+     "0.1": 0,
+     "0.5": 0
+    }
+   },
+   "mujoco": {
+    "n_pairs": 5334,
+    "min_distance_mm": 0.0,
+    "capped": false,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "n_penetrating_deeper_than_mm": {
+     "0.01": 0,
+     "0.05": 0,
+     "0.1": 0,
+     "0.5": 0
+    }
+   },
+   "fcl": {
+    "n_pairs": 5334,
+    "min_distance_mm": 0.13525267431708465,
+    "capped": false,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "n_penetrating_deeper_than_mm": {
+     "0.01": 0,
+     "0.05": 0,
+     "0.1": 0,
+     "0.5": 0
+    }
+   },
+   "per_b_part": {
+    "motor4": {
+     "min_distance_mm": 0.1352526743170878,
+     "n_penetrating": 0
+    }
+   },
+   "worst_pairs": [
+    {
+     "geom_a": "v11_wrist_shell_0444",
+     "body_a": "wrist_shell",
+     "geom_b": "stock_1_motor4_drive_horn_185_034",
+     "body_b": "motor4_output",
+     "distance_mm": 0.1352526743170878,
+     "method": "agree",
+     "mujoco_mm": 0.1352526743170878,
+     "fcl_mm": 0.13525267431708465,
+     "collidable": true
+    },
+    {
+     "geom_a": "v11_wrist_shell_1381",
+     "body_a": "wrist_shell",
+     "geom_b": "stock_1_motor4_drive_horn_185_034",
+     "body_b": "motor4_output",
+     "distance_mm": 0.1799964014513248,
+     "method": "agree",
+     "mujoco_mm": 0.1799964014513248,
+     "fcl_mm": 0.1799964099315671,
+     "collidable": true
+    },
+    {
+     "geom_a": "v11_wrist_shell_1379",
+     "body_a": "wrist_shell",
+     "geom_b": "stock_1_motor4_drive_horn_185_034",
+     "body_b": "motor4_output",
+     "distance_mm": 0.17999845532519615,
+     "method": "agree",
+     "mujoco_mm": 0.17999845532519615,
+     "fcl_mm": 0.17999845537558246,
+     "collidable": true
+    },
+    {
+     "geom_a": "v11_wrist_shell_1574",
+     "body_a": "wrist_shell",
+     "geom_b": "stock_1_motor4_drive_horn_183_032",
+     "body_b": "motor4_output",
+     "distance_mm": 0.1799990623199781,
+     "method": "agree",
+     "mujoco_mm": 0.1799990623199781,
+     "fcl_mm": 0.1799990623613559,
+     "collidable": true
+    },
+    {
+     "geom_a": "v11_wrist_shell_1471",
+     "body_a": "wrist_shell",
+     "geom_b": "stock_1_motor4_drive_horn_186_035",
+     "body_b": "motor4_output",
+     "distance_mm": 0.17999923669878057,
+     "method": "agree",
+     "mujoco_mm": 0.17999923669878057,
+     "fcl_mm": 0.17999923669880008,
+     "collidable": true
+    }
+   ],
+   "wall_s": 5.645456143189222
+  },
+  "wrist_motor5": {
+   "a": [
+    "motor5"
+   ],
+   "b": [
+    "base",
+    "motor",
+    "holder",
+    "shoulder_fork",
+    "shoulder_seat",
+    "motor_2",
+    "upper_print",
+    "motor3",
+    "forearm",
+    "forearm_holder",
+    "motor4",
+    "wrist_shell"
+   ],
+   "n_geoms_a": 860,
+   "n_geoms_b": 11683,
+   "n_geom_pairs_total": 10047380,
+   "n_agree": 2434,
+   "n_exact": 110,
+   "n_unresolved": 1,
+   "n_mujoco_exact_zero": 111,
+   "resolved": {
+    "n_pairs": 2545,
+    "min_distance_mm": 0.05749027922685137,
+    "capped": false,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "n_penetrating_deeper_than_mm": {
+     "0.01": 0,
+     "0.05": 0,
+     "0.1": 0,
+     "0.5": 0
+    }
+   },
+   "resolved_collidable": {
+    "n_pairs": 2545,
+    "min_distance_mm": 0.05749027922685137,
+    "capped": false,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "n_penetrating_deeper_than_mm": {
+     "0.01": 0,
+     "0.05": 0,
+     "0.1": 0,
+     "0.5": 0
+    }
+   },
+   "mujoco": {
+    "n_pairs": 2545,
+    "min_distance_mm": 0.0,
+    "capped": false,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "n_penetrating_deeper_than_mm": {
+     "0.01": 0,
+     "0.05": 0,
+     "0.1": 0,
+     "0.5": 0
+    }
+   },
+   "fcl": {
+    "n_pairs": 2545,
+    "min_distance_mm": 0.05749027922685111,
+    "capped": false,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "n_penetrating_deeper_than_mm": {
+     "0.01": 0,
+     "0.05": 0,
+     "0.1": 0,
+     "0.5": 0
+    }
+   },
+   "per_b_part": {
+    "wrist_shell": {
+     "min_distance_mm": 0.05749027922685137,
+     "n_penetrating": 0
+    }
+   },
+   "worst_pairs": [
+    {
+     "geom_a": "stock_2_motor5_housing_188",
+     "body_a": "motor5",
+     "geom_b": "v11_wrist_shell_0468",
+     "body_b": "wrist_shell",
+     "distance_mm": 0.05749027922685137,
+     "method": "agree",
+     "mujoco_mm": 0.05749027922685137,
+     "fcl_mm": 0.05749027922685111,
+     "collidable": true
+    },
+    {
+     "geom_a": "stock_2_motor5_housing_124",
+     "body_a": "motor5",
+     "geom_b": "v11_wrist_shell_0480",
+     "body_b": "wrist_shell",
+     "distance_mm": 0.06563412640604104,
+     "method": "agree",
+     "mujoco_mm": 0.06563412640604104,
+     "fcl_mm": 0.06563412640601157,
+     "collidable": true
+    },
+    {
+     "geom_a": "stock_2_motor5_housing_125",
+     "body_a": "motor5",
+     "geom_b": "v11_wrist_shell_0480",
+     "body_b": "wrist_shell",
+     "distance_mm": 0.06563648166716075,
+     "method": "agree",
+     "mujoco_mm": 0.06563648166716075,
+     "fcl_mm": 0.06563876083888036,
+     "collidable": true
+    },
+    {
+     "geom_a": "stock_2_motor5_housing_126",
+     "body_a": "motor5",
+     "geom_b": "v11_wrist_shell_0480",
+     "body_b": "wrist_shell",
+     "distance_mm": 0.06563908272018823,
+     "method": "agree",
+     "mujoco_mm": 0.06563908272018823,
+     "fcl_mm": 0.06564126854750056,
+     "collidable": true
+    },
+    {
+     "geom_a": "stock_2_motor5_housing_127",
+     "body_a": "motor5",
+     "geom_b": "v11_wrist_shell_0480",
+     "body_b": "wrist_shell",
+     "distance_mm": 0.06564168377327624,
+     "method": "agree",
+     "mujoco_mm": 0.06564168377327624,
+     "fcl_mm": 0.06564168377327197,
+     "collidable": true
+    }
+   ],
+   "wall_s": 7.252425391925499
+  },
+  "wrist_end_frame": {
+   "a": [
+    "frame"
+   ],
+   "b": [
+    "base",
+    "motor",
+    "holder",
+    "shoulder_fork",
+    "shoulder_seat",
+    "motor_2",
+    "upper_print",
+    "motor3",
+    "forearm",
+    "forearm_holder",
+    "motor4",
+    "wrist_shell",
+    "motor5"
+   ],
+   "n_geoms_a": 1952,
+   "n_geoms_b": 12543,
+   "n_geom_pairs_total": 24483936,
+   "n_agree": 21465,
+   "n_exact": 134,
+   "n_unresolved": 0,
+   "n_mujoco_exact_zero": 133,
+   "resolved": {
+    "n_pairs": 21599,
+    "min_distance_mm": 0.024494260511746517,
+    "capped": false,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "n_penetrating_deeper_than_mm": {
+     "0.01": 0,
+     "0.05": 0,
+     "0.1": 0,
+     "0.5": 0
+    }
+   },
+   "resolved_collidable": {
+    "n_pairs": 21599,
+    "min_distance_mm": 0.024494260511746517,
+    "capped": false,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "n_penetrating_deeper_than_mm": {
+     "0.01": 0,
+     "0.05": 0,
+     "0.1": 0,
+     "0.5": 0
+    }
+   },
+   "mujoco": {
+    "n_pairs": 21599,
+    "min_distance_mm": 0.0,
+    "capped": false,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "n_penetrating_deeper_than_mm": {
+     "0.01": 0,
+     "0.05": 0,
+     "0.1": 0,
+     "0.5": 0
+    }
+   },
+   "fcl": {
+    "n_pairs": 21599,
+    "min_distance_mm": 0.024494260511718387,
+    "capped": false,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "n_penetrating_deeper_than_mm": {
+     "0.01": 0,
+     "0.05": 0,
+     "0.1": 0,
+     "0.5": 0
+    }
+   },
+   "per_b_part": {
+    "motor5": {
+     "min_distance_mm": 0.024494260511746517,
+     "n_penetrating": 0
+    },
+    "wrist_shell": {
+     "min_distance_mm": 0.2725996523027454,
+     "n_penetrating": 0
+    }
+   },
+   "worst_pairs": [
+    {
+     "geom_a": "v11_frame_0386",
+     "body_a": "frame",
+     "geom_b": "motor5_disc_section_324",
+     "body_b": "motor5_output",
+     "distance_mm": 0.024494260511746517,
+     "method": "exact",
+     "mujoco_mm": 0.024494260511735092,
+     "fcl_mm": 0.024494260511718387,
+     "collidable": true
+    },
+    {
+     "geom_a": "v11_frame_0785",
+     "body_a": "frame",
+     "geom_b": "motor5_disc_section_20",
+     "body_b": "motor5_output",
+     "distance_mm": 0.056337329536079964,
+     "method": "agree",
+     "mujoco_mm": 0.056337329536079964,
+     "fcl_mm": 0.056337329536056385,
+     "collidable": true
+    },
+    {
+     "geom_a": "v11_frame_0884",
+     "body_a": "frame",
+     "geom_b": "motor5_disc_section_208",
+     "body_b": "motor5_output",
+     "distance_mm": 0.09556436752538604,
+     "method": "agree",
+     "mujoco_mm": 0.09556436752538604,
+     "fcl_mm": 0.09556436752540211,
+     "collidable": true
+    },
+    {
+     "geom_a": "v11_frame_0884",
+     "body_a": "frame",
+     "geom_b": "motor5_disc_section_96",
+     "body_b": "motor5_output",
+     "distance_mm": 0.09991022132422027,
+     "method": "agree",
+     "mujoco_mm": 0.09991022132422027,
+     "fcl_mm": 0.09991022132423079,
+     "collidable": true
+    },
+    {
+     "geom_a": "v11_frame_0813",
+     "body_a": "frame",
+     "geom_b": "motor5_disc_section_44",
+     "body_b": "motor5_output",
+     "distance_mm": 0.10043423089664391,
+     "method": "agree",
+     "mujoco_mm": 0.10043423089664391,
+     "fcl_mm": 0.10043423089667314,
+     "collidable": true
+    }
+   ],
+   "wall_s": 6.42912349710241
+  },
+  "end_frame_motor6": {
+   "a": [
+    "housing"
+   ],
+   "b": [
+    "base",
+    "motor",
+    "holder",
+    "shoulder_fork",
+    "shoulder_seat",
+    "motor_2",
+    "upper_print",
+    "motor3",
+    "forearm",
+    "forearm_holder",
+    "motor4",
+    "wrist_shell",
+    "motor5",
+    "frame"
+   ],
+   "n_geoms_a": 371,
+   "n_geoms_b": 14495,
+   "n_geom_pairs_total": 5377645,
+   "n_agree": 5710,
+   "n_exact": 213,
+   "n_unresolved": 0,
+   "n_mujoco_exact_zero": 212,
+   "resolved": {
+    "n_pairs": 5923,
+    "min_distance_mm": 0.09997423126785193,
+    "capped": false,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "n_penetrating_deeper_than_mm": {
+     "0.01": 0,
+     "0.05": 0,
+     "0.1": 0,
+     "0.5": 0
+    }
+   },
+   "resolved_collidable": {
+    "n_pairs": 5923,
+    "min_distance_mm": 0.09997423126785193,
+    "capped": false,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "n_penetrating_deeper_than_mm": {
+     "0.01": 0,
+     "0.05": 0,
+     "0.1": 0,
+     "0.5": 0
+    }
+   },
+   "mujoco": {
+    "n_pairs": 5923,
+    "min_distance_mm": 0.0,
+    "capped": false,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "n_penetrating_deeper_than_mm": {
+     "0.01": 0,
+     "0.05": 0,
+     "0.1": 0,
+     "0.5": 0
+    }
+   },
+   "fcl": {
+    "n_pairs": 5923,
+    "min_distance_mm": 0.09997423126783647,
+    "capped": false,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "n_penetrating_deeper_than_mm": {
+     "0.01": 0,
+     "0.05": 0,
+     "0.1": 0,
+     "0.5": 0
+    }
+   },
+   "per_b_part": {
+    "frame": {
+     "min_distance_mm": 0.09997423126785193,
+     "n_penetrating": 0
+    }
+   },
+   "worst_pairs": [
+    {
+     "geom_a": "stock_3_housing_contact_179",
+     "body_a": "housing",
+     "geom_b": "v11_frame_0764",
+     "body_b": "frame",
+     "distance_mm": 0.09997423126785193,
+     "method": "agree",
+     "mujoco_mm": 0.09997423126785193,
+     "fcl_mm": 0.09997423126783647,
+     "collidable": true
+    },
+    {
+     "geom_a": "stock_3_housing_contact_174",
+     "body_a": "housing",
+     "geom_b": "v11_frame_0764",
+     "body_b": "frame",
+     "distance_mm": 0.09997439765735563,
+     "method": "agree",
+     "mujoco_mm": 0.09997439765735563,
+     "fcl_mm": 0.09997632786894578,
+     "collidable": true
+    },
+    {
+     "geom_a": "stock_3_housing_contact_180",
+     "body_a": "housing",
+     "geom_b": "v11_frame_0834",
+     "body_b": "frame",
+     "distance_mm": 0.09997520319962303,
+     "method": "agree",
+     "mujoco_mm": 0.09997520319962303,
+     "fcl_mm": 0.09997526284399114,
+     "collidable": true
+    },
+    {
+     "geom_a": "stock_3_housing_contact_71",
+     "body_a": "housing",
+     "geom_b": "v11_frame_0779",
+     "body_b": "frame",
+     "distance_mm": 0.09997549177120504,
+     "method": "agree",
+     "mujoco_mm": 0.09997549177120504,
+     "fcl_mm": 0.09997549177684671,
+     "collidable": true
+    },
+    {
+     "geom_a": "stock_3_housing_contact_174",
+     "body_a": "housing",
+     "geom_b": "v11_frame_0779",
+     "body_b": "frame",
+     "distance_mm": 0.09998431723468779,
+     "method": "agree",
+     "mujoco_mm": 0.09998431723468779,
+     "fcl_mm": 0.09998431723468111,
+     "collidable": true
+    }
+   ],
+   "wall_s": 5.57549429195933
+  },
+  "end_frame_jaw": {
+   "a": [
+    "jaw"
+   ],
+   "b": [
+    "base",
+    "motor",
+    "holder",
+    "shoulder_fork",
+    "shoulder_seat",
+    "motor_2",
+    "upper_print",
+    "motor3",
+    "forearm",
+    "forearm_holder",
+    "motor4",
+    "wrist_shell",
+    "motor5",
+    "frame",
+    "housing"
+   ],
+   "n_geoms_a": 1056,
+   "n_geoms_b": 14866,
+   "n_geom_pairs_total": 15698496,
+   "n_agree": 2702,
+   "n_exact": 54,
+   "n_unresolved": 0,
+   "n_mujoco_exact_zero": 54,
+   "resolved": {
+    "n_pairs": 2756,
+    "min_distance_mm": 0.10817322614764123,
+    "capped": false,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "n_penetrating_deeper_than_mm": {
+     "0.01": 0,
+     "0.05": 0,
+     "0.1": 0,
+     "0.5": 0
+    }
+   },
+   "resolved_collidable": {
+    "n_pairs": 2756,
+    "min_distance_mm": 0.10817322614764123,
+    "capped": false,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "n_penetrating_deeper_than_mm": {
+     "0.01": 0,
+     "0.05": 0,
+     "0.1": 0,
+     "0.5": 0
+    }
+   },
+   "mujoco": {
+    "n_pairs": 2756,
+    "min_distance_mm": 0.0,
+    "capped": false,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "n_penetrating_deeper_than_mm": {
+     "0.01": 0,
+     "0.05": 0,
+     "0.1": 0,
+     "0.5": 0
+    }
+   },
+   "fcl": {
+    "n_pairs": 2756,
+    "min_distance_mm": 0.10817322614762825,
+    "capped": false,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "n_penetrating_deeper_than_mm": {
+     "0.01": 0,
+     "0.05": 0,
+     "0.1": 0,
+     "0.5": 0
+    }
+   },
+   "per_b_part": {
+    "housing": {
+     "min_distance_mm": 0.10817322614764123,
+     "n_penetrating": 0
+    },
+    "frame": {
+     "min_distance_mm": 0.7555069677788411,
+     "n_penetrating": 0
+    }
+   },
+   "worst_pairs": [
+    {
+     "geom_a": "v11_jaw_0538",
+     "body_a": "jaw",
+     "geom_b": "stock_3_disc_contact_0",
+     "body_b": "disc",
+     "distance_mm": 0.10817322614764123,
+     "method": "agree",
+     "mujoco_mm": 0.10817322614764123,
+     "fcl_mm": 0.10817322614762825,
+     "collidable": true
+    },
+    {
+     "geom_a": "v11_jaw_0233",
+     "body_a": "jaw",
+     "geom_b": "stock_3_disc_contact_0",
+     "body_b": "disc",
+     "distance_mm": 0.12388739140978713,
+     "method": "agree",
+     "mujoco_mm": 0.12388739140978713,
+     "fcl_mm": 0.12388742754672509,
+     "collidable": true
+    },
+    {
+     "geom_a": "v11_jaw_0393",
+     "body_a": "jaw",
+     "geom_b": "stock_3_housing_contact_101",
+     "body_b": "housing",
+     "distance_mm": 0.14718544781912934,
+     "method": "exact",
+     "mujoco_mm": 0.0,
+     "fcl_mm": 0.14718693950328635,
+     "collidable": true
+    },
+    {
+     "geom_a": "v11_jaw_0393",
+     "body_a": "jaw",
+     "geom_b": "stock_3_housing_contact_154",
+     "body_b": "housing",
+     "distance_mm": 0.14731591908022793,
+     "method": "agree",
+     "mujoco_mm": 0.14731591908022793,
+     "fcl_mm": 0.14731591908028813,
+     "collidable": true
+    },
+    {
+     "geom_a": "v11_jaw_0738",
+     "body_a": "jaw",
+     "geom_b": "stock_3_disc_contact_0",
+     "body_b": "disc",
+     "distance_mm": 0.1499988848025379,
+     "method": "agree",
+     "mujoco_mm": 0.1499988848025379,
+     "fcl_mm": 0.14999899786786947,
+     "collidable": true
+    }
+   ],
+   "wall_s": 5.206275627948344
+  },
+  "base_holder": {
+   "a": [
+    "holder"
+   ],
+   "b": [
+    "base",
+    "motor"
+   ],
+   "n_geoms_a": 519,
+   "n_geoms_b": 1877,
+   "n_geom_pairs_total": 974163,
+   "n_agree": 2070,
+   "n_exact": 226,
+   "n_unresolved": 4,
+   "n_mujoco_exact_zero": 109,
+   "resolved": {
+    "n_pairs": 2300,
+    "min_distance_mm": -0.009683955684135725,
+    "capped": false,
+    "n_penetrating": 22,
+    "max_penetration_mm": 0.009683955684135725,
+    "n_penetrating_deeper_than_mm": {
+     "0.01": 0,
+     "0.05": 0,
+     "0.1": 0,
+     "0.5": 0
+    }
+   },
+   "resolved_collidable": {
+    "n_pairs": 2300,
+    "min_distance_mm": -0.009683955684135725,
+    "capped": false,
+    "n_penetrating": 22,
+    "max_penetration_mm": 0.009683955684135725,
+    "n_penetrating_deeper_than_mm": {
+     "0.01": 0,
+     "0.05": 0,
+     "0.1": 0,
+     "0.5": 0
+    }
+   },
+   "mujoco": {
+    "n_pairs": 2300,
+    "min_distance_mm": -1.5239824524141852,
+    "capped": false,
+    "n_penetrating": 23,
+    "max_penetration_mm": 1.5239824524141852,
+    "n_penetrating_deeper_than_mm": {
+     "0.01": 1,
+     "0.05": 1,
+     "0.1": 1,
+     "0.5": 1
+    }
+   },
+   "fcl": {
+    "n_pairs": 2300,
+    "min_distance_mm": -13.504879785304084,
+    "capped": false,
+    "n_penetrating": 27,
+    "max_penetration_mm": 13.504879785304084,
+    "n_penetrating_deeper_than_mm": {
+     "0.01": 5,
+     "0.05": 5,
+     "0.1": 5,
+     "0.5": 5
+    }
+   },
+   "per_b_part": {
+    "base": {
+     "min_distance_mm": -0.009683955684135725,
+     "n_penetrating": 22
+    },
+    "motor": {
+     "min_distance_mm": 0.01854047876874168,
+     "n_penetrating": 0
+    }
+   },
+   "worst_pairs": [
+    {
+     "geom_a": "v11_holder_0093",
+     "body_a": "holder",
+     "geom_b": "v11_base_0899",
+     "body_b": "base",
+     "distance_mm": -0.009683955684135725,
+     "method": "exact",
+     "mujoco_mm": -0.009683955684134713,
+     "fcl_mm": -0.00968395557542804,
+     "collidable": true
+    },
+    {
+     "geom_a": "v11_holder_0093",
+     "body_a": "holder",
+     "geom_b": "v11_base_0897",
+     "body_b": "base",
+     "distance_mm": -0.009683839592322862,
+     "method": "exact",
+     "mujoco_mm": -0.009683839592320435,
+     "fcl_mm": -0.009683839592357479,
+     "collidable": true
+    },
+    {
+     "geom_a": "v11_holder_0093",
+     "body_a": "holder",
+     "geom_b": "v11_base_0662",
+     "body_b": "base",
+     "distance_mm": -0.009667503782576524,
+     "method": "exact",
+     "mujoco_mm": -0.009667503782575318,
+     "fcl_mm": -0.009667444349815783,
+     "collidable": true
+    },
+    {
+     "geom_a": "v11_holder_0119",
+     "body_a": "holder",
+     "geom_b": "v11_base_0902",
+     "body_b": "base",
+     "distance_mm": -0.009660645587954809,
+     "method": "exact",
+     "mujoco_mm": -0.009660645587955437,
+     "fcl_mm": -0.009660645587979744,
+     "collidable": true
+    },
+    {
+     "geom_a": "v11_holder_0119",
+     "body_a": "holder",
+     "geom_b": "v11_base_0080",
+     "body_b": "base",
+     "distance_mm": -0.009660307282054753,
+     "method": "exact",
+     "mujoco_mm": -0.009660307282050855,
+     "fcl_mm": -0.009660298732621267,
+     "collidable": true
+    }
+   ],
+   "wall_s": 12.593210366088897
+  }
+ },
+ "assembled": {
+  "qpos_from_interface": "end_frame_jaw",
+  "parts": [
+   "base",
+   "motor",
+   "holder",
+   "shoulder_fork",
+   "shoulder_seat",
+   "motor_2",
+   "upper_print",
+   "motor3",
+   "forearm",
+   "forearm_holder",
+   "motor4",
+   "wrist_shell",
+   "motor5",
+   "frame",
+   "housing",
+   "jaw"
+  ],
+  "n_part_pairs": 120,
+  "resolved": {
+   "n_pairs": 78163,
+   "min_distance_mm": -0.9076837399999762,
+   "n_penetrating": 691,
+   "max_penetration_mm": 0.9076837399999762,
+   "n_penetrating_deeper_than_mm": {
+    "0.01": 601,
+    "0.05": 378,
+    "0.1": 347,
+    "0.5": 199
+   },
+   "n_part_pairs_penetrating": 6
+  },
+  "resolved_collidable": {
+   "n_pairs": 78163,
+   "min_distance_mm": -0.9076837399999762,
+   "n_penetrating": 691,
+   "max_penetration_mm": 0.9076837399999762,
+   "n_penetrating_deeper_than_mm": {
+    "0.01": 601,
+    "0.05": 378,
+    "0.1": 347,
+    "0.5": 199
+   },
+   "n_part_pairs_penetrating": 6
+  },
+  "mujoco": {
+   "n_pairs": 78163,
+   "min_distance_mm": -2.7990112712865116,
+   "n_penetrating": 699,
+   "max_penetration_mm": 2.7990112712865116,
+   "n_penetrating_deeper_than_mm": {
+    "0.01": 602,
+    "0.05": 379,
+    "0.1": 348,
+    "0.5": 200
+   },
+   "n_part_pairs_penetrating": 6
+  },
+  "fcl": {
+   "n_pairs": 78163,
+   "min_distance_mm": -0.9076837399999701,
+   "n_penetrating": 691,
+   "max_penetration_mm": 0.9076837399999701,
+   "n_penetrating_deeper_than_mm": {
+    "0.01": 601,
+    "0.05": 378,
+    "0.1": 347,
+    "0.5": 199
+   },
+   "n_part_pairs_penetrating": 6
+  },
+  "n_agree": 75220,
+  "n_exact": 2916,
+  "n_unresolved": 27,
+  "n_mujoco_exact_zero": 1655,
+  "part_pairs": {
+   "base|motor": {
+    "min_distance_mm": 0.19381564872870688,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "mujoco_min_distance_mm": 0.0,
+    "fcl_min_distance_mm": 0.19381564872873097,
+    "worst_pairs": [
+     {
+      "geom_a": "v11_base_0885",
+      "body_a": "base",
+      "geom_b": "v11_motor_0424",
+      "body_b": "motor",
+      "distance_mm": 0.19381564872870688,
+      "method": "agree",
+      "mujoco_mm": 0.19381564872870688,
+      "fcl_mm": 0.19381564872873097,
+      "collidable": true
+     },
+     {
+      "geom_a": "v11_base_0360",
+      "body_a": "base",
+      "geom_b": "v11_motor_0424",
+      "body_b": "motor",
+      "distance_mm": 0.1939792706036313,
+      "method": "agree",
+      "mujoco_mm": 0.1939792706036313,
+      "fcl_mm": 0.19397927060365983,
+      "collidable": true
+     }
+    ]
+   },
+   "base|holder": {
+    "min_distance_mm": -0.010501565471649283,
+    "n_penetrating": 76,
+    "max_penetration_mm": 0.010501565471649283,
+    "mujoco_min_distance_mm": -2.7990112712865116,
+    "fcl_min_distance_mm": -0.010501565471649283,
+    "worst_pairs": [
+     {
+      "geom_a": "v11_base_0857",
+      "body_a": "base",
+      "geom_b": "v11_holder_0060",
+      "body_b": "holder",
+      "distance_mm": -0.010501565471649283,
+      "method": "unresolved",
+      "mujoco_mm": -0.010501604915505412,
+      "fcl_mm": -0.010501565471649283,
+      "collidable": true
+     },
+     {
+      "geom_a": "v11_base_0857",
+      "body_a": "base",
+      "geom_b": "v11_holder_0014",
+      "body_b": "holder",
+      "distance_mm": -0.01048057034230146,
+      "method": "unresolved",
+      "mujoco_mm": -0.010480570342317195,
+      "fcl_mm": -0.01048057034230146,
+      "collidable": true
+     }
+    ]
+   },
+   "motor|holder": {
+    "min_distance_mm": 0.06874108243495705,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "mujoco_min_distance_mm": 0.0,
+    "fcl_min_distance_mm": 0.0687410824349434,
+    "worst_pairs": [
+     {
+      "geom_a": "v11_motor_0424",
+      "body_a": "motor",
+      "geom_b": "v11_holder_0145",
+      "body_b": "holder",
+      "distance_mm": 0.06874108243495705,
+      "method": "agree",
+      "mujoco_mm": 0.06874108243495705,
+      "fcl_mm": 0.0687410824349434,
+      "collidable": true
+     },
+     {
+      "geom_a": "v11_motor_0424",
+      "body_a": "motor",
+      "geom_b": "v11_holder_0059",
+      "body_b": "holder",
+      "distance_mm": 0.07746047395283788,
+      "method": "agree",
+      "mujoco_mm": 0.07746047395283788,
+      "fcl_mm": 0.07746047395272311,
+      "collidable": true
+     }
+    ]
+   },
+   "motor|shoulder_fork": {
+    "min_distance_mm": -0.9076837399999762,
+    "n_penetrating": 355,
+    "max_penetration_mm": 0.9076837399999762,
+    "mujoco_min_distance_mm": -0.9076837399999763,
+    "fcl_min_distance_mm": -0.9076837399999701,
+    "worst_pairs": [
+     {
+      "geom_a": "v11_motor_output_0255",
+      "body_a": "motor_output",
+      "geom_b": "v11_shoulder_fork_0449",
+      "body_b": "shoulder_fork",
+      "distance_mm": -0.9076837399999762,
+      "method": "exact",
+      "mujoco_mm": -0.9076837399999763,
+      "fcl_mm": -0.9076837399999701,
+      "collidable": true
+     },
+     {
+      "geom_a": "v11_motor_output_0255",
+      "body_a": "motor_output",
+      "geom_b": "v11_shoulder_fork_0378",
+      "body_b": "shoulder_fork",
+      "distance_mm": -0.9072896702103379,
+      "method": "exact",
+      "mujoco_mm": -0.9072896702103377,
+      "fcl_mm": -0.9072896702103334,
+      "collidable": true
+     }
+    ]
+   },
+   "shoulder_fork|shoulder_seat": {
+    "min_distance_mm": -0.13468723861839943,
+    "n_penetrating": 241,
+    "max_penetration_mm": 0.13468723861839943,
+    "mujoco_min_distance_mm": -0.13468723861839074,
+    "fcl_min_distance_mm": -0.1346872386183873,
+    "worst_pairs": [
+     {
+      "geom_a": "v11_shoulder_fork_0473",
+      "body_a": "shoulder_fork",
+      "geom_b": "v11_shoulder_seat_0185",
+      "body_b": "shoulder_seat",
+      "distance_mm": -0.13468723861839943,
+      "method": "exact",
+      "mujoco_mm": -0.13468723861839074,
+      "fcl_mm": -0.1346872386183873,
+      "collidable": true
+     },
+     {
+      "geom_a": "v11_shoulder_fork_0621",
+      "body_a": "shoulder_fork",
+      "geom_b": "v11_shoulder_seat_0185",
+      "body_b": "shoulder_seat",
+      "distance_mm": -0.13468713065701504,
+      "method": "exact",
+      "mujoco_mm": -0.13468713065700794,
+      "fcl_mm": -0.13468713065701357,
+      "collidable": true
+     }
+    ]
+   },
+   "shoulder_fork|motor_2": {
+    "min_distance_mm": -0.014366942491382956,
+    "n_penetrating": 3,
+    "max_penetration_mm": 0.014366942491382956,
+    "mujoco_min_distance_mm": -0.014366942491384678,
+    "fcl_min_distance_mm": -0.01436694249135858,
+    "worst_pairs": [
+     {
+      "geom_a": "v11_shoulder_fork_0852",
+      "body_a": "shoulder_fork",
+      "geom_b": "v11_motor_2_0749",
+      "body_b": "motor_2",
+      "distance_mm": -0.014366942491382956,
+      "method": "exact",
+      "mujoco_mm": -0.014366942491384678,
+      "fcl_mm": -0.01436694249135858,
+      "collidable": true
+     },
+     {
+      "geom_a": "v11_shoulder_fork_0852",
+      "body_a": "shoulder_fork",
+      "geom_b": "v11_motor_2_0636",
+      "body_b": "motor_2",
+      "distance_mm": -0.010473693142241308,
+      "method": "exact",
+      "mujoco_mm": -0.010473693142241535,
+      "fcl_mm": -0.010473693142237924,
+      "collidable": true
+     }
+    ]
+   },
+   "shoulder_seat|motor_2": {
+    "min_distance_mm": 0.05908471793468086,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "mujoco_min_distance_mm": 0.0,
+    "fcl_min_distance_mm": 0.0590847179346727,
+    "worst_pairs": [
+     {
+      "geom_a": "v11_shoulder_seat_0165",
+      "body_a": "shoulder_seat",
+      "geom_b": "v11_motor_2_0704",
+      "body_b": "motor_2",
+      "distance_mm": 0.05908471793468086,
+      "method": "agree",
+      "mujoco_mm": 0.05908471793468086,
+      "fcl_mm": 0.0590847179346727,
+      "collidable": true
+     },
+     {
+      "geom_a": "v11_shoulder_seat_0165",
+      "body_a": "shoulder_seat",
+      "geom_b": "v11_motor_2_0692",
+      "body_b": "motor_2",
+      "distance_mm": 0.05908472834756399,
+      "method": "agree",
+      "mujoco_mm": 0.05908472834756399,
+      "fcl_mm": 0.059084728347562405,
+      "collidable": true
+     }
+    ]
+   },
+   "motor_2|upper_print": {
+    "min_distance_mm": -0.11410626570998667,
+    "n_penetrating": 8,
+    "max_penetration_mm": 0.11410626570998667,
+    "mujoco_min_distance_mm": -0.11410626570998247,
+    "fcl_min_distance_mm": -0.11410626570998747,
+    "worst_pairs": [
+     {
+      "geom_a": "v11_motor_2_0533",
+      "body_a": "motor_2",
+      "geom_b": "v11_upper_print_0472",
+      "body_b": "upper_print",
+      "distance_mm": -0.11410626570998667,
+      "method": "exact",
+      "mujoco_mm": -0.11410626570998247,
+      "fcl_mm": -0.11410626570998747,
+      "collidable": true
+     },
+     {
+      "geom_a": "v11_motor_2_0664",
+      "body_a": "motor_2",
+      "geom_b": "v11_upper_print_0159",
+      "body_b": "upper_print",
+      "distance_mm": -0.06121051441647205,
+      "method": "exact",
+      "mujoco_mm": -0.061210514416469984,
+      "fcl_mm": -0.061210514416472246,
+      "collidable": true
+     }
+    ]
+   },
+   "upper_print|motor3": {
+    "min_distance_mm": -0.12584096419078447,
+    "n_penetrating": 8,
+    "max_penetration_mm": 0.12584096419078447,
+    "mujoco_min_distance_mm": -0.12584096419078808,
+    "fcl_min_distance_mm": -0.12584096419081892,
+    "worst_pairs": [
+     {
+      "geom_a": "v11_upper_print_0674",
+      "body_a": "upper_print",
+      "geom_b": "stock_0_motor3_housing_084_118",
+      "body_b": "motor3",
+      "distance_mm": -0.12584096419078447,
+      "method": "exact",
+      "mujoco_mm": -0.12584096419078808,
+      "fcl_mm": -0.12584096419081892,
+      "collidable": true
+     },
+     {
+      "geom_a": "v11_upper_print_0674",
+      "body_a": "upper_print",
+      "geom_b": "stock_0_motor3_housing_085_119",
+      "body_b": "motor3",
+      "distance_mm": -0.12579615249923382,
+      "method": "exact",
+      "mujoco_mm": -0.12579615249923842,
+      "fcl_mm": -0.12579615249926526,
+      "collidable": true
+     }
+    ]
+   },
+   "motor3|forearm": {
+    "min_distance_mm": 0.01387116017510307,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "mujoco_min_distance_mm": 0.0,
+    "fcl_min_distance_mm": 0.013871160175103323,
+    "worst_pairs": [
+     {
+      "geom_a": "stock_0_motor3_idler_horn_011_004",
+      "body_a": "motor3_output",
+      "geom_b": "v11_forearm_0573",
+      "body_b": "forearm",
+      "distance_mm": 0.01387116017510307,
+      "method": "exact",
+      "mujoco_mm": 0.01387116017514776,
+      "fcl_mm": 0.013871160175103323,
+      "collidable": true
+     },
+     {
+      "geom_a": "stock_0_motor3_idler_horn_012_005",
+      "body_a": "motor3_output",
+      "geom_b": "v11_forearm_0533",
+      "body_b": "forearm",
+      "distance_mm": 0.01747982333806577,
+      "method": "exact",
+      "mujoco_mm": 0.0174798233380062,
+      "fcl_mm": 0.017479823338065813,
+      "collidable": true
+     }
+    ]
+   },
+   "forearm|forearm_holder": {
+    "min_distance_mm": 0.015588893505742473,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "mujoco_min_distance_mm": 0.0,
+    "fcl_min_distance_mm": 0.015588893505750339,
+    "worst_pairs": [
+     {
+      "geom_a": "v11_forearm_1182",
+      "body_a": "forearm",
+      "geom_b": "v11_forearm_holder_0091",
+      "body_b": "forearm_holder",
+      "distance_mm": 0.015588893505742473,
+      "method": "exact",
+      "mujoco_mm": 0.015588893505736494,
+      "fcl_mm": 0.015588893505750339,
+      "collidable": true
+     },
+     {
+      "geom_a": "v11_forearm_0862",
+      "body_a": "forearm",
+      "geom_b": "v11_forearm_holder_0091",
+      "body_b": "forearm_holder",
+      "distance_mm": 0.01563022379701965,
+      "method": "exact",
+      "mujoco_mm": 0.015630223797025382,
+      "fcl_mm": 0.015630223796983915,
+      "collidable": true
+     }
+    ]
+   },
+   "forearm|motor4": {
+    "min_distance_mm": 0.04670470135653981,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "mujoco_min_distance_mm": 0.0,
+    "fcl_min_distance_mm": 0.04670470135650823,
+    "worst_pairs": [
+     {
+      "geom_a": "v11_forearm_0427",
+      "body_a": "forearm",
+      "geom_b": "stock_1_motor4_housing_155_203",
+      "body_b": "motor4",
+      "distance_mm": 0.04670470135653981,
+      "method": "exact",
+      "mujoco_mm": 0.04670470135651661,
+      "fcl_mm": 0.04670470135650823,
+      "collidable": true
+     },
+     {
+      "geom_a": "v11_forearm_0005",
+      "body_a": "forearm",
+      "geom_b": "stock_1_motor4_housing_109_144",
+      "body_b": "motor4",
+      "distance_mm": 0.07715420273227258,
+      "method": "agree",
+      "mujoco_mm": 0.07715420273227258,
+      "fcl_mm": 0.07715420273228724,
+      "collidable": true
+     }
+    ]
+   },
+   "forearm_holder|motor4": {
+    "min_distance_mm": 0.019385090604494296,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "mujoco_min_distance_mm": 0.0,
+    "fcl_min_distance_mm": 0.019385090604396037,
+    "worst_pairs": [
+     {
+      "geom_a": "v11_forearm_holder_0098",
+      "body_a": "forearm_holder",
+      "geom_b": "stock_1_motor4_housing_086_120",
+      "body_b": "motor4",
+      "distance_mm": 0.019385090604494296,
+      "method": "exact",
+      "mujoco_mm": 0.019385090604497883,
+      "fcl_mm": 0.019385090604396037,
+      "collidable": true
+     },
+     {
+      "geom_a": "v11_forearm_holder_0038",
+      "body_a": "forearm_holder",
+      "geom_b": "stock_1_motor4_housing_130_178",
+      "body_b": "motor4",
+      "distance_mm": 0.13332498375441423,
+      "method": "agree",
+      "mujoco_mm": 0.13332498375441423,
+      "fcl_mm": 0.1333249837544117,
+      "collidable": true
+     }
+    ]
+   },
+   "motor4|wrist_shell": {
+    "min_distance_mm": 0.1352526743170878,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "mujoco_min_distance_mm": 0.0,
+    "fcl_min_distance_mm": 0.13525267431708465,
+    "worst_pairs": [
+     {
+      "geom_a": "stock_1_motor4_drive_horn_185_034",
+      "body_a": "motor4_output",
+      "geom_b": "v11_wrist_shell_0444",
+      "body_b": "wrist_shell",
+      "distance_mm": 0.1352526743170878,
+      "method": "agree",
+      "mujoco_mm": 0.1352526743170878,
+      "fcl_mm": 0.13525267431708465,
+      "collidable": true
+     },
+     {
+      "geom_a": "stock_1_motor4_drive_horn_185_034",
+      "body_a": "motor4_output",
+      "geom_b": "v11_wrist_shell_1381",
+      "body_b": "wrist_shell",
+      "distance_mm": 0.1799964014513248,
+      "method": "agree",
+      "mujoco_mm": 0.1799964014513248,
+      "fcl_mm": 0.17999642959638024,
+      "collidable": true
+     }
+    ]
+   },
+   "wrist_shell|motor5": {
+    "min_distance_mm": 0.05749027922685137,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "mujoco_min_distance_mm": 0.0,
+    "fcl_min_distance_mm": 0.0574902792268511,
+    "worst_pairs": [
+     {
+      "geom_a": "v11_wrist_shell_0468",
+      "body_a": "wrist_shell",
+      "geom_b": "stock_2_motor5_housing_188",
+      "body_b": "motor5",
+      "distance_mm": 0.05749027922685137,
+      "method": "agree",
+      "mujoco_mm": 0.05749027922685137,
+      "fcl_mm": 0.0574902792268511,
+      "collidable": true
+     },
+     {
+      "geom_a": "v11_wrist_shell_0480",
+      "body_a": "wrist_shell",
+      "geom_b": "stock_2_motor5_housing_124",
+      "body_b": "motor5",
+      "distance_mm": 0.06563412640604104,
+      "method": "agree",
+      "mujoco_mm": 0.06563412640604104,
+      "fcl_mm": 0.06563412640601154,
+      "collidable": true
+     }
+    ]
+   },
+   "wrist_shell|frame": {
+    "min_distance_mm": 0.2725996523027454,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "mujoco_min_distance_mm": 0.2725996523027454,
+    "fcl_min_distance_mm": 0.27260002381270715,
+    "worst_pairs": [
+     {
+      "geom_a": "v11_wrist_shell_0239",
+      "body_a": "wrist_shell",
+      "geom_b": "v11_frame_0864",
+      "body_b": "frame",
+      "distance_mm": 0.2725996523027454,
+      "method": "agree",
+      "mujoco_mm": 0.2725996523027454,
+      "fcl_mm": 0.27260002381270715,
+      "collidable": true
+     },
+     {
+      "geom_a": "v11_wrist_shell_0239",
+      "body_a": "wrist_shell",
+      "geom_b": "v11_frame_0436",
+      "body_b": "frame",
+      "distance_mm": 0.4825279370622985,
+      "method": "agree",
+      "mujoco_mm": 0.4825279370622985,
+      "fcl_mm": 0.4825279370623031,
+      "collidable": true
+     }
+    ]
+   },
+   "motor5|frame": {
+    "min_distance_mm": 0.02449426051174652,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "mujoco_min_distance_mm": 0.0,
+    "fcl_min_distance_mm": 0.02449426051171838,
+    "worst_pairs": [
+     {
+      "geom_a": "motor5_disc_section_324",
+      "body_a": "motor5_output",
+      "geom_b": "v11_frame_0386",
+      "body_b": "frame",
+      "distance_mm": 0.02449426051174652,
+      "method": "exact",
+      "mujoco_mm": 0.024494260511735092,
+      "fcl_mm": 0.02449426051171838,
+      "collidable": true
+     },
+     {
+      "geom_a": "motor5_disc_section_20",
+      "body_a": "motor5_output",
+      "geom_b": "v11_frame_0785",
+      "body_b": "frame",
+      "distance_mm": 0.056337329536079964,
+      "method": "agree",
+      "mujoco_mm": 0.056337329536079964,
+      "fcl_mm": 0.056337329536056455,
+      "collidable": true
+     }
+    ]
+   },
+   "frame|housing": {
+    "min_distance_mm": 0.09997423126785193,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "mujoco_min_distance_mm": 0.0,
+    "fcl_min_distance_mm": 0.09997423126783624,
+    "worst_pairs": [
+     {
+      "geom_a": "v11_frame_0764",
+      "body_a": "frame",
+      "geom_b": "stock_3_housing_contact_179",
+      "body_b": "housing",
+      "distance_mm": 0.09997423126785193,
+      "method": "agree",
+      "mujoco_mm": 0.09997423126785193,
+      "fcl_mm": 0.09997423126783624,
+      "collidable": true
+     },
+     {
+      "geom_a": "v11_frame_0764",
+      "body_a": "frame",
+      "geom_b": "stock_3_housing_contact_174",
+      "body_b": "housing",
+      "distance_mm": 0.09997439765735563,
+      "method": "agree",
+      "mujoco_mm": 0.09997439765735563,
+      "fcl_mm": 0.09997439984455511,
+      "collidable": true
+     }
+    ]
+   },
+   "frame|jaw": {
+    "min_distance_mm": 0.7555069677788411,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "mujoco_min_distance_mm": 0.7555069677788411,
+    "fcl_min_distance_mm": 0.7555069677788306,
+    "worst_pairs": [
+     {
+      "geom_a": "v11_frame_0766",
+      "body_a": "frame",
+      "geom_b": "v11_jaw_0267",
+      "body_b": "jaw",
+      "distance_mm": 0.7555069677788411,
+      "method": "agree",
+      "mujoco_mm": 0.7555069677788411,
+      "fcl_mm": 0.7555069677788306,
+      "collidable": true
+     },
+     {
+      "geom_a": "v11_frame_0766",
+      "body_a": "frame",
+      "geom_b": "v11_jaw_0550",
+      "body_b": "jaw",
+      "distance_mm": 0.7952722716206487,
+      "method": "agree",
+      "mujoco_mm": 0.7952722716206487,
+      "fcl_mm": 0.7952722716206444,
+      "collidable": true
+     }
+    ]
+   },
+   "housing|jaw": {
+    "min_distance_mm": 0.10817322614764123,
+    "n_penetrating": 0,
+    "max_penetration_mm": 0.0,
+    "mujoco_min_distance_mm": 0.0,
+    "fcl_min_distance_mm": 0.10817322614762807,
+    "worst_pairs": [
+     {
+      "geom_a": "stock_3_disc_contact_0",
+      "body_a": "disc",
+      "geom_b": "v11_jaw_0538",
+      "body_b": "jaw",
+      "distance_mm": 0.10817322614764123,
+      "method": "agree",
+      "mujoco_mm": 0.10817322614764123,
+      "fcl_mm": 0.10817322614762807,
+      "collidable": true
+     },
+     {
+      "geom_a": "stock_3_disc_contact_0",
+      "body_a": "disc",
+      "geom_b": "v11_jaw_0233",
+      "body_b": "jaw",
+      "distance_mm": 0.12388739140978713,
+      "method": "agree",
+      "mujoco_mm": 0.12388739140978713,
+      "fcl_mm": 0.12388739960592131,
+      "collidable": true
+     }
+    ]
+   }
+  }
+ },
+ "wall_s": 136.30595519207418
+}
