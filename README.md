@@ -10,7 +10,7 @@
   <img src="docs/teaser.png" width="100%">
 </p>
 
-> **`sim2real` 分支：第一步（M1 装入 Base）上真机。** 准备清单、harness 控制接口和一键 pipeline 在 [`sim2real/README.md`](sim2real/README.md)，真机缺口在 [`sim2real/REPORT.md`](sim2real/REPORT.md)。
+> **`sim2real` branch: step 1 (M1 into the Base) on the real robot.** Preparation checklist, the harness control interface and the one-command pipeline: [`sim2real/README.md`](sim2real/README.md) ([中文](sim2real/README_zh.md)); what is still missing on hardware: [`sim2real/REPORT.md`](sim2real/REPORT.md).
 
 
 ## Table of Contents
