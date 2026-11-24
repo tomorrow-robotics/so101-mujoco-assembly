@@ -1,0 +1,10 @@
+{
+ "built_from": "step1_handhold_scene/scene.xml (the scene of the successful step-1 sim episodes E1/G1/H1)",
+ "source_scene_sha256": "4f8a940ada8a4c694f9c4adb6b254785dba8f80b2eb2f53bfa13db91be84b6c2",
+ "removed": [
+  "SO-101 part bodies base/motor and their weld",
+  "shoulder_pan actuator",
+  "visual-only arm meshes"
+ ],
+ "kept": "both Panthera-HT arms (collision geometry, joints, torque actuators, gripper tendons), tcp sites, calibrated wrist and head cameras, lab_table"
+}
