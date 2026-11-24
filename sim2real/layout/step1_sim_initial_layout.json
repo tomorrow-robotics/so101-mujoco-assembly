@@ -1,0 +1,23 @@
+{
+  "source": "so101_step1_v11/input.tar.gz",
+  "source_sha256": "692fd6abbc69f4b6a36c53d68cd391f8ca104b50c3f435cf2936f9bae9ee3049",
+  "scene_sha256": "4f8a940ada8a4c694f9c4adb6b254785dba8f80b2eb2f53bfa13db91be84b6c2",
+  "base": {
+    "name": "base",
+    "quat": "0.707106781187 0 0 0.707106781187",
+    "pos": "-0.095 0.345 0.0364",
+    "sleep": "never"
+  },
+  "motor": {
+    "name": "motor",
+    "quat": "0.382683432365 0 0 0.923879532511",
+    "pos": "0.15 0.245 0.01935229",
+    "sleep": "never"
+  },
+  "args": {
+    "base_xy": null,
+    "base_yaw_deg": null,
+    "motor_xy": null,
+    "motor_yaw_deg": null
+  }
+}

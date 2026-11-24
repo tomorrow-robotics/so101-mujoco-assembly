@@ -1,0 +1,256 @@
+{
+ "panthera_ht.urdf": {
+  "source": "assets/panthera_ht/robot.urdf",
+  "source_sha256": "63a72bf4a67c657aaadb80d442751af4386ed9a1fad04c18aaaa2d5ab7ae272f",
+  "sdk_commit": "7c506f88155109eccb156287b4a1263f5e8b8ed0",
+  "change": "CRLF normalized to LF only; kinematics identical to the SDK URDF that build_bimanual_scene.py instantiates (gripper_L/R fixed fully open)"
+ },
+ "collision_spheres.json": {
+  "tool": "curobo.robot_builder.RobotBuilder (nvidia-curobo 0.0.post1.dev1, commit 895c6517243f8cb091c73c018c8167192d39599a)",
+  "call": "fit_collision_spheres(sphere_density=1.0, use_collision_mesh=True) [MORPHIT, defaults otherwise], torch.manual_seed(0)",
+  "refit": {
+   "link6": {
+    "num_spheres": 16,
+    "surface_radius": 0.006,
+    "fit_type": "SURFACE"
+   }
+  },
+  "fit_geometry": "trimesh convex hull of each SDK *_collision.obj (what MuJoCo collides with)",
+  "hulls": {
+   "base_link_collision.obj": {
+    "vertices": 183,
+    "volume_cm3": 851.8933778100902
+   },
+   "camera_link_collision.obj": {
+    "vertices": 356,
+    "volume_cm3": 196.92356717583593
+   },
+   "gripper_L_link_collision.obj": {
+    "vertices": 299,
+    "volume_cm3": 164.03356954579007
+   },
+   "gripper_R_link_collision.obj": {
+    "vertices": 299,
+    "volume_cm3": 167.44030948483436
+   },
+   "gripper_center_link_collision.obj": {
+    "vertices": 138,
+    "volume_cm3": 236.162278554078
+   },
+   "link1_collision.obj": {
+    "vertices": 262,
+    "volume_cm3": 475.71940297995945
+   },
+   "link2_collision.obj": {
+    "vertices": 306,
+    "volume_cm3": 1363.2714009052665
+   },
+   "link3_collision.obj": {
+    "vertices": 221,
+    "volume_cm3": 1390.8867550581854
+   },
+   "link4_collision.obj": {
+    "vertices": 185,
+    "volume_cm3": 408.1198388388716
+   },
+   "link5_collision.obj": {
+    "vertices": 194,
+    "volume_cm3": 134.24349851782054
+   },
+   "link6_collision.obj": {
+    "vertices": 155,
+    "volume_cm3": 4.0369902281764505
+   }
+  },
+  "meshes": {
+   "base_link": {
+    "file": "assets/panthera_ht/meshes/obj/base_link_collision.obj",
+    "sha256": "f558bd454be8089ae116341d1c3597bd2fbca101d650b3c353526ef309be04e6"
+   },
+   "link1": {
+    "file": "assets/panthera_ht/meshes/obj/link1_collision.obj",
+    "sha256": "2290c6ea9ccd7c91c7c11fb3a3c4e50611665455c21f254050e6ff9878f17e0d"
+   },
+   "link2": {
+    "file": "assets/panthera_ht/meshes/obj/link2_collision.obj",
+    "sha256": "6acf899c5e5d8c2180ef7a095b47b7743f5e6ca3f5e84187002289c06bfcff48"
+   },
+   "link3": {
+    "file": "assets/panthera_ht/meshes/obj/link3_collision.obj",
+    "sha256": "44254a9b96301ce9d18c762d173e173c96b23725a9f1b6522fb54f63d97c24f8"
+   },
+   "link4": {
+    "file": "assets/panthera_ht/meshes/obj/link4_collision.obj",
+    "sha256": "6a51ac8ac6bb79520a4f630f86eaf40dd4be2ae75e5d38d5decd3f85907f11a4"
+   },
+   "link5": {
+    "file": "assets/panthera_ht/meshes/obj/link5_collision.obj",
+    "sha256": "c7b1f482dcd8f2b245ad2e1bb0d10f20547926961e4aaefa073d3b4ead0b08ff"
+   },
+   "link6": {
+    "file": "assets/panthera_ht/meshes/obj/link6_collision.obj",
+    "sha256": "d76e29d2492cbd3f05eadf89fc83880055f8d447dd5963f515d14e5612bb00c3"
+   },
+   "gripper_center_link": {
+    "file": "assets/panthera_ht/meshes/obj/gripper_center_link_collision.obj",
+    "sha256": "ac81f6faec33293e48309bde81ef32649f3c00169473f955a7e69e6a6a18c83d"
+   },
+   "gripper_L_link": {
+    "file": "assets/panthera_ht/meshes/obj/gripper_L_link_collision.obj",
+    "sha256": "d469e3adfae1678396c5123e23783ec7c8c148f478a42803dd0b08744ecf08eb"
+   },
+   "gripper_R_link": {
+    "file": "assets/panthera_ht/meshes/obj/gripper_R_link_collision.obj",
+    "sha256": "1cd62b83263d408f505fde08c7a836146438d1d8160552fdefea13078703c8ea"
+   }
+  },
+  "metrics": {
+   "base_link": {
+    "num_spheres": 49.0,
+    "coverage": 0.9637999534606934,
+    "protrusion": 0.20091836154460907,
+    "protrusion_dist_mean": 0.0032505933195352554,
+    "protrusion_dist_p95": 0.009020543657243252,
+    "surface_gap_mean": 0.0004596248036250472,
+    "surface_gap_p95": 0.0029079720843583345,
+    "max_uncovered_gap": 0.008754007518291473,
+    "volume_ratio": 1.7134663372212933
+   },
+   "link1": {
+    "num_spheres": 3.0,
+    "coverage": 0.9829999804496765,
+    "protrusion": 0.5400000214576721,
+    "protrusion_dist_mean": 0.005031166132539511,
+    "protrusion_dist_p95": 0.013753732666373253,
+    "surface_gap_mean": 0.0002799350768327713,
+    "surface_gap_p95": 0.0022816823329776525,
+    "max_uncovered_gap": 0.007424399256706238,
+    "volume_ratio": 1.6537277037019327
+   },
+   "link2": {
+    "num_spheres": 17.0,
+    "coverage": 0.9710999727249146,
+    "protrusion": 0.2508823573589325,
+    "protrusion_dist_mean": 0.005627973936498165,
+    "protrusion_dist_p95": 0.012858648784458637,
+    "surface_gap_mean": 0.0004529717843979597,
+    "surface_gap_p95": 0.0033904954325407743,
+    "max_uncovered_gap": 0.007942814379930496,
+    "volume_ratio": 1.5578823138821545
+   },
+   "link3": {
+    "num_spheres": 7.0,
+    "coverage": 0.9729999899864197,
+    "protrusion": 0.49214285612106323,
+    "protrusion_dist_mean": 0.004751242697238922,
+    "protrusion_dist_p95": 0.011569680646061897,
+    "surface_gap_mean": 0.0005521593266166747,
+    "surface_gap_p95": 0.003707399358972907,
+    "max_uncovered_gap": 0.0086837038397789,
+    "volume_ratio": 1.6235166377634391
+   },
+   "link4": {
+    "num_spheres": 5.0,
+    "coverage": 0.9752101302146912,
+    "protrusion": 0.45100003480911255,
+    "protrusion_dist_mean": 0.0038401219062507153,
+    "protrusion_dist_p95": 0.007900932803750038,
+    "surface_gap_mean": 0.00031082361238077283,
+    "surface_gap_p95": 0.0022873992566019297,
+    "max_uncovered_gap": 0.00577894039452076,
+    "volume_ratio": 1.5782125227266275
+   },
+   "link5": {
+    "num_spheres": 5.0,
+    "coverage": 0.9693999886512756,
+    "protrusion": 0.42500001192092896,
+    "protrusion_dist_mean": 0.0028342613950371742,
+    "protrusion_dist_p95": 0.007425546646118164,
+    "surface_gap_mean": 0.00030356014030985534,
+    "surface_gap_p95": 0.0019731975626200438,
+    "max_uncovered_gap": 0.0049352869391441345,
+    "volume_ratio": 1.5198955767404578
+   },
+   "link6": {
+    "num_spheres": 14.0,
+    "coverage": 0.8786999583244324,
+    "protrusion": 0.7300000190734863,
+    "protrusion_dist_mean": 0.002990530338138342,
+    "protrusion_dist_p95": 0.005635946057736874,
+    "surface_gap_mean": 0.00011578096746234223,
+    "surface_gap_p95": 0.0008709437097422779,
+    "max_uncovered_gap": 0.002511007711291313,
+    "volume_ratio": 3.1377093454502263
+   },
+   "gripper_center_link": {
+    "num_spheres": 11.0,
+    "coverage": 0.9568576216697693,
+    "protrusion": 0.4031818211078644,
+    "protrusion_dist_mean": 0.0029316775035113096,
+    "protrusion_dist_p95": 0.007422925904393196,
+    "surface_gap_mean": 0.00044213951332494617,
+    "surface_gap_p95": 0.0029695385601371527,
+    "max_uncovered_gap": 0.006218992173671722,
+    "volume_ratio": 1.7212867798740341
+   },
+   "gripper_L_link": {
+    "num_spheres": 9.0,
+    "coverage": 0.9471237659454346,
+    "protrusion": 0.4883333444595337,
+    "protrusion_dist_mean": 0.0031829713843762875,
+    "protrusion_dist_p95": 0.007184682879596949,
+    "surface_gap_mean": 0.00033886011806316674,
+    "surface_gap_p95": 0.002322304528206587,
+    "max_uncovered_gap": 0.0057806652039289474,
+    "volume_ratio": 1.4843160151199655
+   },
+   "gripper_R_link": {
+    "num_spheres": 12.0,
+    "coverage": 0.9647848010063171,
+    "protrusion": 0.39791667461395264,
+    "protrusion_dist_mean": 0.0029843614902347326,
+    "protrusion_dist_p95": 0.00686924671754241,
+    "surface_gap_mean": 0.00023170706117525697,
+    "surface_gap_p95": 0.0016279072733595967,
+    "max_uncovered_gap": 0.005062934942543507,
+    "volume_ratio": 1.609029512438467
+   }
+  }
+ },
+ "curobo.yml": {
+  "layout": "upstream calibration/curobo.yml key set",
+  "collision_link_names": [
+   "base_link",
+   "link1",
+   "link2",
+   "link3",
+   "link4",
+   "link5",
+   "link6",
+   "gripper_center_link"
+  ],
+  "excluded_from_collision": [
+   "gripper_L_link",
+   "gripper_R_link",
+   "(upstream drops X5 link7/link8 likewise)"
+  ],
+  "self_collision_ignore": "compute_collision_matrix(prune_collisions=False, custom_ignore=config/robot.yaml self_collision_exclusions)",
+  "self_collision_buffer_m": 0.0,
+  "cspace": "joint1..6, default 0 (scene home; upstream X5 default 0), accel 10, jerk 500 (upstream values); joint limits from the URDF (= compiled MuJoCo jnt_range)"
+ },
+ "curobo_fingers.yml": {
+  "collision_link_names": [
+   "base_link",
+   "link1",
+   "link2",
+   "link3",
+   "link4",
+   "link5",
+   "link6",
+   "gripper_center_link",
+   "gripper_L_link",
+   "gripper_R_link"
+  ]
+ },
+ "host": "NVIDIA H100 80GB HBM3, 535.129.03"
+}

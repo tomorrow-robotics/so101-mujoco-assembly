@@ -1,0 +1,17 @@
+{
+  "provider": "openai",
+  "model": "gpt-6-astra",
+  "base_url": "http://127.0.0.1:18090/v1",
+  "python_prefix": "/tmp/q0-preview-python",
+  "sandbox": "bwrap",
+  "bwrap_executable": "<path to bwrap>",
+  "context_history": "first_recent",
+  "context_max_bytes": 33554432,
+  "stream": false,
+  "api_request_timeout_s": 3600,
+  "api_idle_timeout_s": 3600,
+  "network_recovery_window_s": 600,
+  "python_memory_limit_mib": 16384,
+  "http_400_max_attempts": 15,
+  "api_key_env": "Q0_PREVIEW_API_KEY"
+}

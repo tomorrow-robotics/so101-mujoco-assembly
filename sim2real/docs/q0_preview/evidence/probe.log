@@ -1,0 +1,1 @@
+{"state_unchanged": true, "sim_time": 0.0, "table_plane": {"point": [-0.025, 0.45, 0.0], "normal": [0.0, 0.0, 1.0], "source": "compiled lab_table box"}, "tcp_roundtrip": {"a": 2.2898349882893854e-16, "b": 1.3877787807814457e-16}}
