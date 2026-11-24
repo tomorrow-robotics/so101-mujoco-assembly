@@ -1,0 +1,188 @@
+{
+ "note": "T_fork_<part>: 4x4 pose of the part body frame in the shoulder-fork body frame at the CAD assembly (metres). insertion_dir_fork: unit direction the part moves in along its final straight path, in the fork frame. Later steps: T_receiver_part is the part in its receiver body frame (receiver named per entry); insertion_dir_receiver likewise.",
+ "sources": {
+  "shoulder_fork": "17bdd7c8550af9ca69f6e7d74636113aaec1194831d628eebd64e6dc59a6cded",
+  "shoulder_holder": "51a282406f25494fe0cab727be393ee5aade1e53151ab09cb08812d09a8f2633",
+  "motor2": "d31fe6f00c03f3065496dbde4a10937dd08445587bbe4c8954f1c1b536e035ed"
+ },
+ "shoulder_seat": {
+  "T_fork_part": [
+   [
+    1.0,
+    0.0,
+    0.0,
+    0.0011402158512364962
+   ],
+   [
+    0.0,
+    1.0,
+    0.0,
+    -0.01417465750152589
+   ],
+   [
+    0.0,
+    0.0,
+    1.0,
+    0.028081695473370166
+   ],
+   [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "insertion_dir_fork": [
+   -0.0,
+   -0.0,
+   -1.0
+  ]
+ },
+ "motor_2": {
+  "T_fork_part": [
+   [
+    1.0,
+    0.0,
+    0.0,
+    0.0019635312420195356
+   ],
+   [
+    0.0,
+    1.0,
+    0.0,
+    -0.013129398037946043
+   ],
+   [
+    0.0,
+    0.0,
+    1.0,
+    0.04584206022834546
+   ],
+   [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "insertion_dir_fork": [
+   -0.0,
+   -0.0,
+   -1.0
+  ]
+ },
+ "upper_print": {
+  "receiver": "shoulder_lift_output",
+  "weld": "upper_shoulder_merge_weld",
+  "T_receiver_part": [
+   [
+    7.621422167399878e-05,
+    0.008728858481601763,
+    -0.9999618998846888,
+    -0.0006626222529532638
+   ],
+   [
+    -6.704763027239755e-06,
+    -0.9999619027619456,
+    -0.008728859017735579,
+    0.01183863703254779
+   ],
+   [
+    -0.9999999970732172,
+    7.369770771017086e-06,
+    -7.615279319499233e-05,
+    0.07759055079533872
+   ],
+   [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "insertion_dir_receiver": [
+   -0.008719878718604607,
+   0.9999619811280193,
+   -3.695888838278378e-06
+  ],
+  "source": "results/table_after_m2_park_1110_upper_geometry.json",
+  "source_sha256": "6d675cb892ff76ebf4dc481d48a398b2acf46858c51261a68b8c28adc4ab022e",
+  "axis_key": "axis"
+ },
+ "motor3": {
+  "receiver": "upper_print",
+  "weld": "motor3_virtual_fastening",
+  "T_receiver_part": [
+   [
+    -3.67320510331151e-06,
+    -0.9999999999897329,
+    2.6535897933348266e-06,
+    -0.047485
+   ],
+   [
+    0.9999999999897328,
+    -3.673212144824436e-06,
+    -2.653580045636461e-06,
+    0.02750000132669806
+   ],
+   [
+    2.6535897928074716e-06,
+    2.653580046163816e-06,
+    0.9999999999929582,
+    -0.0004999270262789195
+   ],
+   [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "insertion_dir_receiver": [
+   -3.6731980617334826e-06,
+   -0.9999999999529302,
+   -8.980384689794617e-06
+  ],
+  "source": "results/table_after_continuous_upper_1110_motor3_geometry.json",
+  "source_sha256": "1cfcd8fe8e31b3cb80fbedb76cf7509204046aef66f546db70980273d3f87012",
+  "axis_key": "withdrawal_world"
+ },
+ "forearm": {
+  "receiver": "motor3_output",
+  "weld": "forearm_elbow_merge_weld",
+  "T_receiver_part": [
+   [
+    -0.9999999999730151,
+    -7.346410206541226e-06,
+    -1.949401216390207e-11,
+    0.07734966491303906
+   ],
+   [
+    7.346410206541795e-06,
+    -0.9999999999730149,
+    -2.9212854727515486e-16,
+    -0.03200052100125999
+   ],
+   [
+    -1.9494000545789602e-11,
+    -4.3542077245020507e-16,
+    0.9999999999999998,
+    0.0005000849162574432
+   ],
+   [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "insertion_dir_receiver": [
+   -7.346419953635923e-06,
+   -0.9999999999589321,
+   5.307166094217081e-06
+  ],
+  "source": "results/table_after_motor3_entry_local_force_1110_forearm_geometry.json",
+  "source_sha256": "910fb5e3d2055f840b24f7365d1844760d606b583bad80fba51d32327a8e991d",
+  "axis_key": "withdrawal_world"
+ }
+}

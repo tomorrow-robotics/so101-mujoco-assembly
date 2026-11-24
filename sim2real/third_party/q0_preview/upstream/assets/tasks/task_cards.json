@@ -1,0 +1,330 @@
+{
+  "benchmark_commit": "09bd5f5e762b949f5858ece31347ce62057b3a5e",
+  "cards": {
+    "align_blocks": {
+      "requirements": "Goal: Use the set square to push all three blocks into one aligned row.\nCompletion: All three blocks lie in a straight row with consistent orientation.\nProcess rules: Do not lift a block: a rise greater than 7 mm can immediately fail the task.\nOptional considerations: Adjust the pushing side and step size from the observed response. A contact_constraint is optional when its plane is supported by observations.",
+      "return_home_required": true,
+      "finish": "Finish: Return both arms to their supplied initial positions and orientations after completing the task.",
+      "control_step_limit": 200
+    },
+    "arrange_largest_number": {
+      "requirements": "Goal: Arrange all displayed digits to form the largest number.\nCompletion: Every digit is on the pad, readable, in descending left-to-right order.\nOptional considerations: Read the actual digits from the current scene; their set may vary.",
+      "return_home_required": true,
+      "finish": "Finish: Return both arms to their supplied initial positions and orientations after completing the task.",
+      "control_step_limit": 1050
+    },
+    "arrange_largest_number_random": {
+      "requirements": "Goal: Arrange all displayed digits to form the largest number.\nCompletion: Every digit is on the pad, readable, in descending left-to-right order.\nOptional considerations: Read the actual digits from the current scene; their set may vary.",
+      "return_home_required": true,
+      "finish": "Finish: Return both arms to their supplied initial positions and orientations after completing the task.",
+      "control_step_limit": 1050
+    },
+    "build_tower": {
+      "requirements": "Goal: Build the specified tower using all eight pieces.\nCompletion: Two white support blocks on the table hold the LARGE board; the other two white support blocks on that board hold the SMALL board. All four white blocks rest on a broad face with their long dimension horizontal and the same face uppermost as in the initial scene; do not stand them on their short ends. The thin top board lies flat and centered on the SMALL board, with their long edges parallel. The green triangular block stands upright and centered on the thin top board, with the bottom edge of its triangular end face parallel to the board's long edge and its top ridge perpendicular to it.\nOptional considerations: The white blocks may be turned within the tabletop plane to suit placement while keeping their initial top faces up. Choose assembly order, temporary supported placements and recovery steps to suit the scene. These relationships describe the finished tower, not every intermediate state.",
+      "return_home_required": true,
+      "finish": "Finish: Return both arms to their supplied initial positions and orientations after completing the task.",
+      "control_step_limit": 1050
+    },
+    "classify_objects": {
+      "requirements": "Goal: Group all objects by category using the three baskets.\nCompletion: Each category occupies one basket, with every object settled inside.\nRequired strategy: Carry each object over the basket interior, stop lateral motion, and lower it into the basket before opening. Release gently from a low height; do not throw it or rotate the wrist to shake it loose. Let it settle before withdrawing.\nInventory: Track every object and check for any still outside before finishing.",
+      "return_home_required": true,
+      "finish": "Finish: Return both arms to their supplied initial positions and orientations after completing the task.",
+      "control_step_limit": 1100
+    },
+    "classify_objects_by_language": {
+      "requirements": "Goal: Sort all objects into the baskets specified by the current instruction.\nCompletion: Every category is in its assigned left, middle or right basket, with every object settled inside.\nRequired strategy: Carry each object over the basket interior, stop lateral motion, and lower it into the basket before opening. Release gently from a low height; do not throw it or rotate the wrist to shake it loose. Let it settle before withdrawing.\nMapping: Follow the current language instruction; do not infer the mapping from basket colors.",
+      "return_home_required": true,
+      "finish": "Finish: Return both arms to their supplied initial positions and orientations after completing the task.",
+      "control_step_limit": 1100
+    },
+    "cover_blocks": {
+      "requirements": "Goal: Cover and uncover the three blocks in the required sequence.\nCompletion: The left, middle and right blocks have been covered in that order, then red, green and blue uncovered in that order.\nProcess rules: The intermediate states and their order count; cups must be upside-down at each checked state. Displacing any block by more than 5 cm can fail.\nOptional considerations: Remember the initial color-to-position mapping; correct alignment before advancing to the next state. Prefer picking up and placing cups from above, with the gripper pointing downward. Horizontal side grasps close to the robot may be unreachable due to joint limits.",
+      "return_home_required": true,
+      "finish": "Finish: Return both arms to their supplied initial positions and orientations after completing the task.",
+      "control_step_limit": 800
+    },
+    "deposit_coin": {
+      "requirements": "Goal: Put the whole coin through the coin-bank slot.\nCompletion: The coin is inside the bank, rather than above or merely touching the slot.\nOptional considerations: A thin coin can have the same estimated jaw gap as an empty grasp. Visible co-motion can help verify possession.",
+      "return_home_required": true,
+      "finish": "Finish: Return both arms to their supplied initial positions and orientations after completing the task.",
+      "control_step_limit": 300
+    },
+    "fasten_screws": {
+      "requirements": "Goal: Fit and tighten all three nuts onto the matching-color bolts.\nCompletion: Each nut is upright, centered and sufficiently threaded onto its bolt; finish with both grippers open.\nRequired strategy: Seat and release each nut on its matching-color bolt before regrasping to tighten. Align the inner finger pads flush with opposite flat sides of the nut to avoid spinning without turning it.\nOptional considerations: There is no prescribed number of turns. Regrasp or unwind the wrist if useful; correct alignment when observed results differ from the plan.",
+      "return_home_required": true,
+      "finish": "Finish: Return both arms to their supplied initial positions and orientations after completing the task.",
+      "control_step_limit": 1900
+    },
+    "fill_egg_holder": {
+      "requirements": "Goal: Move all four eggs into the egg holder and close its lid.\nCompletion: All four eggs are seated low inside the holder and the lid is fully closed.\nOptional considerations: Maintain access while loading. Keep the gripper and wrist camera clear of the open lid and basket rim during transfers. If the lid closes early, reopen it as needed.",
+      "return_home_required": true,
+      "finish": "Finish: Return both arms to their supplied initial positions and orientations after completing the task.",
+      "control_step_limit": 700
+    },
+    "fill_pen_holder": {
+      "requirements": "Goal: Place all four pens into the holder while supporting it with the other hand, then set it upright.\nCompletion: All four pens are seated inside the upright holder, not balanced across its rim. The white slim pen goes in pointed writing-tip first. The black-and-gold capped pen and the blue and purple highlighters go in closed barrel-tail first, with their capped writing ends pointing upward. For the highlighters, the tail is the plain end near the POINT COLOR lettering, opposite the cap/clip end; for the black-and-gold pen, it is the rounded barrel end opposite the cap with the pocket clip.\nOptional considerations: Identify the required lower end of each pen from its visible features before insertion; the writing tip is not the lower end for every pen. Choose or revise the pen order according to available clearance.",
+      "return_home_required": true,
+      "finish": "Finish: Return both arms to their supplied initial positions and orientations after completing the task.",
+      "control_step_limit": 1100
+    },
+    "fold_clothes": {
+      "requirements": "Goal: Fold both sleeves across the torso, then fold the lower half upward.\nCompletion: The sleeves lie flat without bunching or twisting, with each cuff at the opposite underarm, where the lower edge of the opposite sleeve meets the torso. Both hem corners lie near their same-side shoulders, and the hem edge is roughly parallel to the shoulder line. Both grippers are open, releasing the folded garment.\nRequired strategy: After releasing the sleeves and letting them settle, verify that both cuffs remain in place. Realign any incomplete sleeve fold before folding the hem.",
+      "return_home_required": true,
+      "finish": "Finish: Return both arms to their supplied initial positions and orientations after completing the task.",
+      "control_step_limit": 500
+    },
+    "fold_clothes_random": {
+      "requirements": "Goal: Fold both sleeves across the torso, then fold the lower half upward.\nCompletion: The sleeves lie flat without bunching or twisting, with each cuff at the opposite underarm, where the lower edge of the opposite sleeve meets the torso. Both hem corners lie near their same-side shoulders, and the hem edge is roughly parallel to the shoulder line. Both grippers are open, releasing the folded garment.\nRequired strategy: After releasing the sleeves and letting them settle, verify that both cuffs remain in place. Realign any incomplete sleeve fold before folding the hem.",
+      "return_home_required": true,
+      "finish": "Finish: Return both arms to their supplied initial positions and orientations after completing the task.",
+      "control_step_limit": 500
+    },
+    "general_pickup": {
+      "requirements": "Goal: Lift the target named in the current instruction.\nCompletion: The target has risen at least 10 cm above its initial height. Keep holding it if needed; no final release is required.",
+      "return_home_required": false,
+      "finish": "Finish: No final arm-home condition is required; do not add a generic reset or release requirement.",
+      "control_step_limit": 200
+    },
+    "hang_mugs": {
+      "requirements": "Goal: Hang all three mugs by their handles on the rack.\nCompletion: All handles enclose their supporting branches and the mugs remain supported after release.\nRequired strategy: Handle one mug at a time; never hold two mugs simultaneously. One arm manipulates the mug while the other stays empty and positions its wrist camera to observe the handle-branch contact. Release only after visually confirming that the handle is aligned with and hooked onto the supporting branch. After release, verify stable support before picking up the next mug.",
+      "return_home_required": true,
+      "finish": "Finish: Return both arms to their supplied initial positions and orientations after completing the task.",
+      "control_step_limit": 800
+    },
+    "hang_mugs_random": {
+      "requirements": "Goal: Hang all three mugs by their handles on the rack.\nCompletion: All handles enclose their supporting branches and the mugs remain supported after release.\nRequired strategy: Handle one mug at a time; never hold two mugs simultaneously. One arm manipulates the mug while the other stays empty and positions its wrist camera to observe the handle-branch contact. Release only after visually confirming that the handle is aligned with and hooked onto the supporting branch. After release, verify stable support before picking up the next mug.",
+      "return_home_required": true,
+      "finish": "Finish: Return both arms to their supplied initial positions and orientations after completing the task.",
+      "control_step_limit": 800
+    },
+    "imitate_sorting_sequence": {
+      "requirements": "Goal: Observe all five demonstrated placements and reproduce their order in your basket.\nCompletion: All five corresponding objects have been placed in the demonstrated sequence.\nProcess rules: While the demonstrator is away from home, keep both main arms at their initial poses; moving away then can fail the task. Placing and releasing a later object before an earlier one can also fail once the misplaced object settles.\nOptional considerations: Wait and observe without moving a wrist camera during the demonstration. Record the sequence before acting.",
+      "return_home_required": true,
+      "finish": "Finish: Return both arms to their supplied initial positions and orientations after completing the task.",
+      "control_step_limit": 1600
+    },
+    "insert_key": {
+      "requirements": "Goal: Pick up the key, hand it to the other hand, insert it vertically and turn it in the lock.\nCompletion: The key is sufficiently inserted and turned to the required final orientation. Leave it inserted; no reset or withdrawal is required.\nOptional considerations: Positioning the receiving hand near the handover point before pickup helps shorten the unsupported transfer. A gentle lift and nearby receiver support can reduce slipping. Separate uncertain alignment from insertion.",
+      "return_home_required": false,
+      "finish": "Finish: No final arm-home condition is required; do not add a generic reset or release requirement.",
+      "control_step_limit": 300
+    },
+    "insert_tubes": {
+      "requirements": "Goal: Insert all three tubes into the rack, one at a time.\nCompletion: All three tubes are upright and fully seated in their holes.\n\nOptional considerations: The free arm's wrist view can help check alignment and depth. Check for tube slip after lifting or rotation. If insertion stalls, inspect before continuing. Once the hole securely supports the tube, controlled release may let it settle; verify seating afterward.\n\nTiming guidance: Prefer automatic timing (duration_s: 0) for clear travel and stable carrying. Add time where grasp stability or contact requires it. Avoid repeated corrections without new evidence. Budget the 500 steps for all three tubes and returning home; do not skip feasible insertions merely to return home early.",
+      "return_home_required": true,
+      "finish": "Finish: Return both arms to their supplied initial positions and orientations after completing the task.",
+      "control_step_limit": 500
+    },
+    "make_kong": {
+      "requirements": "Goal: Wait for the opponent, declare the matching kong, then draw the replacement tile.\nCompletion: Only the matching triplet is face-up; the other nine tiles are standing. After the kong, the separate replacement tile has been turned face-down and then placed upright at its right-side resting position. The replacement tile's final horizontal facing direction is unrestricted. Finish with open grippers.\nProcess rules: Keep both main arms at their initial poses while the opponent is away. The kong and replacement-tile states must occur in that order.\nOptional considerations: Identify the triplet from the discarded tile and current images. Consult the task reference if the replacement destination is ambiguous. \nRequired strategy: Do not transfer the replacement tile directly between grippers. If a hand change is needed, place the tile at a stable, reachable location clear of other tiles, release it, and withdraw the first gripper before the other grasps it. Preserve the required task order. Once upright, preserve its orientation during transfer and placement unless reachability or clearance requires a change.",
+      "return_home_required": false,
+      "finish": "Finish: No final arm-home condition is required; do not add a generic reset or release requirement.",
+      "control_step_limit": 600
+    },
+    "make_toast": {
+      "requirements": "Goal: Put two of the four bread slices into the toaster and press the lever down.\nCompletion: One slice is seated vertically in each slot, the other two remain upright on the rack, and the lever is fully down.\nOptional considerations: Each slice's orientation may vary during grasping, transfer and alignment. Use a deeper right-hand grasp with enough bread inside the finger pads to resist slipping or rotation. Avoid pinching only the edge or catching a neighbouring slice.",
+      "return_home_required": true,
+      "finish": "Finish: Return both arms to their supplied initial positions and orientations after completing the task.",
+      "control_step_limit": 1400
+    },
+    "make_toast_random": {
+      "requirements": "Goal: Put two of the four bread slices into the toaster, then press the toaster lever all the way down.\nCompletion: One slice is seated vertically in each slot, the other two remain upright on the rack, and the lever is fully down.\nOptional considerations: Each slice's orientation may vary during grasping, transfer and alignment. Use a deeper right-hand grasp with enough bread inside the finger pads to resist slipping or rotation. Avoid pinching only the edge or catching a neighbouring slice.",
+      "return_home_required": true,
+      "finish": "Finish: Return both arms to their supplied initial positions and orientations after completing the task.",
+      "control_step_limit": 1400
+    },
+    "match_and_pick_from_conveyor": {
+      "requirements": "Goal: Remember the first conveyor object and pick up its later matching occurrence.\nCompletion: The later matching object has been lifted at least 10 cm.\nProcess rules: Do not substitute the first occurrence for its later match.\nOptional considerations: Use fresh images and simulation time to track moving objects.",
+      "return_home_required": false,
+      "finish": "Finish: No final arm-home condition is required; do not add a generic reset or release requirement.",
+      "control_step_limit": 700
+    },
+    "organize_table": {
+      "requirements": "Goal: Complete the four specified placements on the table.\nCompletion: The alarm clock is on the drawer, figurine on the stand, mouse on its pad, and keyboard aligned over its marked frame.\nOptional considerations: Choose the order freely and check all four objects before finishing.",
+      "return_home_required": true,
+      "finish": "Finish: Return both arms to their supplied initial positions and orientations after completing the task.",
+      "control_step_limit": 1000
+    },
+    "pack_objects_into_box": {
+      "requirements": "Goal: Pack the car, shoe, toothbrush and hammer into the box.\nCompletion: All four objects are contained with their fronts facing left; the box is aligned with the table left-right direction.\nOptional considerations: If the box is easy to reach, place the objects directly into it without moving it. If it is far away or awkward to access, consider moving it to a more accessible position. Before moving the box, clear any objects blocking its path or intended position. Choose packing order and regrasping as needed. Prefer placing objects from the two sides without lid flaps. Lower each object onto a supporting surface before releasing it, then check that its required orientation is preserved after settling. Recheck protruding or displaced objects before finishing.",
+      "return_home_required": true,
+      "finish": "Finish: Return both arms to their supplied initial positions and orientations after completing the task.",
+      "control_step_limit": 1300
+    },
+    "pack_objects_into_box_random": {
+      "requirements": "Goal: Pack the car, shoe, toothbrush and hammer into the box.\nCompletion: All four objects are contained with their fronts facing left; the box is aligned with the table left-right direction.\nOptional considerations: If the box is easy to reach, place the objects directly into it without moving it. If it is far away or awkward to access, consider moving it to a more accessible position. Before moving the box, clear any objects blocking its path or intended position. Choose packing order and regrasping as needed. Prefer placing objects from the two sides without lid flaps. Lower each object onto a supporting surface before releasing it, then check that its required orientation is preserved after settling. Recheck protruding or displaced objects before finishing.",
+      "return_home_required": true,
+      "finish": "Finish: Return both arms to their supplied initial positions and orientations after completing the task.",
+      "control_step_limit": 1300
+    },
+    "pick_from_conveyor_by_image": {
+      "requirements": "Goal: Use the board image to identify the conveyor target and place it into the raised basket.\nCompletion: The basket and target have each been lifted more than 8 cm; the target settles on the basket bottom while the basket is held level.\nOptional considerations: Choose a stable support and transfer strategy. After lifting the basket, consider rotating it 90 degrees in the horizontal plane while keeping it level to make more room for placing the target. Align the target over the basket interior, then lower it close to the basket bottom before release; do not drop it from height. Account for conveyor motion in simulation time and inspect containment after placement.",
+      "return_home_required": false,
+      "finish": "Finish: No final arm-home condition is required; do not add a generic reset or release requirement.",
+      "control_step_limit": 700
+    },
+    "play_Xylophone": {
+      "requirements": "Goal: Strike all eight keys from left to right with the mallet.\nCompletion: All eight strikes have occurred in order.\nProcess rules: Between strikes, the mallet must rise more than 35 mm above its height when the preceding strike was first registered, which may be higher than the lowest point of the stroke.\nOptional considerations: Track the actual mallet head and lift it clearly before moving sideways to the next key, allowing extra height for slip or droop in the grasp.",
+      "return_home_required": false,
+      "finish": "Finish: No final arm-home condition is required; do not add a generic reset or release requirement.",
+      "control_step_limit": 500
+    },
+    "play_stacking_toy": {
+      "requirements": "Goal: Place every piece on the peg matching its shape.\nCompletion: Four stars, three blue rectangles, two yellow squares and one orange ring are fully seated on their matching pegs.\nOptional considerations: Choose order and recovery moves from the current scene. Check for pieces left above a peg or hidden behind the stack.",
+      "return_home_required": true,
+      "finish": "Finish: Return both arms to their supplied initial positions and orientations after completing the task.",
+      "control_step_limit": 1200
+    },
+    "play_tic_tac_toe": {
+      "requirements": "Goal: Cooperate with the opponent to fill all nine cells, one piece per cell.\nCompletion: Your five rings and the opponent's four pieces fill the board through alternating moves; winning a game is not the objective.\nProcess rules: You move first. Return both arms home to trigger each opponent move, and remain there until the opponent returns. Moving or pre-grasping during its turn can fail the task.\nOptional considerations: Track occupied cells and whose turn it is.",
+      "return_home_required": false,
+      "finish": "Finish: No final arm-home condition is required; do not add a generic reset or release requirement.",
+      "control_step_limit": 1100
+    },
+    "plug_in_charger": {
+      "requirements": "Goal: Insert the charger prongs into the power-strip socket.\nCompletion: The upright charger is seated in the socket, not just touching or hovering above it.\nRequired strategy: Position the free arm's wrist camera to see the prongs and target socket clearly before lowering. Align the prongs with the socket and keep the charger vertical as you lower it. Keep the contact region in view; stop and adjust if alignment is lost or the gripper blocks the view. Release only after the charger is seated.",
+      "return_home_required": true,
+      "finish": "Finish: Return both arms to their supplied initial positions and orientations after completing the task.",
+      "control_step_limit": 400
+    },
+    "pour_balls_into_vase": {
+      "requirements": "Goal: Pour all seven balls into the vase.\nCompletion: All seven balls are inside and the pouring cup is restored upright.\nRequired strategy: Keep one hand free and use its wrist camera to check the actual cup orientation and lip alignment before tilting. Approach from the side with one rim edge above the vase opening. Tilt in small steps, moving the hand to keep that edge over the opening. Keep the whole cup and both fingers clear of the vase rim. After the balls settle, check the cup and table for any remaining balls.",
+      "return_home_required": true,
+      "finish": "Finish: Return both arms to their supplied initial positions and orientations after completing the task.",
+      "control_step_limit": 600
+    },
+    "pour_by_language": {
+      "requirements": "Goal: Pour the three bottle/bowl pairs in the mapping and order given by the current instruction.\nCompletion: Each bottle is restored upright after at least 95% of its poured liquid is in the assigned bowl and at most 10% remains in the bottle. These are assessment criteria, not measured feedback.\nProcess rules: Complete each bottle–bowl pair fully before starting the next, strictly following the instructed order. Restoring each bottle upright triggers its transfer check. Returning an arm home after later pairs while an earlier pair is incomplete can fail the task.\nOptional considerations: Keep the bottle mouth close above the bowl and clear of its rim. Adjust its position while tilting to keep the stream inside. During pouring, tilt each bottle at least 140 degrees from upright. Wait for the visible stream to stop and the liquid to settle before restoring the bottle upright. A fixed tilt angle, elapsed time, or liquid visible in the bowl does not prove completion.",
+      "return_home_required": true,
+      "finish": "Finish: Return both arms to their supplied initial positions and orientations after completing the task.",
+      "control_step_limit": 800
+    },
+    "pour_liquid_into_cup": {
+      "requirements": "Goal: Pour almost all liquid into the cup with minimal spill.\nCompletion: The liquid is transferred and the bottle is upright.\nProcess rules: Returning the bottle upright triggers the transfer check; assess the pour before triggering it.\nRequired strategy: Keep one hand free and use its wrist camera to observe the bottle mouth and cup opening. Confirm pouring alignment before tilting.\nOptional considerations: Keep the bottle mouth close above the cup and clear of the rim. Leave enough room inside the cup for the liquid's forward motion. If transfer is uncertain, check a fresh observation before increasing the tilt further.",
+      "return_home_required": false,
+      "finish": "Finish: No final arm-home condition is required; do not add a generic reset or release requirement.",
+      "control_step_limit": 400
+    },
+    "pour_liquid_into_cup_random": {
+      "requirements": "Goal: Pour almost all liquid into the cup with minimal spill.\nCompletion: The liquid is transferred and the bottle is upright.\nProcess rules: Returning the bottle upright triggers the transfer check; assess the pour before triggering it.\nRequired strategy: Keep one hand free and use its wrist camera to observe the bottle mouth and cup opening. Confirm pouring alignment before tilting.\nOptional considerations: Keep the bottle mouth close above the cup and clear of the rim. Leave enough room inside the cup for the liquid's forward motion. If transfer is uncertain, check a fresh observation before increasing the tilt further.",
+      "return_home_required": false,
+      "finish": "Finish: No final arm-home condition is required; do not add a generic reset or release requirement.",
+      "control_step_limit": 400
+    },
+    "press_by_number": {
+      "requirements": "Goal: Execute the two button-count instructions, confirming each with blue.\nCompletion: Left red has been pressed and released its required number of times, then blue once; middle red likewise, then blue once.\nProcess rules: Blue is pressed exactly twice in total. Extra blue presses or red over-counting fail. Each press must be followed by full release.\nOptional considerations: Count confirmed press-release cycles rather than apparent contact alone.",
+      "return_home_required": true,
+      "finish": "Finish: Return both arms to their supplied initial positions and orientations after completing the task.",
+      "control_step_limit": 700
+    },
+    "push_T": {
+      "requirements": "Goal: Push the T block along the table onto the matching gray T pad.\nCompletion: The block matches the pad in position and orientation.\nProcess rules: Do not pick-and-place: lifting the block more than 1 cm immediately fails.\nOptional considerations: Choose pushing sides and step sizes from the observed response. A contact_constraint is optional if the actual working plane is known.",
+      "return_home_required": true,
+      "finish": "Finish: Return both arms to their supplied initial positions and orientations after completing the task.",
+      "control_step_limit": 600
+    },
+    "push_T_random": {
+      "requirements": "Goal: Push the T block along the table onto the matching gray T pad.\nCompletion: The block matches the pad in position and orientation.\nProcess rules: Do not pick-and-place: lifting the block more than 1 cm immediately fails.\nOptional considerations: Choose pushing sides and step sizes from the observed response. A contact_constraint is optional if the actual working plane is known.",
+      "return_home_required": true,
+      "finish": "Finish: Return both arms to their supplied initial positions and orientations after completing the task.",
+      "control_step_limit": 600
+    },
+    "put_bottles_into_dustbin": {
+      "requirements": "Goal: Put all four bottles into the dustbin.\nCompletion: All four are inside, including the bottle initially lying on its side.\nOptional considerations: Choose order and handovers as useful; the sideways bottle is not a distractor.",
+      "return_home_required": true,
+      "finish": "Finish: Return both arms to their supplied initial positions and orientations after completing the task.",
+      "control_step_limit": 700
+    },
+    "solve_equation": {
+      "requirements": "Goal: Complete the displayed equation using the correct physical piece.\nCompletion: The missing number or operator is correct and placed readably on its corresponding pad.\nOptional considerations: Read the current equation rather than assuming a fixed answer.",
+      "return_home_required": true,
+      "finish": "Finish: Return both arms to their supplied initial positions and orientations after completing the task.",
+      "control_step_limit": 300
+    },
+    "sort_nesting_dolls_by_size": {
+      "requirements": "Goal: Arrange all five dolls from smallest to largest, left to right.\nCompletion: All five are upright in one clearly ordered row.\nOptional considerations: Rearrange or regrasp any misplaced doll as needed.",
+      "return_home_required": true,
+      "finish": "Finish: Return both arms to their supplied initial positions and orientations after completing the task.",
+      "control_step_limit": 1050
+    },
+    "sort_nesting_dolls_by_size_random": {
+      "requirements": "Goal: Arrange all five dolls from smallest to largest, left to right.\nCompletion: All five are upright in one clearly ordered row.\nOptional considerations: Rearrange or regrasp any misplaced doll as needed.",
+      "return_home_required": true,
+      "finish": "Finish: Return both arms to their supplied initial positions and orientations after completing the task.",
+      "control_step_limit": 1050
+    },
+    "stack_blocks": {
+      "requirements": "Goal: Stack all three blocks into one tower.\nCompletion: All three form a stable, aligned stack.\nOptional considerations: Use the visible block geometry. A misplaced or fallen block may be repositioned; there is no prescribed assembly route.",
+      "return_home_required": true,
+      "finish": "Finish: Return both arms to their supplied initial positions and orientations after completing the task.",
+      "control_step_limit": 550
+    },
+    "stack_blocks_by_language": {
+      "requirements": "Goal: Stack all three blocks in the bottom-to-top order in the current instruction.\nCompletion: The tower is aligned and has the specified color order.\nOptional considerations: Preserve the requested final order while choosing or revising the assembly route.",
+      "return_home_required": true,
+      "finish": "Finish: Return both arms to their supplied initial positions and orientations after completing the task.",
+      "control_step_limit": 400
+    },
+    "stack_blocks_random": {
+      "requirements": "Goal: Stack all three blocks into one tower.\nCompletion: All three form a stable, aligned stack.\nOptional considerations: Use the visible block geometry. A misplaced or fallen block may be repositioned; there is no prescribed assembly route.",
+      "return_home_required": true,
+      "finish": "Finish: Return both arms to their supplied initial positions and orientations after completing the task.",
+      "control_step_limit": 550
+    },
+    "stack_bowls": {
+      "requirements": "Goal: Nest all three bowls into one stack.\nCompletion: All three form a stable upright stack and remain supported after release.\nOptional considerations: Regrasp, separate, reposition or restack bowls as needed. Upright stacking describes the finished result, not every intermediate pose.",
+      "return_home_required": true,
+      "finish": "Finish: Return both arms to their supplied initial positions and orientations after completing the task.",
+      "control_step_limit": 800
+    },
+    "stack_bowls_random": {
+      "requirements": "Goal: Nest all three bowls into one stack.\nCompletion: All three form a stable upright stack and remain supported after release.\nOptional considerations: Regrasp, separate, reposition or restack bowls as needed. Upright stacking describes the finished result, not every intermediate pose.",
+      "return_home_required": true,
+      "finish": "Finish: Return both arms to their supplied initial positions and orientations after completing the task.",
+      "control_step_limit": 800
+    },
+    "store_laptop_and_headphones": {
+      "requirements": "Goal: Hang the headphones on their stand and store the closed laptop upright in the rack.\nCompletion: The headband bridge is supported on the cradle; the laptop lid is closed and its bottom is inside the vertical rack.\nOptional considerations: Choose the order and intermediate supported placements. Recheck that finishing one object has not displaced the other.",
+      "return_home_required": true,
+      "finish": "Finish: Return both arms to their supplied initial positions and orientations after completing the task.",
+      "control_step_limit": 800
+    },
+    "store_laptop_and_headphones_random": {
+      "requirements": "Goal: Hang the headphones on their stand and store the closed laptop upright in the rack.\nCompletion: The headband bridge is supported on the cradle; the laptop lid is closed and its bottom is inside the vertical rack.\nOptional considerations: Choose the order and intermediate supported placements. Recheck that finishing one object has not displaced the other.",
+      "return_home_required": true,
+      "finish": "Finish: Return both arms to their supplied initial positions and orientations after completing the task.",
+      "control_step_limit": 800
+    },
+    "store_tools_in_toolbox": {
+      "requirements": "Goal: Put all four tools into their matching molded slots.\nCompletion: All four tools lie flat and correctly oriented in their matching molded slots, fully inside the toolbox and below its rim. Release all tools with both grippers open.\nOptional considerations: If the toolbox is easy to reach, place each tool directly into its matching molded slot without moving the toolbox. If it is far away or awkward to access, consider moving it to a more accessible position. Before moving the toolbox, clear any objects blocking its path or intended position. Match each tool to its slot’s shape and direction, then lower it gently into place. After release, check that it is not tilted or resting on a slot edge.",
+      "return_home_required": true,
+      "finish": "Finish: Return both arms to their supplied initial positions and orientations after completing the task.",
+      "control_step_limit": 900
+    },
+    "swap_T": {
+      "requirements": "Goal: Swap the two T blocks' positions and orientations.\nCompletion: Each block occupies the other block's initial pose.\nOptional considerations: Remember both initial poses. Picking up is allowed in this task; pushing is not the only option.",
+      "return_home_required": true,
+      "finish": "Finish: Return both arms to their supplied initial positions and orientations after completing the task.",
+      "control_step_limit": 400
+    },
+    "swap_blocks": {
+      "requirements": "Goal: Swap the two blocks using the empty third mat and the button confirmations.\nCompletion: The blocks have exchanged mats through three confirmed placements.\nProcess rules: Move one block to the empty mat and confirm once; move the other to the vacated mat and confirm once; move the buffered block to the final vacated mat and confirm once. Each transfer includes a lift of more than 3 cm before placement. Press and fully release for each confirmation; no extra confirmations.\nOptional considerations: Correct an uncertain placement before its confirmation rather than treating an attempted move as completed.",
+      "return_home_required": true,
+      "finish": "Finish: Return both arms to their supplied initial positions and orientations after completing the task.",
+      "control_step_limit": 700
+    },
+    "sweep_blocks": {
+      "requirements": "Goal: Transfer the brush to the right hand and sweep all blocks into the dustpan on the left.\nCompletion: All blocks are inside the pan; the pan is level, near its initial height, and left of the brush.\nRequired strategy: Use the left hand to place the brush flat on clear table within right-hand reach, then release it and withdraw the left gripper. Grip the handle with the right hand without lifting the brush. Keep the brush supported by the tabletop during sweeping and repositioning; slide it around obstacles instead of carrying it over them. Keep its working edge low enough to catch the smallest object. Use the left hand to stabilize the dustpan with its lip against the table and its opening facing the sweep. After one short stroke, adjust the brush contact if the objects did not move; then continue sweeping.",
+      "return_home_required": true,
+      "finish": "Finish: Return both arms to their supplied initial positions and orientations after completing the task.",
+      "control_step_limit": 1000
+    },
+    "sweep_blocks_random": {
+      "requirements": "Goal: Transfer the brush to the right hand and sweep all target objects into the dustpan on the left.\nCompletion: All target objects are inside the pan; the pan is level, near its initial height, and left of the brush.\nRequired strategy: Use the left hand to place the brush flat on clear table within right-hand reach, then release it and withdraw the left gripper. Grip the handle with the right hand without lifting the brush. Keep the brush supported by the tabletop during sweeping and repositioning; slide it around obstacles instead of carrying it over them. Keep its working edge low enough to catch the smallest object. Use the left hand to stabilize the dustpan with its lip against the table and its opening facing the sweep. After one short stroke, adjust the brush contact if the objects did not move; then continue sweeping.",
+      "return_home_required": true,
+      "finish": "Finish: Return both arms to their supplied initial positions and orientations after completing the task.",
+      "control_step_limit": 1000
+    }
+  },
+  "description": "English task goals, completion conditions, benchmark process rules, required policy strategies and optional considerations. Current-task details and evaluation notes from task_reference.json are included automatically."
+}

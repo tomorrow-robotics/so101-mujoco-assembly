@@ -1,0 +1,46 @@
+{
+  "notice": "Static benchmark definitions, not current object measurements or assessment feedback. Completion details describe the assessed end state unless a process rule explicitly says otherwise. Evaluation notes distinguish additional scoring conditions. These definitions do not prescribe grasps, routes or recovery methods. Image-based estimates have uncertainty; numerical tolerances do not imply measured object precision. Official assessment is performed outside the policy.",
+  "benchmark_commit": "panthera-so101-v1.1-step1 (native MuJoCo; not a RoboDojo task)",
+  "cards": {
+    "so101_base_m1_insert": {
+      "completion_details": "Final M1 pose relative to Base equals the CAD assembled pose (/work/cad/assembly.json T_base_motor) within: along the insertion direction at most 0.05 mm short of the designed depth and at most 0.6 mm past it (fully seated against its stop), lateral error 0.25 mm, orientation error 0.75 degree. The depth tolerance is one-sided because the retaining cap installed next fits only a fully seated M1. The station checks this after every finished action, fastens the part when it is within these tolerances, and reports `station.fastened` in the observation.",
+      "process_rules": "Base stays on the table and is never lifted.",
+      "assessment_notes": "Assessment uses the final state after the policy finishes and a short stationary hold."
+    },
+    "so101_m1_cap_install": {
+      "completion_details": "Final cap pose relative to Base equals the CAD assembled pose (/work/cad/assembly.json T_base_holder) within: lateral error 0.25 mm, error along the seating direction 0.5 mm, orientation error 1 degree; M1 remains fastened within the same tolerances of T_base_motor. The station checks this after every finished action, fastens the part when it is within these tolerances, and reports `station.fastened` in the observation.",
+      "process_rules": "The Base+M1 assembly stays on the table and is never lifted.",
+      "assessment_notes": "Assessment uses the final state after the policy finishes and a short stationary hold."
+    },
+    "so101_shoulder_fork_install": {
+      "completion_details": "Final fork pose equals the CAD assembled pose (/work/cad/assembly.json T_base_shoulder_fork), measured in the Base frame as carried by M1's output (so M1's own small seating error is not counted against the fork), within: lateral error 0.4 mm, along the slide-in direction between 0.3 mm short and 0.8 mm past, orientation error 1.2 degree. M1 and the cap remain fastened within their tolerances. The station checks this after every finished action, fastens the fork when it is within these tolerances, and reports `station.fastened` in the observation.",
+      "process_rules": "The Base assembly stays on the table and is never lifted.",
+      "assessment_notes": "Assessment uses the final state after the policy finishes and a short stationary hold."
+    },
+    "so101_shoulder_seat_install": {
+      "completion_details": "Final seat pose equals the CAD assembled pose (/work/cad/assembly.json T_fork_shoulder_seat), measured in the shoulder fork's frame (so the fork's own small seating error is not counted against the seat), within: lateral error 0.25 mm, along the insertion direction between 0.5 mm short and 0.5 mm past, orientation error 1 degree. M1, the cap and the fork remain fastened within their tolerances. The station checks this after every finished action, fastens the seat when it is within these tolerances, and reports `station.fastened` in the observation.",
+      "process_rules": "The Base assembly stays on the table and is never lifted.",
+      "assessment_notes": "Assessment uses the final state after the policy finishes and a short stationary hold."
+    },
+    "so101_motor2_install": {
+      "completion_details": "Final M2 pose equals the CAD assembled pose (/work/cad/assembly.json T_fork_motor_2), measured in the shoulder fork's frame (so the fork's own small seating error is not counted against the M2), within: lateral error 0.25 mm, along the insertion direction between 0.5 mm short and 0.5 mm past, orientation error 1 degree. M1, the cap, the fork and the seat remain fastened within their tolerances. The station checks this after every finished action, fastens the M2 when it is within these tolerances, and reports `station.fastened` in the observation.",
+      "process_rules": "The Base assembly stays on the table and is never lifted.",
+      "assessment_notes": "Assessment uses the final state after the policy finishes and a short stationary hold."
+    },
+    "so101_upper_arm_install": {
+      "completion_details": "Final upper-arm pose equals the CAD assembled pose (/work/cad/assembly.json T_motor_2_output_upper_print), measured in the frame of M2's output (so M2's own small seating error and its output angle are not counted against the upper arm), within: lateral error 0.25 mm, along the insertion direction between 0.5 mm short and 0.5 mm past, orientation error 1 degree. M1, the cap, the fork, the seat and M2 remain fastened and in place. The station checks this after every finished action, fastens the upper arm when it is within these tolerances, and reports `station.fastened` in the observation.",
+      "process_rules": "The Base assembly stays on the table and is never lifted.",
+      "assessment_notes": "Assessment uses the final state after the policy finishes and a short stationary hold."
+    },
+    "so101_motor3_install": {
+      "completion_details": "Final M3 pose equals the CAD assembled pose (/work/cad/assembly.json T_upper_print_motor3), measured in the upper arm's frame, within: lateral error 0.25 mm, along the insertion direction between 0.5 mm short and 0.5 mm past, orientation error 1 degree. All parts installed earlier remain fastened and in place. The station checks this after every finished action, fastens M3 when it is within these tolerances, and reports `station.fastened` in the observation.",
+      "process_rules": "The Base assembly stays on the table and is never lifted.",
+      "assessment_notes": "Assessment uses the final state after the policy finishes and a short stationary hold."
+    },
+    "so101_forearm_install": {
+      "completion_details": "Final forearm pose equals the CAD assembled pose (/work/cad/assembly.json T_motor3_output_forearm), measured in the frame of M3's output (so M3's own small seating error and its output angle are not counted against the forearm), within: lateral error 0.25 mm, along the insertion direction between 0.5 mm short and 0.5 mm past, orientation error 1 degree. All parts installed earlier remain fastened and in place. The station checks this after every finished action, fastens the forearm when it is within these tolerances, and reports `station.fastened` in the observation.",
+      "process_rules": "The Base assembly stays on the table and is never lifted.",
+      "assessment_notes": "Assessment uses the final state after the policy finishes and a short stationary hold."
+    }
+  }
+}

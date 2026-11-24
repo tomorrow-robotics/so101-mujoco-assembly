@@ -1,0 +1,363 @@
+{
+ "task": "so101_base_m1_insert",
+ "episodes": [
+  {
+   "episode": "real_cad_ctx_20plans_1113_0104",
+   "task": "so101_base_m1_insert",
+   "started_unix_s": 1794503077.626155,
+   "date": "2026-11-13",
+   "status": "success",
+   "invalid_from_control_step": null,
+   "evaluator": {
+    "success": true,
+    "fastened_after_seating": true,
+    "final_error": {
+     "lateral_mm": 0.1807763921988141,
+     "axial_mm": -0.4445476532786161,
+     "angle_deg": 0.6376831022682733
+    },
+    "gates": {
+     "lateral_mm": 0.25,
+     "axial_mm": 0.5,
+     "angle_deg": 1.0
+    },
+    "best_error_during_episode": {
+     "control_step": 298,
+     "lateral_mm": 0.17969056008805273,
+     "axial_mm": -0.4444615316960042,
+     "angle_deg": 0.636355878823433
+    },
+    "process_violations": null,
+    "base_max_rise_mm": null,
+    "base_drift_mm": 0.5218040505628971,
+    "earlier_parts": null,
+    "events": [
+     {
+      "event": "fastened_after_seating",
+      "control_step": 293,
+      "error_at_activation": {
+       "lateral_mm": 0.17951494533893517,
+       "axial_mm": -0.44454732641414746,
+       "angle_deg": 0.6372889508983511
+      }
+     }
+    ]
+   },
+   "end_reason": "external_stop",
+   "operator_stop": "STOP by operator after plan 14 (model reported completion and was holding still); evaluator-side close",
+   "plans": 16,
+   "groups_completed": 15,
+   "control_steps": 518,
+   "planner": null,
+   "planner_rejections": [
+    {
+     "reason": "right Cartesian segment is not reachable; add/change explicit keypoints",
+     "count": 2,
+     "examples": [
+      {
+       "arm": "right",
+       "tcp_m": [
+        0.157,
+        0.252,
+        0.095
+       ],
+       "tool_direction": [
+        -0.0,
+        0.0,
+        -1.0
+       ],
+       "jaw_axis": [
+        0.71,
+        -0.7,
+        -0.0
+       ]
+      },
+      {
+       "arm": "right",
+       "tcp_m": [
+        0.162,
+        0.245,
+        0.112
+       ],
+       "tool_direction": [
+        -0.71,
+        -0.01,
+        -0.71
+       ],
+       "jaw_axis": [
+        0.01,
+        -1.0,
+        -0.0
+       ]
+      }
+     ]
+    },
+    {
+     "reason": "left Cartesian segment is not reachable; add/change explicit keypoints",
+     "count": 1,
+     "examples": [
+      {
+       "arm": "left",
+       "tcp_m": [
+        -0.179,
+        0.344,
+        0.046
+       ],
+       "tool_direction": [
+        1.0,
+        0.0,
+        0.0
+       ],
+       "jaw_axis": [
+        -0.0,
+        1.0,
+        0.0
+       ]
+      }
+     ]
+    }
+   ],
+   "policy_final_memory": "Task complete based on current visual evidence: M1 remains seated in Base after release, full withdrawal, home return, and final one-second stationary hold. Both arms are empty/open and near their supplied initial positions/orientations. Base stayed on table and was braced throughout CAD-directed insertion. No further manipulation is needed; preserve the stable assembly. Previous zero-duration wait was rejected without motion; this corrects only the required positive duration.",
+   "operator_note": "This episode was judged with an earlier, looser depth tolerance (0.5 mm) and counted as success then. M1 was in fact 0.445 mm short of its designed depth. In the following step-2 episode the retaining cap could not seat over it: measured afterwards, the cap jams when M1 is more than 0.05 mm short. The step-1 tolerance was tightened because of this."
+  },
+  {
+   "episode": "step1_tight_curobo_30plans_1113_1111",
+   "task": "so101_base_m1_insert",
+   "started_unix_s": 1794539519.1128523,
+   "date": "2026-11-13",
+   "status": "invalid",
+   "invalid_from_control_step": 626,
+   "evaluator": {
+    "success": false,
+    "fastened_after_seating": false,
+    "final_error": {
+     "lateral_mm": 104.40374776176304,
+     "axial_mm": -238.99273480793948,
+     "angle_deg": 45.19081501550442
+    },
+    "gates": {
+     "lateral_mm": 0.2,
+     "axial_mm": 0.05,
+     "angle_deg": 0.4
+    },
+    "best_error_during_episode": {
+     "control_step": 626,
+     "lateral_mm": 0.3192064975865475,
+     "axial_mm": -0.41726690863014715,
+     "angle_deg": 0.7581223016164078
+    },
+    "process_violations": [],
+    "base_max_rise_mm": 0.0,
+    "base_drift_mm": 0.4002716600690121,
+    "earlier_parts": {},
+    "events": []
+   },
+   "end_reason": "external_stop",
+   "operator_stop": "STOP by operator (user option 1): continue as hybrid with scripted push to the physical stop under the asymmetric M1 gate",
+   "plans": 16,
+   "groups_completed": 15,
+   "control_steps": 677,
+   "planner": "curobo",
+   "planner_rejections": [
+    {
+     "reason": "arm path sweeps over 12 cm; add an explicit intermediate pose",
+     "count": 1,
+     "examples": []
+    },
+    {
+     "reason": "right Cartesian segment is not reachable; add/change explicit keypoints",
+     "count": 1,
+     "examples": [
+      {
+       "arm": "right",
+       "tcp_m": [
+        0.2,
+        0.36,
+        0.16
+       ],
+       "tool_direction": [
+        -0.14,
+        -0.7,
+        -0.7
+       ],
+       "jaw_axis": [
+        0.92,
+        -0.35,
+        0.17
+       ]
+      }
+     ]
+    },
+    {
+     "reason": "arrival mismatch; after-arrival gripper commands cancelled",
+     "count": 1,
+     "examples": []
+    }
+   ],
+   "policy_final_memory": "Final seating refinement based on fresh evidence, not force-search. After1.2sec hold, Base stayed table-supported and nearly stationary. Current Base arc fit obs00018 origin[-.08043690,.36652623,.036],yaw70.661929. Rigid-grip orientation relative Base~[-.005,-.031,.024]deg. Current visible7-marker translation/yaw fit with this orientation gives motor error relative CAD[+.1614,-.2449,+.3994]mm; projected CAD seat landmarks are consistently~.8pixel upper-left of observed, so still a measurable seating discrepancy. Full6D7-feature estimate is poorly conditioned; preserve established nine-marker tilt. Command this image-derived correction and compensate steady measured right tracking bias world[+.1587,+.0882,+.0173]mm from prior held target. Net right movement[-.4478,-.1742,-.4178]mm. Base remains clamped35mm by left, motor24.7mm by right. Then stationary1sec to settle/fasten; checkpoint only verifies gross stability, not micrometre accuracy. No claim of fastening yet. CAD goal R=BaseR,t=tb+Rb[-.00009943,-.00528959,.01051683]. /work/held_poses.npz updated. Next inspect against CAD, release if seated, then withdraw right safely while left holds; release/withdraw left and both home. Avoid endless noisy orientation fits: right9 established tilt, current7 only position/yaw. Never lift Base.",
+   "operator_note": null
+  },
+  {
+   "episode": "E1_step1_guide_1113_1727",
+   "task": "so101_base_m1_insert",
+   "started_unix_s": 1794562093.1631675,
+   "date": "2026-11-13",
+   "status": "success",
+   "invalid_from_control_step": null,
+   "evaluator": {
+    "success": true,
+    "fastened_after_seating": true,
+    "final_error": {
+     "lateral_mm": 0.12034363244602422,
+     "axial_mm": 0.5262822716132383,
+     "angle_deg": 0.7268137125068255
+    },
+    "gates": {
+     "lateral_mm": 0.25,
+     "axial_mm": 0.5,
+     "axial_min_mm": -0.05,
+     "axial_max_mm": 0.6,
+     "angle_deg": 0.75
+    },
+    "best_error_during_episode": {
+     "control_step": 343,
+     "lateral_mm": 0.3198934234919714,
+     "axial_mm": 0.39479798721613146,
+     "angle_deg": 0.1225955158297347
+    },
+    "process_violations": [],
+    "base_max_rise_mm": 0.0,
+    "base_drift_mm": 1.3964422494840185,
+    "earlier_parts": {},
+    "events": [
+     {
+      "event": "fastened_after_seating",
+      "control_step": 350,
+      "error_at_activation": {
+       "lateral_mm": 0.12029960666336509,
+       "axial_mm": 0.5277161144389324,
+       "angle_deg": 0.7341994775053134
+      }
+     }
+    ]
+   },
+   "end_reason": "external_stop",
+   "operator_stop": "STOP by operator after plan 11: the policy reported the task complete (M1 fastened per station signal, both hands released, withdrawn and home) and was only holding still; evaluator-side close",
+   "plans": 12,
+   "groups_completed": 15,
+   "control_steps": 529,
+   "planner": "curobo",
+   "planner_rejections": [],
+   "policy_final_memory": "Task completed: obs00014 confirms station.fastened=true, M1 seated rigidly in Base, both hands released and withdrawn, both returned to supplied home poses (near_home true, left2.03mm/1.91deg and right2.92mm/1.83deg residual). Assembly visibly stable on table. Current action is final1s stationary hold to settle; no further manipulation needed. Base was never lifted and left braced it throughout insertion. CAD-directed horizontal entry along Base+Y, precise two-wrist feature fitting corrected grasp roll before final10mm insertion. Final10N push aimed2.5mm beyond CAD depth achieved fastening. Do not disturb completed work or repeat geometry corrections.",
+   "operator_note": null
+  },
+  {
+   "episode": "G1_step1_chain_1118_2101",
+   "task": "so101_base_m1_insert",
+   "started_unix_s": 1795006906.549706,
+   "date": "2026-11-18",
+   "status": "success",
+   "invalid_from_control_step": null,
+   "evaluator": {
+    "success": true,
+    "fastened_after_seating": true,
+    "final_error": {
+     "lateral_mm": 0.156071312639023,
+     "axial_mm": 0.5275617467617091,
+     "angle_deg": 0.716370173448807
+    },
+    "gates": {
+     "lateral_mm": 0.25,
+     "axial_mm": 0.5,
+     "axial_min_mm": -0.05,
+     "axial_max_mm": 0.6,
+     "angle_deg": 0.75
+    },
+    "best_error_during_episode": {
+     "control_step": 367,
+     "lateral_mm": 0.15607133884846897,
+     "axial_mm": 0.5275617200554599,
+     "angle_deg": 0.7163700831460398
+    },
+    "process_violations": [],
+    "base_max_rise_mm": 0.0,
+    "base_drift_mm": 3.4176298220233576,
+    "earlier_parts": {},
+    "events": [
+     {
+      "event": "fastened_after_seating",
+      "control_step": 312,
+      "error_at_activation": {
+       "lateral_mm": 0.1560818119110998,
+       "axial_mm": 0.5291679882108314,
+       "angle_deg": 0.7274010096317846
+      }
+     }
+    ]
+   },
+   "end_reason": "external_stop",
+   "operator_stop": "STOP by operator after plan 12: the policy reported the task complete (M1 fastened per station signal, both hands released, withdrawn and home) and was only holding still; evaluator-side close",
+   "plans": 13,
+   "groups_completed": 15,
+   "control_steps": 483,
+   "planner": "curobo",
+   "planner_rejections": [],
+   "policy_final_memory": "Task completed: obs14 station.fastened=true; M1 seated and rigidly joined Base. Both grippers open, empty, withdrawn and returned to initial poses (left1.15mm/1.05deg, right2.55mm/.99deg home errors, both near_home true). Assembly remains stable table-supported, Base never lifted. Final short stationary hold, no additional manipulation needed. CAD geometry guided initial pose fits, rear Base hold, side M1 grasp, lift verification, staged carry and aligned front insertion. Seat required second axial compliant push because Base slid under first; fastening used as authoritative completion signal, then immediate stationary release and separate safe withdrawals.",
+   "operator_note": null
+  },
+  {
+   "episode": "H1_step1_chain_1118_2155",
+   "task": "so101_base_m1_insert",
+   "started_unix_s": 1795010180.0727923,
+   "date": "2026-11-18",
+   "status": "success",
+   "invalid_from_control_step": null,
+   "evaluator": {
+    "success": true,
+    "fastened_after_seating": true,
+    "final_error": {
+     "lateral_mm": 0.18592897702120395,
+     "axial_mm": 0.5212525530208425,
+     "angle_deg": 0.7324069014837937
+    },
+    "gates": {
+     "lateral_mm": 0.25,
+     "axial_mm": 0.5,
+     "axial_min_mm": -0.05,
+     "axial_max_mm": 0.6,
+     "angle_deg": 0.75
+    },
+    "best_error_during_episode": {
+     "control_step": 350,
+     "lateral_mm": 0.18591642397553848,
+     "axial_mm": 0.5212535172271502,
+     "angle_deg": 0.732204907554652
+    },
+    "process_violations": [],
+    "base_max_rise_mm": 0.3787350088123864,
+    "base_drift_mm": 3.5774125030782176,
+    "earlier_parts": {},
+    "events": [
+     {
+      "event": "fastened_after_seating",
+      "control_step": 308,
+      "error_at_activation": {
+       "lateral_mm": 0.1859740013168155,
+       "axial_mm": 0.5227792549015071,
+       "angle_deg": 0.7435721548644162
+      }
+     }
+    ]
+   },
+   "end_reason": "external_stop",
+   "operator_stop": "STOP by operator after plan 14: the policy reported the task complete (M1 fastened per station signal, both hands released, withdrawn and home) and was only holding still; evaluator-side close",
+   "plans": 15,
+   "groups_completed": 16,
+   "control_steps": 510,
+   "planner": "curobo",
+   "planner_rejections": [],
+   "policy_final_memory": "Task complete: station.fastened=true confirms M1 seated to CAD tolerance and fastened. Both grippers released; hands withdrawn safely; both arms returned to supplied home poses and report near_home=true. Assembly remains stable on table, untouched after fastening. Final stationary hold only; no further manipulation required.",
+   "operator_note": null
+  }
+ ]
+}
